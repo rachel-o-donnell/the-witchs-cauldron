@@ -139,16 +139,37 @@ User Stories:
 
 ### Agile Methodology
 
-Product Backlog
-Timeboxing- iterations
+Themes, Epics and User Stories were all divided up and added as issues in the issues tab of Github 
 
-photos of grouped themes with color coded label for ease of identification
+![Acc Management screenshot](assets/README-images/acc-management.png)
 
-MoSCoW used for each iteration 60% 20% the rest
+Each Theme, Epic and User Story was given a label(s) to visually connect to the theme or epic it belonged to.
+
+![Admin Features screenshot](assets/README-images/admin-features.png)
+
+Each Epic and User Story was color coded to have more harmonious connection to the Theme.
+
+![Post Interaction screenshot](assets/README-images/post-interaction.png)
+
+
+
+All issues were coverted to a Github Kanban project board found in the Github Projects tab or by clicking 
+
+[The Witch's Cauldron Kanban Board](https://github.com/users/rachel-o-donnell/projects/9/views/1)
+
+*** insert progress photos
+
+Product Backlog were created using the Milestones feature in Github 
+Timeboxing was used by creating Iterations in the Milestones tab of Github with each iteration being one week long. 
+Issues were added to each iteration at the start of each week using MosCow prioritisation, and the 60% 20% rest rule 
+The current iteration led the management of the kanban board.
+
 
 ### Design
 
 #### Wireframes
+
+
 
 #### Colour Scheme
 
