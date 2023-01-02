@@ -57,7 +57,7 @@
 
 ### User Stories
 
-#### Theme: Acc Management 
+### Theme: Acc Management 
 [GitHub Issue #14](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/14)
 
 ### Epic: Register Acc 
@@ -88,7 +88,7 @@ User Stories:
 
 1. As a Site User/Site Admin I can personalise my profile so that people can see my areas of interest as a site user or areas of speciality as a creator [GitHub Issue #1](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/1)
 
-#### Theme: Admin Features
+### Theme: Admin Features
 [GitHub Issue #21](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/21)
 
 ### Epic: Customise Post
@@ -109,10 +109,10 @@ User Stories:
 
 1. As a Site Admin I can create a draft of my post so that I can save my progress and finish the post at a later time [GitHub Issue #10](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/10)
 
-#### Theme: Post Interaction
+### Theme: Post Interaction
 [GitHub Issue #24](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/24)
 
-#### Epic: View Posts
+### Epic: View Posts
 [GitHub Issue #25](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/25)
 
 User Stories:
@@ -120,14 +120,14 @@ User Stories:
 1. As a Site User I can view a list of posts so that I can choose one to read [GitHub Issue #2](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/2)
 1. As a Site User I can click on a post so that I can read the full spell [GitHub Issue #3](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/3)
 
-#### Epic: Save Post
+### Epic: Save Post
 [GitHub Issue #23](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/23)
 
 User Stories:
 
 1. As a Site User I can save a spell post so that I can have quick access to my favourite spells [GitHub Issue #13](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/13)
 
-#### Epic: Likes and Comments
+### Epic: Likes and Comments
 [GitHub Issue #26](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/26)
 
 User Stories: 
@@ -167,19 +167,21 @@ The current iteration led the management of the kanban board.
 
 ### Design
 
-#### Wireframes
+### Wireframes
 
+Wireframes were created using Balsamiq and can be found [here](assets/Wireframes/)
 
+![Homepage desktop](assets/Wireframes/home-view-desktop.png)
 
-#### Colour Scheme
+### Colour Scheme
 
-#### Typography
+### Typography
 
-#### Images and Iconography
+### Images and Iconography
 
-#### Database Schema
+### Database Schema
 
-#### Design changes ???
+### Design changes ???
 
 ## Features
 
@@ -246,9 +248,9 @@ linting:
 
 ### Bugs
 
-#### Fixed Bugs
+### Fixed Bugs
 
-#### Remaining Bugs
+### Remaining Bugs
 
 ## Deployment
 
@@ -286,3 +288,4 @@ Tips from the below video README: Worth Reading, with Joanna Gorska on the Code 
 - https://www.youtube.com/watch?v=P1UiUXrp7Ic
 
 ### Acknowledgments
+
