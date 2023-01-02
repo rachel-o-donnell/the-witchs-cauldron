@@ -1,108 +1,175 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Welcome to The Witch's Cauldron**
 
-Welcome USER_NAME,
+## Demo
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View the live project here.]
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## TOC
 
-## Gitpod Reminders
+- [User Experience (UX)](#user-experience-ux)
+  - [Project Aims](#project-aims)
+  - [User Stories](#user-stories)
+    - [Theme: Acc Management](#Theme-acc-management)
+        - [Epic: ](#epic- insert name)
+ 
+  - [Agile Methodology](#agile-methodology)
+  - [Design](#design)
+    - [Wireframes](#wireframes)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Images and Iconography](#images-and-iconography)
+    - [Database Schema](#database-schema)
+    - [Design changes](#design-changes)
+- [Features](#features)
+  - [Features Not Implemented](#features-not-implemented)
+  - [Future Features](#future-features)
+- [Technologies Used](#technologies-used)
+  - [Languages Used](#languages-used)
+  - [Python Modules and Packages/Frameworks Used](#python-modules-and-packagesframeworks-used)
+  - [Programs and Tools Used](#programs-and-tools-used)
+- [Testing](#testing)
+  - [Bugs](#bugs)
+    - [Fixed Bugs](#fixed-bugs)
+    - [Remaining Bugs](#remaining-bugs)
+- [Deployment](#deployment)
+  - [Forking the GitHub Repository](#forking-the-github-repository)
+  - [Making a Local Clone](#making-a-local-clone)
+  - [Deploying with Heroku](#deploying-with-heroku)
+- [Credits](#credits)
+  - [Online resources](#online-resources)
+  - [Code](#code)
+  - [Media](#media)
+  - [Acknowledgments](#acknowledgments)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Experience (UX)
 
-`python3 -m http.server`
+### Project Aims
 
-A blue button should appear to click: _Make Public_,
+### User Stories
 
-Another blue button should appear to click: _Open Browser_.
+#### Theme: Acc Management
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### Epic: 
 
-A blue button should appear to click: _Make Public_,
+### Agile Methodology
 
-Another blue button should appear to click: _Open Browser_.
+### Design
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Wireframes
 
-To log into the Heroku toolbelt CLI:
+#### Colour Scheme
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Typography
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Images and Iconography
 
-------
+#### Database Schema
 
-## Release History
+#### Design changes ???
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Features
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+1. Home Page
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    - 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+1. Navigation
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    - 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+1. Signup, Login and other account management pages
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    - 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+1. Posts
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    - 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+1. Admin
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    - 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Features Not Implemented
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Future Features
 
-------
+-
 
-## FAQ about the uptime script
+## Technologies Used
 
-**Why have you added this script?**
+### Languages Used
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- HTML5
+- CSS3
+- Python
 
-**How will this affect me?**
+### Python Modules and Packages/Frameworks Used
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Programs and Tools Used
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- [Google Fonts:](https://fonts.google.com/)- [Bootstrap](https://getbootstrap.com/)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- [Bootstrap](https://getbootstrap.com/
+  - Bootstrap was used through the project to style the project and create responsive elements/layouts.
 
-**So….?**
+- [drawSQL](https://drawsql.app/) - Create Database Schema/ERD
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- [Git](https://git-scm.com/)
+  - Git was used for version control, using the terminal to commit to Git and
+    Push to GitHub.
+- [GitHub:](https://github.com/)
+  - GitHub is used to store the projects code after being pushed from Git.
 
-**Can I opt out?**
+- [Balsamiq:](https://balsamiq.com/)
+  - Balsamiq was used to create the [wireframes](#wireframes) during the design
+    process.
+- [Coolors](https://coolors.co/image-recolor)
+- The following modules were installed or enabled in [GitHub]() to assist with formatting and code
+linting:
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Testing
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Bugs
 
-**Anything more?**
+#### Fixed Bugs
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+#### Remaining Bugs
 
----
+## Deployment
 
-Happy coding!
+### Forking the GitHub Repository
+
+
+### Making a Local Clone
+
+**NOTE**: It is a requirement of the is project that you have Python version 3.8 or higher installed locally.
+
+
+
+### Deploying with Heroku
+
+
+## Credits
+
+### Online resources
+
+- [Django Documentation](https://docs.djangoproject.com/en/3.2/)
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.1) and [Examples](https://getbootstrap.com/docs/5.1/examples/)
+- [Django-Summernote Documentation](https://github.com/summernote/django-summernote)
+
+### Code
+
+### Media
+
+### ReadMe 
+
+I used the skeleton of Ian's ReadMe to help me put a structure of my ReadMe together as a starting point.
+
+- https://github.com/ianmeigh/support-hub/blob/main/README.md 
+
+Tips from the below video README: Worth Reading, with Joanna Gorska on the Code Institute Channel.
+- https://www.youtube.com/watch?v=P1UiUXrp7Ic
+
+### Acknowledgments
