@@ -175,6 +175,12 @@ Wireframes were created using Balsamiq and can be found [here](assets/Wireframes
 
 ### Colour Scheme
 
+Neutral natural colors were chosen for the site using Coolers. I made every effort for color blind accesability here to ensure all tones would differ. 
+
+![Colour Palette](assets/README-images/colors/color-palette-original.png)
+
+All colorblind variants can be found [here](assets/README-images/colors)
+
 ### Typography
 
 ### Images and Iconography
