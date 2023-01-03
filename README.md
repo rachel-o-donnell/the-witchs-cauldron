@@ -141,15 +141,15 @@ User Stories:
 
 Themes, Epics and User Stories were all divided up and added as issues in the issues tab of Github 
 
-![Acc Management screenshot](assets/README-images/acc-management.png)
+![Acc Management screenshot](assets/README-images/agile/acc-management.png)
 
 Each Theme, Epic and User Story was given a label(s) to visually connect to the theme or epic it belonged to.
 
-![Admin Features screenshot](assets/README-images/admin-features.png)
+![Admin Features screenshot](assets/README-images/agile/admin-features.png)
 
 Each Epic and User Story was color coded to have more harmonious connection to the Theme.
 
-![Post Interaction screenshot](assets/README-images/post-interaction.png)
+![Post Interaction screenshot](assets/README-images/agile/post-interaction.png)
 
 
 
