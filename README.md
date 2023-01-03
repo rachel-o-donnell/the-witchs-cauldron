@@ -232,13 +232,18 @@ All colorblind variants can be found [here](assets/README-images/colors)
  - [gunicorn](https://pypi.org/project/gunicorn/20.1.0/) - Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX. (The server that I am useing to run Django on Heroku)
  - [Django](https://www.djangoproject.com/) - High-level Python Web framework used to build this project rapidly.
  
-
- - [cloudinary](https://cloudinary.com/)
+ API: 
+ - [cloudinary](https://cloudinary.com/) - Image and Video API
  
  Libraries:
  - [dj-database-url](https://pypi.org/project/dj-database-url/) - Django utility allows use of DATABASE_URL environment variable to configure your Django app.  (Support library needed for PostgresSQL - Found in Django settings file to connect to a PostgreSQL database.)
  - [psycopg2](https://pypi.org/project/psycopg2/) - PostgreSQL database adapter for Python. (Connects to PostgresSQL)
  - [dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/) - Django package that facilitates integration with Cloudinary by implementing Django Storage API.
+
+Deployment:
+ - [Heroku](https://dashboard.heroku.com/) - "Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud."
+ Database:
+ - [ElephantSQL](https://www.elephantsql.com/) - "ElephantSQL automates every part of setup and running of PostgreSQL clusters." (Database)
 
 ### Programs and Tools Used
 
@@ -248,6 +253,7 @@ All colorblind variants can be found [here](assets/README-images/colors)
   - Bootstrap was used through the project to style the project and create responsive elements/layouts.
 
 - [drawSQL](https://drawsql.app/) - Create Database Schema/ERD
+
 
 - [Git](https://git-scm.com/)
   - Git was used for version control, using the terminal to commit to Git and
@@ -270,6 +276,8 @@ linting:
 ### Remaining Bugs
 
 ## Deployment
+
+
 
 ### Forking the GitHub Repository
 
