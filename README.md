@@ -281,6 +281,8 @@ linting:
 
 ### Fixed Bugs
 
+#1 Missing comma after 'cloudinary_storage' in INSTALLED_APPS section of Settings.py creating error ModuleNotFoundError: No module named 'cloudinary_storagedjango' found when dry running migration.
+
 ### Remaining Bugs
 
 ## Deployment
