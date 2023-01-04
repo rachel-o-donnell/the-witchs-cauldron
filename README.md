@@ -165,7 +165,7 @@ Issues were added to each iteration at the start of each week using MosCow prior
 
 Issues that were not completed were added back into the main Product Backlog Milestone at the end of each iteration and the board was reprioritised.
 
-***INsert Screenshot of this process***
+** Insert Screenshot of this process***
 
 ![Iteration 1](assets/README-images/agile/it-1-product-backlog.png)
 
