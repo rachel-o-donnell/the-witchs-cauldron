@@ -239,14 +239,21 @@ All colorblind variants can be found [here](assets/README-images/colors)
 
  - [gunicorn](https://pypi.org/project/gunicorn/20.1.0/) - Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX. (The server that I am useing to run Django on Heroku)
  - [Django](https://www.djangoproject.com/) - High-level Python Web framework used to build this project rapidly.
+ <!-- Not sure if i need to add these
+ - [include]
+ - [os]
+ - [DateTime] - [CharField] etc 
+ -->
  
  API: 
  - [cloudinary](https://cloudinary.com/) - Image and Video API
  
  Libraries:
- - [dj-database-url](https://pypi.org/project/dj-database-url/) - Django utility allows use of DATABASE_URL environment variable to configure your Django app.  (Support library needed for PostgresSQL - Found in Django settings file to connect to a PostgreSQL database.)
+ - [dj-database-url](https://pypi.org/project/dj-database-url/) - Django utility allows use of DATABASE_URL environment variable to configure your Django app.  
+    (Support library needed for PostgresSQL - Found in Django settings file to connect to a PostgreSQL database.)
  - [psycopg2](https://pypi.org/project/psycopg2/) - PostgreSQL database adapter for Python. (Connects to PostgresSQL)
  - [dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/) - Django package that facilitates integration with Cloudinary by implementing Django Storage API.
+ - [django-summernote](https://summernote.org/) - WISIWYG (what you see is what you get) text editor
 
 Deployment:
  - [Heroku](https://dashboard.heroku.com/) - "Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud."
