@@ -283,6 +283,11 @@ linting:
 
 #1 Missing comma after 'cloudinary_storage' in INSTALLED_APPS section of Settings.py creating error ModuleNotFoundError: No module named 'cloudinary_storagedjango' found when dry running migration.
 
+#2 in PostSpell/models.py:
+ Fix bug#2 in PostSpell/models.py. Missing capital F in CharField and SlugField creating  AttributeError: module 'django.db.models' has no attribute 'Slugfield'/'CharField' found in migration dry run. 
+
+
+
 ### Remaining Bugs
 
 ## Deployment
