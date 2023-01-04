@@ -157,13 +157,21 @@ All issues were coverted to a Github Kanban project board found in the Github Pr
 
 [The Witch's Cauldron Kanban Board](https://github.com/users/rachel-o-donnell/projects/9/views/1)
 
-*** insert progress photos
+Product Backlogs were created using the Milestones feature in Github. 1 main product board was created 1st and each iteration was drawn from this board in order of priority.
 
-Product Backlog were created using the Milestones feature in Github 
 Timeboxing was used by creating Iterations in the Milestones tab of Github with each iteration being one week long. 
-Issues were added to each iteration at the start of each week using MosCow prioritisation, and the 60% 20% rest rule 
-The current iteration led the management of the kanban board.
 
+Issues were added to each iteration at the start of each week using MosCow prioritisation (with new labels added to each issue) and using the 60% 20% rest method. These issues were also ordered from top priority on the top of the list down.
+
+Issues that were not completed were added back into the main Product Backlog Milestone at the end of each iteration and the board was reprioritised.
+
+***INsert Screenshot of this process***
+
+![Iteration 1](assets/README-images/agile/it-1-product-backlog.png)
+
+The current iteration led the management of the kanban board- again laid out with a product backlog style in mind with prioritised issues on the top of the list. This helped me visually focus as you could no longer see the MoSCoW labels without clicking into each item. 
+
+![kanban Iteration 1](assets/README-images/agile/kanban-it-1.png)
 
 ### Design
 
