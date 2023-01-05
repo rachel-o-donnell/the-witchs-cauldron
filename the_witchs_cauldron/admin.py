@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import PostSpell
+from .models import PostSpell, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -12,3 +12,16 @@ class PostAdmin(SummernoteModelAdmin):
     list_display = ('title', 'slug', 'status', 'created_on')
     search_fields = ['title', 'content']
     list_filter = ('status', 'created_on')
+
+
+# Admin features for comments
+@admin.register(Comment)
+class AdminComment(admin.ModelAdmin):
+    list_display = ('username', 'body', 'post', 'created_on', 'approved')
+    list_filter = ('approved', 'created_on')
+    search_fields = ('username', 'email', 'body')
+    actions = ['approve_comment']
+
+    # this is set to false by default so needs to have this function to approve
+    def approve_comment(self, request, queryset):
+        queryset.update(approved=True)
