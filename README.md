@@ -323,6 +323,10 @@ linting:
 
 ### Code
 
+Using Code Institute's "I Think Therefore I Blog" runthrough as a base for guidence and adapting as much as possible.
+
+***admin.py - PostAdmin and Admin comment - Add features to expand/make different (minimal I could change here yet- possibly add a category tag if that becomes a feature later on)
+
 ### Media
 
 ### ReadMe 
