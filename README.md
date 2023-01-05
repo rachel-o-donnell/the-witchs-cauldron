@@ -175,7 +175,7 @@ Issues that were not completed were added back into the main Product Backlog Mil
 The current iteration led the management of the kanban board- again laid out with a product backlog style in mind with prioritised issues on the top of the list. This helped me visually focus as you could no longer see the MoSCoW labels without clicking into each item. 
 
 ![kanban Iteration 1](assets/README-images/agile/kanban-it-1.png)
-
+![Kanban Iteration 1 Day 4 progress](assets/README-images/agile/kanban-it1-progress.png) 
 ### Design
 
 ### Wireframes
