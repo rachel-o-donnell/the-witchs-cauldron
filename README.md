@@ -153,8 +153,7 @@ Each Epic and User Story was color coded to have more harmonious connection to t
 
 User Stories had acceptance criteria/tasks in the form of check boxes. In this example I tested this feature from the admin panel first and added screenshot in the comments as I know I will have to test this function again after I create the views.
 
-![User Story Acceptance criteria](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/9)
-
+[User Story Acceptance criteria](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/9)
 
 All issues were coverted to a Github Kanban project board found in the Github Projects tab or by clicking 
 
@@ -162,20 +161,39 @@ All issues were coverted to a Github Kanban project board found in the Github Pr
 
 Product Backlogs were created using the Milestones feature in Github. 1 main product board was created 1st and each iteration was drawn from this board in order of priority.
 
+Product Backlog (main) with MoSCoW labels - Screenshot taken at the start of Iteration 2.
+
+![Product Backlog (main) with MoSCoW](assets/README-images/agile/main-product-backlog-moscow.png)
+
 Timeboxing was used by creating Iterations in the Milestones tab of Github with each iteration being one week long. 
+
+![Milstones tab](assets/README-images/agile/milestones.png)
+
 
 Issues were added to each iteration at the start of each week using MosCow prioritisation (with new labels added to each issue) and using the 60% 20% rest method. These issues were also ordered from top priority on the top of the list down.
 
 Issues that were not completed were added back into the main Product Backlog Milestone at the end of each iteration and the board was reprioritised.
 
-** Insert Screenshot of this process***
-
 ![Iteration 1](assets/README-images/agile/it-1-product-backlog.png)
+
+1st week I was ahead of my iteration so I began working on 2nd iteration early.
+
+![Iteration 2](assets/README-images/agile/it2-pb.png)
 
 The current iteration led the management of the kanban board- again laid out with a product backlog style in mind with prioritised issues on the top of the list. This helped me visually focus as you could no longer see the MoSCoW labels without clicking into each item. 
 
+Kanban Iteration 1
+
 ![kanban Iteration 1](assets/README-images/agile/kanban-it-1.png)
+
+Kanban Iteration 1 Day 4 progress
+
 ![Kanban Iteration 1 Day 4 progress](assets/README-images/agile/kanban-it1-progress.png) 
+
+Kanban Iteration 2 
+
+![Kanban Iteration 2](assets/README-images/agile/kanban-it2.png)
+
 ### Design
 
 ### Wireframes
