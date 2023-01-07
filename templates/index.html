@@ -1,1 +1,47 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                {% for post in postspell_list %}
+                <!-- card populated with content -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="image-container">
+                                {% if "placeholder" in post.main_image.url %}
+                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffolklorethursday.com%2Flegends%2Fancient-celtic-cauldrons-the-magical-the-mythical-the-real%2F&psig=AOvVaw2t44mMszHs7YHfY661IzGH&ust=1673189038554000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJDwsITZtfwCFQAAAAAdAAAAABAK"
+                                    class="card-img-top" alt="...">
+                                {% else %}
+                                <img src="{{ post.main_image.url }}" alt="" class="card-img-top">
+                                {% endif %}
+                                <div class="image-flash">
+                                    <p class="creator">Creator: {{ post.creator }}</p>
+                                </div>
+                            </div>
+                            <a href="#" class="post-link">
+                                <h2 class="card-title">{{ post.title }}</h2>
+                                <p class="card-text">{{ post.excerpt }}</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+{%endblock%}
