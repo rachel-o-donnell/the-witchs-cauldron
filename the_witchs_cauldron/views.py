@@ -8,4 +8,4 @@ class PostList(generic.ListView):
     model = PostSpell()
     queryset = PostSpell.objects.filter(status=1).order_by('created_on')
     template_name = 'index.html'
-    paginate_by = 3  # can only view this many at a time before adding a page nav-change to 9/continuous?
+    #paginate_by = 6  # can only view this many at a time before adding a page nav-change to 9/continuous?
