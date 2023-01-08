@@ -153,7 +153,7 @@ Each Epic and User Story was color coded to have more harmonious connection to t
 
 User Stories had acceptance criteria/tasks in the form of check boxes. In this example I tested this feature from the admin panel first and added screenshot in the comments as I know I will have to test this function again after I create the views.
 
-[User Story Acceptance criteria](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/9)
+[User Story Acceptance criteria](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/9) 
 
 All issues were coverted to a Github Kanban project board found in the Github Projects tab or by clicking 
 
@@ -314,6 +314,7 @@ linting:
 #2 in PostSpell/models.py:
  Fix bug#2 in PostSpell/models.py. Missing capital F in CharField and SlugField creating  AttributeError: module 'django.db.models' has no attribute 'Slugfield'/'CharField' found in migration dry run. 
 
+#3 Default image was not displaying - I needed to change the address. image by Jalyn Bryce.
 
 
 ### Remaining Bugs
