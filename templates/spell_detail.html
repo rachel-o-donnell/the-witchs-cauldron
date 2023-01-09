@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1 class="post-title">{{ post.title }}</h1>
+        <p class="post-subtitle">{{ post.creator }} | {{ post.created_on }}</p>
+    </div>
+    <div>
+        {% if "placeholder" in post.main_image.url %}
+        <img src="https://folklorethursday.com/wp-content/uploads/2021/02/cauldron-folklore.png" class="card-img-top"
+            alt="...">
+        {% else %}
+        <img src="{{ post.main_image.url }}" alt="" class="card-img-top">
+        {% endif %}
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text">
+                    {{ post.content | safe }}
+                </p>
+                <div class="row">
+                    <!--
+                    <div>
+                        <i class="far fa-heart"></i> {{ post.number_of_likes}}
+                    </div>
+                    <div>
+                        {% with comments.count as total_comments %}
+                        <i class="far fa-comments">
+                        </i>
+                        {{ total_comments }}
+                        {% endwith %}
+                    </div>
+                -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
