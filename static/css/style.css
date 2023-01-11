@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Amiri&family=Inter:wght@300&family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Amiri&display=swap');
 
 body {
     background-color: #F4F3EE;
@@ -15,4 +15,21 @@ body {
     color: #463F3A;
     font-family: 'Amatic SC', cursive;
     font-size: 2rem;
+}
+
+.card-body {
+    font-family: 'Amiri', serif;
+    color: #463F3A;
+}
+
+.card-title {
+    color: #463F3A;
+}
+
+.post-link {
+    color: #E0AFA0;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
 }
