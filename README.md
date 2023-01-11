@@ -212,6 +212,9 @@ All colorblind variants can be found [here](assets/README-images/colors)
 
 ### Typography
 
+Amatic SC - playful and homemade - a nod to the inviting and not so serious nature of the blog.
+Amiri - Has an early modern feel like - the classical period of witch hunts.
+
 ### Images and Iconography
 
 ### Database Schema
