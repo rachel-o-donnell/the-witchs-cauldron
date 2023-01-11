@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Amiri&family=Inter:wght@300&family=La+Belle+Aurore&display=swap');
+
+body {
+    background-color: #F4F3EE;
+    color: #463F3A;
+}
+
+.navbar {
+    background-color: #E0AFA0;
+    color: #463F3A;
+}
+
+.logo-font {
+    background-color: #E0AFA0;
+    color: #463F3A;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+}
