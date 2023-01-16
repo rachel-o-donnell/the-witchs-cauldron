@@ -38,3 +38,8 @@ h1,
 h2 {
     font-family: 'Amatic SC', cursive;
 }
+
+.btn-signin {
+    background-color: #463F3A;
+    color: #E0AFA0;
+}
