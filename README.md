@@ -346,6 +346,7 @@ linting:
 - [Django Documentation](https://docs.djangoproject.com/en/3.2/)
 - [Bootstrap Documentation](https://getbootstrap.com/docs/5.1) and [Examples](https://getbootstrap.com/docs/5.1/examples/)
 - [Django-Summernote Documentation](https://github.com/summernote/django-summernote)
+- [Django-Allauth Documentation](https://django-allauth.readthedocs.io/en/latest/)
 
 ### Code
 
