@@ -321,6 +321,8 @@ linting:
 
 #3 Default image was not displaying - I needed to change the address. image by Jalyn Bryce.
 
+#4 Username and body not displaying in comment section - changed to user.username and comment_area 
+
 
 ### Remaining Bugs
 

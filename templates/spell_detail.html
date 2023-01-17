@@ -64,9 +64,9 @@
                     {% if user.is_authenticated %}
 
                     <h2>Post a comment</h2>
-                    <p>Posted by: {{ username.username }}</p>
+                    <p>Posted by: {{ user.username }}</p>
                     <form method="post">
-                        {{ comment_form | crispy }}
+                        {{ comment_area | crispy }}
                         {% csrf_token %}
                         <button class="btn btn-signin">Post</button>
                     </form>
