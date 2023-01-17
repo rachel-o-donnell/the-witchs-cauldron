@@ -355,6 +355,8 @@ Using Code Institute's "I Think Therefore I Blog" runthrough as a base for guide
 
 ***admin.py - PostAdmin and Admin comment - Add features to expand/make different (minimal I could change here yet- possibly add a category tag if that becomes a feature later on)
 
+Footer - Base code example and addapted to suit the needs and style of the project https://mdbootstrap.com/snippets/standard/mdbootstrap/2885129?view=side
+
 Fixing footer styling to push to the bottom of the screen but not sticky : https://radu.link/make-footer-stay-bottom-page-bootstrap/
 
 ### Media
