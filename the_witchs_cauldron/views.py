@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from .models import PostSpell
+from .forms import CommentArea
 
 
 # class based views allows for re-use - One view can inherit from another
@@ -27,6 +28,7 @@ class SpellDetail(View):
             {
                 "post": post,
                 "comments": comments,
-                "liked": liked
+                "liked": liked,
+                "comment_area": CommentArea()
             },
         )
