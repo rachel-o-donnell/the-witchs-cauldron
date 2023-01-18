@@ -25,8 +25,22 @@
                 </p>
                 <!-- likes and comments -->
                 <div class="row">
-                    <div>
-                        <i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}</div>
+                    {% if user.is_authenticated %}
+                    <form action="{% url 'spell_like' post.slug %}" method="POST">
+                        {% csrf_token %}
+                        {% if liked %}
+                        <button type="submit" name="spellpost_id" value="{{post.slug}}" class="btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        {% else %}
+                        <button type="submit" name="spellpost_id" value="{{post.slug}}" class="btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        {% endif %}
+                    </form>
+                    {% else %}
+                    <span><i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}</span>
+                    {% endif %}
                     <div>
                         {% with comments.count as no_of_comments %}
                         <i class="fa-regular fa-comments">
