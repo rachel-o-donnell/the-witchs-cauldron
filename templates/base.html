@@ -34,8 +34,14 @@
                 <ul class="nav">
                     {% if user.is_authenticated %}
                     <li class="nav-item">
+                        <a class="nav-link active logo-font" aria-current="page" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active logo-font" aria-current="page"
                             href="{% url 'account_logout' %}">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled logo-font" href="#">Disabled/Other?</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
