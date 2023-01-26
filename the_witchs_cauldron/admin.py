@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import PostSpell, Comment
+from .models import PostSpell, Comment, Categories
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -25,3 +25,6 @@ class AdminComment(admin.ModelAdmin):
     # this is set to false by default so needs to have this function to approve
     def approve_comment(self, request, queryset):
         queryset.update(approved=True)
+
+
+admin.site.register(Categories)

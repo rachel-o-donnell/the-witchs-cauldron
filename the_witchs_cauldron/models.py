@@ -4,13 +4,24 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-# Post a Spell
 
+# Adds a category label to Spell Posts
+
+class Categories(models.Model):
+    category = models.CharField(max_length=50)
+
+    # returns a string representaion of an object
+    def __str__(self):
+        return self.category
+
+
+# Post a Spell
 
 class PostSpell(models.Model):
     title = models.CharField(max_length=250, unique=True)
     slug = models.SlugField(max_length=250, unique=True)
     creator = models.ForeignKey(User, on_delete=models.CASCADE, related_name='spell_posts')
+    categories = models.ManyToManyField(Categories, related_name='spell_categories', blank=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     main_image = CloudinaryField('image', default='placeholder')
