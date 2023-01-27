@@ -2,6 +2,44 @@
 
 {% block content %}
 
-Magic Categories
+<div class="container-fluid">
+    <div class="row">
+        <h1>Magic Categories</h1>
+        <h2>Spells relating to {{categorylist.category}}</h2>
+        <!-- Blog Entries Column -->
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                {% for post in categorylist.related_posts %}
+                <!-- card populated with content -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="image-container">
+                                {% if "placeholder" in post.main_image.url %}
+                                <img src="https://folklorethursday.com/wp-content/uploads/2021/02/cauldron-folklore.png"
+                                    class="card-img-top" alt="...">
+                                {% else %}
+                                <img src="{{ post.main_image.url }}" alt="" class="card-img-top">
+                                {% endif %}
+                                <div class="image-flash">
+                                    <p class="creator">Creator: {{ post.creator }}</p>
+                                </div>
+                            </div>
+                            <a href="{% url 'spell_detail' post.slug %}" class="post-link">
+                                <h2 class="card-title">{{ post.title }}</h2>
+                                <p class="card-text">{{ post.excerpt }}</p>
+                            </a>
+                            <p class="card-text">{{ post.created_on }}
+                                <i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}
+                                <i class="fa-regular fa-comments"></i>
+                            </p>
 
-{% endblock %}
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%endblock%}
