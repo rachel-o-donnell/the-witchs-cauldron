@@ -32,6 +32,17 @@
             https://stackoverflow.com/questions/61174994/bootstrap-justify-content-end-not-working-as-expected -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="nav">
+                    <div class="dropdown">
+                        <button class="btn btn-signin btn-lg dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Magic Categories
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            {% for category in category_list %}
+
+                            {% endfor %}
+                        </div>
+                    </div>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link active logo-font" aria-current="page" href="{% url 'home' %}">Home</a>
