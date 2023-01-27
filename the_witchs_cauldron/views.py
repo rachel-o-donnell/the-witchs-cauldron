@@ -78,3 +78,15 @@ class SpellLike(View):
         else:
             post.likes.add(request.user)
         return HttpResponseRedirect(reverse('spell_detail', args=[slug]))
+
+
+class Categories(generic.ListView):
+    template_name = 'categories.html'
+    context_object_name = 'categorylist'
+
+    def get_queryset(self):
+        category_content = {
+            'category': self.kwargs['category'],
+            'related_posts': PostSpell.objects.filter(categories__category=self.kwargs['category']).filter(status=1)
+        }
+        return category_content
