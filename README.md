@@ -361,6 +361,8 @@ Footer - Base code example and addapted to suit the needs and style of the proje
 
 Fixing footer styling to push to the bottom of the screen but not sticky : https://radu.link/make-footer-stay-bottom-page-bootstrap/
 
+Adding Categories model and dropdown view: https://www.youtube.com/watch?v=S9-Bt1JgRjQ
+
 ### Media
 
 ### ReadMe 
