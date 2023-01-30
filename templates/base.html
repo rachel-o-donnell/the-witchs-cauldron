@@ -33,15 +33,18 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="nav">
                     <div class="dropdown">
-                        <button class="btn btn-signin btn-lg dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-signin btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Magic Categories
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <ul class="dropdown-menu">
                             {% for category in category_list %}
-
+                            <li>
+                                <a href="/categories/{{ category }}" class="dropdown_item">
+                                    {{ category|title }}</a>
+                            </li>
                             {% endfor %}
-                        </div>
+                        </ul>
                     </div>
                     {% if user.is_authenticated %}
                     <li class="nav-item">

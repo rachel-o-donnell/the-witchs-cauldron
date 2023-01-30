@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import PostSpell
+from .models import PostSpell, Categories
 from .forms import CommentArea
 
 
@@ -80,7 +80,7 @@ class SpellLike(View):
         return HttpResponseRedirect(reverse('spell_detail', args=[slug]))
 
 
-class Categories(generic.ListView):
+class ListCategories(generic.ListView):
     template_name = 'categories.html'
     context_object_name = 'categorylist'
 
@@ -90,3 +90,11 @@ class Categories(generic.ListView):
             'related_posts': PostSpell.objects.filter(categories__category=self.kwargs['category']).filter(status=1)
         }
         return category_content
+
+
+def category_list(request):
+    category_list = Categories.objects.all()
+    context = {
+        "category_list": category_list,
+    }
+    return context
