@@ -17,14 +17,10 @@ class PostAdmin(SummernoteModelAdmin):
 # Admin features for comments
 @admin.register(Comment)
 class AdminComment(admin.ModelAdmin):
-    list_display = ('username', 'body', 'post', 'created_on', 'approved')
-    list_filter = ('approved', 'created_on')
+    list_display = (
+        'username', 'body', 'post', 'created_on')
+    list_filter = ('created_on',)
     search_fields = ('username', 'email', 'body')
-    actions = ['approve_comment']
-
-    # this is set to false by default so needs to have this function to approve
-    def approve_comment(self, request, queryset):
-        queryset.update(approved=True)
 
 
 admin.site.register(Categories)
