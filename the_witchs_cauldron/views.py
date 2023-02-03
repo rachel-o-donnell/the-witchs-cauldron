@@ -62,7 +62,7 @@ class SpellDetail(View):
                 "comments": comments,
                 "commented": True,
                 "liked": liked,
-                "comment_area": CommentArea()
+                "comment_area": CommentArea()            
             },
         )
 

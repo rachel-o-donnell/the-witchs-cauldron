@@ -70,13 +70,7 @@
             </div>
             <div class="card font">
                 <div class="card-body">
-                    <!-- {% if commented %}
-                    <div class="alert alert-success" role="alert">
-                        Your comment is waiting to be approved
-                    </div>
-                    {% else %} -->
-                    <!-- {% if user.is_authenticated %} -->
-
+                    {% if user.is_authenticated %}
                     <h2>Post a comment</h2>
                     <p>Posted by: {{ user.username }}</p>
                     <form method="post">
@@ -84,8 +78,13 @@
                         {% csrf_token %}
                         <button class="btn btn-signin">Post</button>
                     </form>
-                    <!-- {% endif %} -->
-                    <!-- {% endif %} -->
+                    {% endif %}
+                    {% if commented %}
+                    <div class="alert alert-success" role="alert">
+                        Your comment has been posted
+                    </div>
+                    {% endif %}
+
                 </div>
             </div>
         </div>
