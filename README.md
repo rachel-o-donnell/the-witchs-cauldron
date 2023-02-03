@@ -323,6 +323,8 @@ linting:
 
 #4 Username and body not displaying in comment section - changed to user.username and comment_area 
 
+#5 Comment area would disapear after adding comment needed to rearrange the code
+
 
 ### Remaining Bugs
 
