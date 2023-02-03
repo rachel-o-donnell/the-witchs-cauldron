@@ -57,14 +57,26 @@
             <h2>Comments:</h2>
             <div class="card-body">
                 {% for comment in comments %}
-                <div>
-                    <p>
-                        {{ comment.username}}
-                        <span>
-                            {{ comment.created_on }}
-                        </span>
-                    </p>
-                    {{ comment.body | linebreaks }}
+                <div class="container">
+                    <div>
+                        <p>
+                            {{ comment.username}}
+                            <span>
+                                {{ comment.created_on }}
+                            </span>
+                        </p>
+                        {{ comment.body | linebreaks }}
+                        {% if user.is_authenticated %}
+                        {% if user.username == comment.username %}
+                        <div>
+                            <button class="btn btn-signin">Edit Comment</button>
+                            <button class="btn btn-signin">Delete Comment</button>
+                        </div>
+                        {% endif %}
+                        {% endif %}
+                        <br>
+
+                    </div>
                 </div>
                 {% endfor %}
             </div>
