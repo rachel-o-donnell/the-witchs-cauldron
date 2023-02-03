@@ -30,7 +30,8 @@
                             </a>
                             <p class="card-text">{{ post.created_on }}
                                 <i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}
-                                <i class="fa-regular fa-comments"></i>
+                                <!-- count is a build in method -->
+                                <i class="fa-regular fa-comments"></i> {{ post.comments.count }}
                             </p>
 
                         </div>
