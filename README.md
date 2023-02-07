@@ -325,6 +325,8 @@ linting:
 
 #5 Comment area would disapear after adding comment needed to rearrange the code
 
+#6 Heroku deployment crash - 1st fix was an attempt but incorrect - I had not added crispy forms to requirements.txt.
+
 
 ### Remaining Bugs
 
