@@ -1,9 +1,8 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import PostSpell, Categories
-from .forms import CommentArea
-
+from .models import PostSpell, Categories, Comment
+from .forms import CommentArea, EditComment
 
 # class based views allows for re-use - One view can inherit from another
 class PostList(generic.ListView):
@@ -62,7 +61,7 @@ class SpellDetail(View):
                 "comments": comments,
                 "commented": True,
                 "liked": liked,
-                "comment_area": CommentArea()            
+                "comment_area": CommentArea()
             },
         )
 
@@ -98,3 +97,10 @@ def category_list(request):
         "category_list": category_list,
     }
     return context
+
+
+class EditComment(generic.UpdateView):
+    model = Comment
+    template_name = "edit_comment.html"
+    form_class = CommentArea
+    success_url = '/'
