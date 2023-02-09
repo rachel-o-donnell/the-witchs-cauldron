@@ -367,6 +367,8 @@ Fixing footer styling to push to the bottom of the screen but not sticky : https
 
 Adding Categories model and dropdown view: https://www.youtube.com/watch?v=S9-Bt1JgRjQ
 
+Edit Comment functionality : https://www.youtube.com/watch?v=qYOrepWooV4&list=PLKnjLEpehhFnb210PantMg9sdQNrygxUL&index=42
+
 ### Media
 
 ### ReadMe 
