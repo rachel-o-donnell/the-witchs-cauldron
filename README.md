@@ -281,6 +281,11 @@ Amiri - Has an early modern feel like - the classical period of witch hunts.
  - [django-allauth](https://django-allauth.readthedocs.io/en/latest/) - integrated Django application addressing authentication, registration, account management and sign in from social media. Used to set up an account, like, comment etc.
  - [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/install.html#installing-django-crispy-forms) - Used for form elements for comments
 
+ ???
+ - [django.contrib.messages]https://docs.djangoproject.com/en/4.1/ref/contrib/messages/
+ - [SuccessMessageMixin]
+ List of all imports?
+
 Deployment:
  - [Heroku](https://dashboard.heroku.com/) - "Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud."
  Database:
@@ -329,8 +334,14 @@ linting:
 
 #7 - alert messages were not showing on edit_comment leading me to realised I had not set them up correctly to display. Needed to add custom messages to respective views, -set import a mixin for class based views, set up the call to show the messages in the base.html and override the django/bootsrap clash in settings.
 
+#8 - SuccessMessageMixin does not work on Deleteview https://code.djangoproject.com/ticket/21926 needed to add workound code found https://stackoverflow.com/questions/24822509/success-message-in-deleteview-not-shown ans:Heyl1
 
 ### Remaining Bugs
+
+Like button not changing colour on home screen
+Delete messages not displaying
+disctortion of list display when looking under categories
+
 
 ## Deployment
 
@@ -372,8 +383,11 @@ Adding Categories model and dropdown view: https://www.youtube.com/watch?v=S9-Bt
 Edit Comment functionality : https://www.youtube.com/watch?v=qYOrepWooV4&list=PLKnjLEpehhFnb210PantMg9sdQNrygxUL&index=42
 
 Messages: https://www.youtube.com/watch?v=2rZqhLo-V14&list=PLKnjLEpehhFnb210PantMg9sdQNrygxUL&index=18 implementing alerts to multiple areas
+https://ordinarycoders.com/blog/article/django-messages-framework
 
 Messages on a class based view: https://dev.to/serhatteker/show-message-in-class-based-views-django-4a4d
+
+
 
 ### Media
 
