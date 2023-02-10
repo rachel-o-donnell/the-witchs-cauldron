@@ -120,3 +120,8 @@ class DeleteComment(SuccessMessageMixin, generic.DeleteView):
     form_class = CommentArea
     success_url = '/'
     success_message = "Your comment was deleted"
+
+# Code to work around a known Django issue #21926: SuccessMessageMixin not working for DeleteView
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(DeleteComment, self).delete(request, *args, **kwargs)
