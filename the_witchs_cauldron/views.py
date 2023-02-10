@@ -1,6 +1,10 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
+
+# from django.urls import reverse_lazy
 from .models import PostSpell, Categories, Comment
 from .forms import CommentArea, EditComment
 
@@ -50,6 +54,7 @@ class SpellDetail(View):
             comment = comment_area.save(commit=False)
             comment.post = post
             comment.save()
+            messages.success(request, "Your comment has been posted")
         else:
             comment_area = CommentArea()
 
@@ -99,8 +104,10 @@ def category_list(request):
     return context
 
 
-class EditComment(generic.UpdateView):
+# Edit a comment
+class EditComment(SuccessMessageMixin, generic.UpdateView):
     model = Comment
     template_name = "edit_comment.html"
     form_class = CommentArea
     success_url = '/'
+    success_message = "Your comment was updated"

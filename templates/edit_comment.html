@@ -11,14 +11,8 @@
         <form method="post">
             {{ form | crispy }}
             {% csrf_token %}
-            <button class="btn btn-signin">Update</button>
+            <button class="btn btn-signin" type="submit">Update</button>
         </form>
-        {% if commented %}
-        <div class="alert alert-success" role="alert">
-            Your comment has been updated
-        </div>
-        {% endif %}
-
     </div>
     {% endif %}
     {% endblock %}

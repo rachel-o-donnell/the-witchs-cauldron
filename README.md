@@ -327,6 +327,8 @@ linting:
 
 #6 Heroku deployment crash - 1st fix was an attempt but incorrect - I had not added crispy forms to requirements.txt.
 
+#7 - alert messages were not showing on edit_comment leading me to realised I had not set them up correctly to display. Needed to add custom messages to respective views, -set import a mixin for class based views, set up the call to show the messages in the base.html and override the django/bootsrap clash in settings.
+
 
 ### Remaining Bugs
 
@@ -368,6 +370,10 @@ Fixing footer styling to push to the bottom of the screen but not sticky : https
 Adding Categories model and dropdown view: https://www.youtube.com/watch?v=S9-Bt1JgRjQ
 
 Edit Comment functionality : https://www.youtube.com/watch?v=qYOrepWooV4&list=PLKnjLEpehhFnb210PantMg9sdQNrygxUL&index=42
+
+Messages: https://www.youtube.com/watch?v=2rZqhLo-V14&list=PLKnjLEpehhFnb210PantMg9sdQNrygxUL&index=18 implementing alerts to multiple areas
+
+Messages on a class based view: https://dev.to/serhatteker/show-message-in-class-based-views-django-4a4d
 
 ### Media
 
