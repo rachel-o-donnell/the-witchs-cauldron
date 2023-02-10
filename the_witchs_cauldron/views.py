@@ -111,3 +111,12 @@ class EditComment(SuccessMessageMixin, generic.UpdateView):
     form_class = CommentArea
     success_url = '/'
     success_message = "Your comment was updated"
+
+
+# Delete a comment
+class DeleteComment(SuccessMessageMixin, generic.DeleteView):
+    model = Comment
+    template_name = "delete_comment.html"
+    form_class = CommentArea
+    success_url = '/'
+    success_message = "Your comment was deleted"

@@ -70,7 +70,8 @@
                         <div>
                             <a class="btn btn-signin" href="{% url 'edit_comment' comment.id %} ">Edit
                                 Comment</a>
-                            <button class="btn btn-signin">Delete Comment</button>
+                            <a class="btn btn-signin" href="{% url 'delete_comment' comment.id %}">Delete Comment</a>
+
                         </div>
 
                         {% endif %}
