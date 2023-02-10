@@ -81,6 +81,8 @@ class SpellLike(View):
             post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
+            messages.success(request, "You liked this post")
+
         return HttpResponseRedirect(reverse('spell_detail', args=[slug]))
 
 
