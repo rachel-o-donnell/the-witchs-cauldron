@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Amiri&display=swap');
 
 body {
-    background-color: #F4F3EE;
+    /* background-color: #F4F3EE; */
+    background-color: #E0AFA0;
     color: #463F3A;
 }
 
@@ -14,6 +15,13 @@ footer,
     font-family: 'Amatic SC', cursive;
     font-size: 2rem;
 }
+
+.logo-card {
+    color: #463F3A;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+}
+
 
 footer {
     font-size: 1.5rem;
