@@ -29,7 +29,12 @@
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
                             <p class="card-text">{{ post.created_on }}
+                                <!-- Shows users liked posts  -->
+                                {% if request.user in post.likes.all %}
+                                <i class="fas fa-heart"></i> {{ post.no_of_likes }}
+                                {% else %}
                                 <i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}
+                                {% endif %}
                                 <!-- count is a build in method -->
                                 <i class="fa-regular fa-comments"></i> {{ post.comments.count }}
                             </p>
