@@ -20,17 +20,20 @@ class Categories(models.Model):
 class PostSpell(models.Model):
     title = models.CharField(max_length=250, unique=True)
     slug = models.SlugField(max_length=250, unique=True)
-    creator = models.ForeignKey(User, on_delete=models.CASCADE, related_name='spell_posts')
-    categories = models.ManyToManyField(Categories, related_name='spell_categories', blank=True)
+    creator = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='spell_posts')
+    categories = models.ManyToManyField(
+        Categories, related_name='spell_categories', blank=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     main_image = CloudinaryField('image', default='placeholder')
     description = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    likes = models.ManyToManyField(User, related_name='spell_likes', blank=True)
+    likes = models.ManyToManyField(
+        User, related_name='spell_likes', blank=True)
 
-    # orders spell posts by most recently created (minus if for decending order)
+    # orders spell posts by most recently created (minus for decending order)
     class Meta:
         ordering = ['-created_on']
 
@@ -46,7 +49,8 @@ class PostSpell(models.Model):
 
 
 class Comment(models.Model):
-    post = models.ForeignKey(PostSpell, on_delete=models.CASCADE, related_name='comments')
+    post = models.ForeignKey(
+        PostSpell, on_delete=models.CASCADE, related_name='comments')
     username = models.CharField(max_length=70)
     email = models.EmailField()
     body = models.TextField()

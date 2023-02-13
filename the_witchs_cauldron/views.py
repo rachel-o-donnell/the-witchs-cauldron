@@ -3,17 +3,16 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
-
-# from django.urls import reverse_lazy
 from .models import PostSpell, Categories, Comment
 from .forms import CommentArea, EditComment
+
 
 # class based views allows for re-use - One view can inherit from another
 class PostList(generic.ListView):
     model = PostSpell()
     queryset = PostSpell.objects.filter(status=1).order_by('created_on')
     template_name = 'index.html'
-    # paginate_by = 6  # can only view this many at a time before adding a page nav-change to 9/continuous?
+    # paginate_by = 6
 
 
 class SpellDetail(View):
@@ -93,7 +92,8 @@ class ListCategories(generic.ListView):
     def get_queryset(self):
         category_content = {
             'category': self.kwargs['category'],
-            'related_posts': PostSpell.objects.filter(categories__category=self.kwargs['category']).filter(status=1)
+            'related_posts': PostSpell.objects.filter(
+                categories__category=self.kwargs['category']).filter(status=1)
         }
         return category_content
 
@@ -123,7 +123,7 @@ class DeleteComment(SuccessMessageMixin, generic.DeleteView):
     success_url = '/'
     success_message = "Your comment was deleted"
 
-# Code to work around a known Django issue #21926: SuccessMessageMixin not working for DeleteView
+# Work around for: SuccessMessageMixin not working for DeleteView
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super(DeleteComment, self).delete(request, *args, **kwargs)
