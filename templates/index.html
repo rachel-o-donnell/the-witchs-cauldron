@@ -3,7 +3,7 @@
 {% block content %}
 <div class="container-fluid text-center">
     <div class="col col d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
+        <div class="card border-dark" style="width: 18rem;">
             <img class="card-img-top logo-image"
                 src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676223039/twc-logo-cropped_wvvulk.png"
                 alt=" A black and white drawing of a cauldron with spiral steam coming from it's contents">
@@ -13,12 +13,19 @@
         </div>
     </div>
 </div>
-<div class="container-fluid hero-text text-center font">
-    <p>A community Coven. Bringing the world's most reveared Witch's work together online,
-        we are a true melting pot of practices. Whether you are a solo witch or those without a local coven, this modern
-        gathering of aesoteric practices is bound to push you deeper into your practice. </p>
-    <p> Blessed Be</p>
-
+<div class="container ">
+    <div class="container-fluid hero-text text-center font">
+        <p>Your Community Coven.
+            <br>
+            <p> Bringing the world's most reveared Witch's work together online,
+                we are a true melting pot of practices.
+                <br>
+                Whether you are a solo witch or those without a local coven, this
+                modern
+                gathering of aesoteric practices is bound to push you deeper into your practice.
+                <br>
+                <p> Blessed Be</p>
+    </div>
 </div>
 <div class="container-fluid">
     <div class="row">
@@ -29,7 +36,7 @@
                 {% for post in postspell_list %}
                 <!-- card populated with content -->
                 <div class="col-md-4">
-                    <div class="card mb-4">
+                    <div class="card border-dark mb-4">
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.main_image.url %}

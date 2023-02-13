@@ -4,7 +4,7 @@
 {% load crispy_forms_tags %}
 {% if user.is_authenticated and user.username == comment.username %}
 
-<div class="card font">
+<div class="card  border-dark font">
     <div class="card-body">
         <h2>Comment posted:</h2>
         <p>{{ comment }}</p>

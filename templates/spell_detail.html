@@ -2,94 +2,97 @@
 
 {% block content %}
 {% load crispy_forms_tags %}
-<div class="container font">
-    <div class="row">
-        <h1 class="post-title">{{ post.title }}</h1>
-        <p class="post-subtitle">{{ post.creator }} | {{ post.created_on }}</p>
-    </div>
-    <div>
-        {% if "placeholder" in post.main_image.url %}
-        <img src="https://folklorethursday.com/wp-content/uploads/2021/02/cauldron-folklore.png" class="card-img-top"
-            alt="...">
-        {% else %}
-        <img src="{{ post.main_image.url }}" alt="" class="card-img-top">
-        {% endif %}
-    </div>
-</div>
 <div class="container">
     <div class="row">
-        <div class="card">
-            <div class="card-body">
-                <p class="card-text">{{ post.content | safe }}
-                    <!-- likes and comments -->
-                    <div class="row">
-                        {% if user.is_authenticated %}
-                        <form action="{% url 'spell_like' post.slug %}" method="POST">
-                            {% csrf_token %}
-                            {% if liked %}
-                            <button type="submit" name="spellpost_id" value="{{post.slug}}" class="btn">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            {% else %}
-                            <button type="submit" name="spellpost_id" value="{{post.slug}}" class="btn">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            {% endif %}
-                        </form>
-                        {% else %}
-                        <span><i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}</span>
-                        {% endif %}
-                        <div>
-                            {% with comments.count as no_of_comments %}
-                            <i class="fa-regular fa-comments">
-                            </i>
-                            {{ no_of_comments }}
-                            {% endwith %}
-                        </div>
-                    </div>
+        <div class="card border-dark">
+            <div class="card-body font">
+                <h1 class="post-title">{{ post.title }}</h1>
+                <p class="post-subtitle">{{ post.creator }} | {{ post.created_on }}</p>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="card">
-            <h2>Comments:</h2>
-            <div class="card-body">
-                {% for comment in comments %}
-                <div class="container">
-                    <div>
-                        <p>
-                            {{ comment.username}}
-                            <span>
-                                {{ comment.created_on }}
-                            </span>
-                        </p>
-                        {{ comment.body | linebreaks }}
-                        {% if user.is_authenticated and user.username == comment.username %}
-                        <div>
-                            <a class="btn btn-signin" href="{% url 'edit_comment' comment.id %} ">Edit
-                                Comment</a>
-                            <a class="btn btn-signin" href="{% url 'delete_comment' comment.id %}">Delete Comment</a>
-
-                        </div>
-
-                        {% endif %}
-                        <br>
-
+            <div>
+                {% if "placeholder" in post.main_image.url %}
+                <img src="https://folklorethursday.com/wp-content/uploads/2021/02/cauldron-folklore.png"
+                    class="card-img-top" alt="...">
+                {% else %}
+                <img src="{{ post.main_image.url }}" alt="" class="card-img-top">
+                {% endif %}
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="card-body">
+                        <p class="card-text">{{ post.content | safe }}
+                            <!-- likes and comments -->
+                            <div class="row">
+                                {% if user.is_authenticated %}
+                                <form action="{% url 'spell_like' post.slug %}" method="POST">
+                                    {% csrf_token %}
+                                    {% if liked %}
+                                    <button type="submit" name="spellpost_id" value="{{post.slug}}" class="btn">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    {% else %}
+                                    <button type="submit" name="spellpost_id" value="{{post.slug}}" class="btn">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    {% endif %}
+                                </form>
+                                {% else %}
+                                <span><i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}</span>
+                                {% endif %}
+                                <div>
+                                    {% with comments.count as no_of_comments %}
+                                    <i class="fa-regular fa-comments">
+                                    </i>
+                                    {{ no_of_comments }}
+                                    {% endwith %}
+                                </div>
+                            </div>
                     </div>
                 </div>
-                {% endfor %}
-            </div>
-            <div class="card font">
-                <div class="card-body">
-                    {% if user.is_authenticated %}
-                    <h2>Post a comment</h2>
-                    <p>Posted by: {{ user.username }}</p>
-                    <form method="post">
-                        {{ comment_area | crispy }}
-                        {% csrf_token %}
-                        <button class="btn btn-signin">Post</button>
-                    </form>
-                    {% endif %}
+                <div class="row">
+                    <div class="card border-dark">
+                        <h2>Comments:</h2>
+                        <div class="card-body">
+                            {% for comment in comments %}
+                            <div class="container">
+                                <div>
+                                    <p>
+                                        {{ comment.username}}
+                                        <span>
+                                            {{ comment.created_on }}
+                                        </span>
+                                    </p>
+                                    {{ comment.body | linebreaks }}
+                                    {% if user.is_authenticated and user.username == comment.username %}
+                                    <div>
+                                        <a class="btn btn-signin" href="{% url 'edit_comment' comment.id %} ">Edit
+                                            Comment</a>
+                                        <a class="btn btn-signin" href="{% url 'delete_comment' comment.id %}">Delete
+                                            Comment</a>
+
+                                    </div>
+
+                                    {% endif %}
+                                    <br>
+
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="card border-dark font">
+                            <div class="card-body">
+                                {% if user.is_authenticated %}
+                                <h2>Post a comment</h2>
+                                <p>Posted by: {{ user.username }}</p>
+                                <form method="post">
+                                    {{ comment_area | crispy }}
+                                    {% csrf_token %}
+                                    <button class="btn btn-signin">Post</button>
+                                </form>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
