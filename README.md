@@ -336,6 +336,8 @@ linting:
 
 #8 - SuccessMessageMixin does not work on Deleteview https://code.djangoproject.com/ticket/21926 needed to add workound code found https://stackoverflow.com/questions/24822509/success-message-in-deleteview-not-shown ans:Heyl1
 
+#9 - Site not loading after pep8 compliance - undid shortening of lines for pep8 in env.py and settings.py
+
 ### Remaining Bugs
 
 Like button not changing colour on home screen
