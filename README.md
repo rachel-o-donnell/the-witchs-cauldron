@@ -338,6 +338,8 @@ linting:
 
 #9 - Site not loading after pep8 compliance - undid shortening of lines for pep8 in env.py and settings.py
 
+<!-- #10 - Categories with two words causing error  -->
+
 ### Remaining Bugs
 
 Like button not changing colour on home screen
