@@ -249,6 +249,17 @@ Amiri - Has an early modern feel like - the classical period of witch hunts.
 
 ### Future Features
 
+Contact us  - apply to become an admin/ submit a spell
+Sign in/up with social media
+Admin profile pages
+User Profile pages
+Favourites/Saved/Liked posts page
+Follow Admin profiles - notifications of their new posts
+Notifications of replies to comments
+Merch for sale
+Books from creators for sale / reccomendations
+Admin page on frontend to upload spells
+
 -
 
 ## Technologies Used
@@ -280,6 +291,8 @@ Amiri - Has an early modern feel like - the classical period of witch hunts.
  - [django-summernote](https://summernote.org/) - WISIWYG (what you see is what you get) text editor
  - [django-allauth](https://django-allauth.readthedocs.io/en/latest/) - integrated Django application addressing authentication, registration, account management and sign in from social media. Used to set up an account, like, comment etc.
  - [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/install.html#installing-django-crispy-forms) - Used for form elements for comments
+
+- [whitenoise] - (https://whitenoise.evans.io/en/latest/) - problem with heroku not reading css 
 
  ???
  - [django.contrib.messages]https://docs.djangoproject.com/en/4.1/ref/contrib/messages/
@@ -315,6 +328,11 @@ linting:
 
 ## Testing
 
+Pycodestyle? - pep 8 replacement
+
+Jigsaw Wc3 validation
+
+
 ### Bugs
 
 ### Fixed Bugs
@@ -343,7 +361,11 @@ linting:
 Like button not changing colour on home screen
 Delete messages not displaying
 disctortion of list display when looking under categories
+like amounts not showing now after restyle?/fixing front end like 
 
+override bootstrap styling on underline- border, dropdown menu etc. 
+
+double submission of form - comments
 
 ## Deployment
 
