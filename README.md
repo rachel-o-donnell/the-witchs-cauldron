@@ -356,6 +356,8 @@ Jigsaw Wc3 validation
 
 #9 - Site not loading after pep8 compliance - undid shortening of lines for pep8 in env.py and settings.py
 
+#10 - Can't have unique=true with a default setting in models. 
+
 ### Remaining Bugs
 
 Like button not changing colour on home screen
@@ -410,6 +412,11 @@ Messages: https://www.youtube.com/watch?v=2rZqhLo-V14&list=PLKnjLEpehhFnb210Pant
 https://ordinarycoders.com/blog/article/django-messages-framework
 
 Messages on a class based view: https://dev.to/serhatteker/show-message-in-class-based-views-django-4a4d
+
+Adding Profiles:
+
+https://www.devhandbook.com/django/user-profile/
+https://www.youtube.com/watch?v=zb4fIvtn4tY Codemy
 
 
 
