@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import PostSpell, Comment, Categories
+from .models import PostSpell, Comment, Categories, Profile
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -24,3 +24,5 @@ class AdminComment(admin.ModelAdmin):
 
 # Categories section
 admin.site.register(Categories)
+
+admin.site.register(Profile)
