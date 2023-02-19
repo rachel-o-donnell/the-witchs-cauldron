@@ -2,6 +2,23 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-<h1>{{ active_user }}</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="card border-dark">
+            <div class="image-container">
+                {% if "default-profile" in active_user.profile_image.url %}
+                <img src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816132/The%20Witch%27s%20Cauldron/hat_png_xfmmrw.png"
+                    class="card-img-top" alt="black and white image of a pointy black witches hat">
+                {% else %}
+                <img src="{{ active_user.profile_image.url }}" alt="" class="card-img-top">
+                {% endif %}
+            </div>
+            <div class="card-body font"></div>
+            <h1 class="post-title">Name: {{ active_user }}</h1>
+            <p class="post-subtitle">Titles:</p>
+
+        </div>
+    </div>
+</div>
 
 {% endblock content %}
