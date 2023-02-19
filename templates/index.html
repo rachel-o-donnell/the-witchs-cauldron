@@ -1,32 +1,36 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container-fluid text-center">
-    <div class="col col d-flex justify-content-center">
-        <div class="card logo-card" style="width: 18rem;">
-            <img class="card-img-top logo-card logo-image"
-                src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
-                alt="A black and white drawing of a cauldron with spiral steam coming from it's contents">
-            <div class="card-body">
-                <p class="card-text logo-card">The Witch's Cauldron
+<section>
+    <div class="container-fluid text-center">
+        <div class="col col-12 mt-3 d-flex justify-content-center">
+            <div class="card logo-card border-0">
+                <img class="card-img-top logo-card logo-image img-fluid"
+                    src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
+                    alt="A black and white drawing of a cauldron with spiral steam coming from it's contents">
+                <div class="card-body pb-0 pt-0">
+                    <p class="card-text logo-card">The Witch's Cauldron
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container ">
-    <div class="container-fluid hero-text text-center font">
-        <p>Your Community Coven.
-            <br>
-            <p> Bringing the world's most reveared Witch's work together online,
-                we are a true melting pot of practices.
+    <div class="container">
+        <div class="container-fluid hero-text text-center font">
+            <p>Your Community Coven.
                 <br>
-                Whether you are a solo witch or those without a local coven, this
-                modern
-                gathering of aesoteric practices is bound to push you deeper into your practice.
-                <br>
-                <p> Blessed Be</p>
+                <p> Bringing the world's most reveared Witch's work together online,
+                    we are a true melting pot of practices.
+                    <br>
+                    Whether you are a solo witch or those without a local coven, this
+                    modern
+                    gathering of aesoteric practices is bound to push you deeper into your practice.
+                    <br>
+                    <p> Blessed Be</p>
+                </p>
+        </div>
     </div>
-</div>
+
+</section>
 <div class="container-fluid">
     <div class="row">
 
@@ -40,8 +44,9 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.main_image.url %}
-                                <img src="https://folklorethursday.com/wp-content/uploads/2021/02/cauldron-folklore.png"
-                                    class="card-img-top" alt="...">
+                                <img src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
+                                    class="card-img-top"
+                                    alt="A black and white drawing of a cauldron with spiral steam coming from it's content">
                                 {% else %}
                                 <img src="{{ post.main_image.url }}" alt="" class="card-img-top">
                                 {% endif %}

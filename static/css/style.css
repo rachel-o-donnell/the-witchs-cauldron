@@ -2,8 +2,8 @@
 
 body {
     /* background-color: #F4F3EE; */
-    background-color: #E0AFA0;
-    color: #463F3A;
+    background-color: #Efd6cf;
+    /* color: #463F3A; */
 }
 
 
@@ -11,17 +11,17 @@ body {
 footer,
 .logo-font {
     background-color: #E0AFA0;
-    color: #463F3A;
+    color: #000000;
     font-family: 'Amatic SC', cursive;
     font-size: 2rem;
 }
 
 .logo-card {
-    color: #463F3A;
     font-family: 'Amatic SC', cursive;
-    font-size: 2rem;
+    font-size: 4rem;
+    background-color: #Efd6cf;
+    width: 25rem;
 }
-
 
 footer {
     font-size: 1.5rem;
@@ -31,11 +31,11 @@ footer {
 .font,
 h3 {
     font-family: 'Amiri', serif;
-    color: #463F3A;
+    background-color: f4f3ee;
 }
 
 .card-title {
-    color: #463F3A;
+    /* color: #463F3A; */
 }
 
 .post-link {
