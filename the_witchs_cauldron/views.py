@@ -147,11 +147,11 @@ class ProfileView(generic.DetailView):
     template_name = "profile.html"
 
     def get_context_data(self, *args, **kwargs):
-        users = Profile.objects
-        context = super(ProfileView, self).get_context_data(*args, **kwargs)
-        active_user = get_object_or_404(User, id=self.kwargs['pk'])
+        active_user = Profile.objects.get(id=self.kwargs['pk'])
 
-        context["active_user"] = active_user
+        context = {
+            "active_user": active_user,
+        }
         return context
 
         # 'related_posts': PostSpell.objects.filter(
