@@ -358,6 +358,8 @@ Jigsaw Wc3 validation
 
 #10 - Can't have unique=true with a default setting in models. 
 
+#11 - Import User to Views.py
+
 ### Remaining Bugs
 
 Like button not changing colour on home screen

@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
+from django.contrib.auth.models import User
 from django.views import generic, View
 from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
