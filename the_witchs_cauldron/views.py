@@ -1,9 +1,10 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
+from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
-from .models import PostSpell, Categories, Comment
+from .models import PostSpell, Categories, Comment, Profile
 from .forms import CommentArea, EditComment
 
 
@@ -127,3 +128,44 @@ class DeleteComment(SuccessMessageMixin, generic.DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super(DeleteComment, self).delete(request, *args, **kwargs)
+
+
+# Profile
+# import Profile
+# class Profile(View):
+
+#     def profile(request):
+#         name = username.name
+#         template_name = "profile.html"
+#         # success_url = '/'
+#         success_message = "Your Profile was created"
+
+
+class ProfileView(generic.DetailView):
+    model = Profile
+    template_name = "profile.html"
+
+    def get_context_data(self, *args, **kwargs):
+        users = Profile.objects
+        context = super(ProfileView, self).get_context_data(*args, **kwargs)
+        active_user = get_object_or_404(User, id=self.kwargs['pk'])
+
+        context["active_user"] = active_user
+        return context
+
+        # 'related_posts': PostSpell.objects.filter(
+        #     categories__category=self.kwargs['category']).filter(status=1)
+        # return category_content
+
+    # def valid_form(self, form):
+    #     user_instance_form = self.request.user
+    #     return super().valid_form(form)
+
+
+# class CreateProfileView(CreateView):
+#     model = Profile
+#     template_name = "create_profile.html"
+
+#     def valid_form(self, form):
+#         user_instance_form = self.request.user
+#         return super().valid_form(form)

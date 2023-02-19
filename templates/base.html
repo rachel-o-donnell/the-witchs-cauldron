@@ -56,7 +56,7 @@
                             href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled logo-font" href="#">Disabled/Other?</a>
+                        <a class="nav-link logo-font" href="{% url 'profile' request.user.profile.id %}">Profile</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
@@ -69,7 +69,8 @@
                         <a class="nav-link logo-font" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled logo-font" href="#">Disabled/Other?</a>
+                        <a class="nav-link disabled logo-font" href="#">Create a
+                            profile</a>
                     </li>
                     {% endif %}
                 </ul>
