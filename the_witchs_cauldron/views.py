@@ -5,14 +5,44 @@ from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
+from django.utils.text import slugify
 from .models import PostSpell, Categories, Comment, Profile
-from .forms import CommentArea, EditComment
+from .forms import CommentArea, EditComment, SpellForm
+
+
+class AddSpell(SuccessMessageMixin, View):
+    def get(self, request):
+        return render(
+            request, "add_spell.html", {"spell_form": SpellForm()})
+
+    def post(self, request):
+        spell_form = SpellForm(request.POST, request.FILES)
+
+        if spell_form.is_valid():
+            spell = spell_form.save(commit=False)
+            spell.creator = request.user
+            spell.slug = slugify(spell.title)
+            spell.save()
+            success_url = '/'
+            success_message = "Your spell was posted"
+            return redirect('home')
+        else:
+            messages.error(self.request, 'Please fill in all required details')
+            spell_form = SpellForm()
+
+        return render(
+            request,
+            "add_spell.html",
+            {
+                    "spell_form": spell_form
+            },
+        )
 
 
 # class based views allows for re-use - One view can inherit from another
 class PostList(generic.ListView):
     model = PostSpell()
-    queryset = PostSpell.objects.filter(status=1).order_by('created_on')
+    queryset = PostSpell.objects.order_by('-created_on')
     template_name = 'index.html'
     # paginate_by = 6
 
