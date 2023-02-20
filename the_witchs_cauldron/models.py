@@ -25,11 +25,11 @@ class PostSpell(models.Model):
     categories = models.ManyToManyField(
         Categories, related_name='spell_categories', blank=True)
     updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField()
     main_image = CloudinaryField('image', default='placeholder')
     description = models.TextField(blank=True)
+    items_needed = models.TextField(blank=True)
+    content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
         User, related_name='spell_likes', blank=True)
 
