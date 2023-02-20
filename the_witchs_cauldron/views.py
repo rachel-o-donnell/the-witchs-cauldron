@@ -53,6 +53,7 @@ class PostList(generic.ListView):
 class SpellDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
+        queryset = PostSpell.objects
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by('created_on')
         liked = False
@@ -72,6 +73,7 @@ class SpellDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
+        queryset = PostSpell.objects.filter
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by('created_on')
         liked = False

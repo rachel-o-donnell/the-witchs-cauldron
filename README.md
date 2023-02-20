@@ -366,6 +366,8 @@ Jigsaw Wc3 validation
 
 #14 - Errors in views after deleteing status from model - forgot to remove ALL status calls/filters from views.py
 
+#15 - Removed queryset from views causing failure to view posts. Re added without status filters
+
 ### Remaining Bugs
 
 Like button not changing colour on home screen
