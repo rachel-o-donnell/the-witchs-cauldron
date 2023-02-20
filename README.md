@@ -293,7 +293,7 @@ Admin page on frontend to upload spells
  - [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/install.html#installing-django-crispy-forms) - Used for form elements for comments
 
 - [whitenoise] - (https://whitenoise.evans.io/en/latest/) - problem with heroku not reading css 
-
+- widgets? 
  ???
  - [django.contrib.messages]https://docs.djangoproject.com/en/4.1/ref/contrib/messages/
  - [SuccessMessageMixin]
@@ -362,6 +362,10 @@ Jigsaw Wc3 validation
 
 #12 - Wrong user showing in profile - I was calling User pk instead of Profile pk 
 
+#13 - CSRF token missing error - needed to import and add request context to View AddSpell https://stackoverflow.com/questions/8321217/django-csrf-token-missing-or-incorrect
+
+#14 - Errors in views after deleteing status from model - forgot to remove ALL status calls/filters from views.py
+
 ### Remaining Bugs
 
 Like button not changing colour on home screen
@@ -422,6 +426,8 @@ Adding Profiles:
 https://www.devhandbook.com/django/user-profile/
 https://www.youtube.com/watch?v=zb4fIvtn4tY Codemy
 
+
+Adding help text to forms field https://stackoverflow.com/posts/50873523/edit
 
 
 ### Media
