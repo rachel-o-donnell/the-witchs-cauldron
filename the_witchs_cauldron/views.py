@@ -6,6 +6,7 @@ from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.utils.text import slugify
+from django.template import RequestContext
 from .models import PostSpell, Categories, Comment, Profile
 from .forms import CommentArea, EditComment, SpellForm
 
@@ -35,7 +36,9 @@ class AddSpell(SuccessMessageMixin, View):
             "add_spell.html",
             {
                     "spell_form": spell_form
+                    
             },
+            RequestContext(request)
         )
 
 
@@ -50,7 +53,6 @@ class PostList(generic.ListView):
 class SpellDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
-        queryset = PostSpell.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by('created_on')
         liked = False
@@ -70,7 +72,6 @@ class SpellDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
-        queryset = PostSpell.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by('created_on')
         liked = False
@@ -125,7 +126,7 @@ class ListCategories(generic.ListView):
         category_content = {
             'category': self.kwargs['category'],
             'related_posts': PostSpell.objects.filter(
-                categories__category=self.kwargs['category']).filter(status=1)
+                categories__category=self.kwargs['category'])
         }
         return category_content
 
