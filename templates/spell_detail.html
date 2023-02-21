@@ -9,6 +9,14 @@
                 <h1 class="post-title">{{ post.title }}</h1>
                 <p class="post-subtitle">{{ post.creator }} | {{ post.created_on }}</p>
             </div>
+            {% if user.is_authenticated and user.id == post.creator.id %}
+
+            <div>
+                <a class="btn btn-signin" href="{% url 'edit_spell' post.id %} ">Edit
+                    Spell</a>
+            </div>
+
+            {% endif %}
             <div>
                 {% if "placeholder" in post.main_image.url %}
                 <img src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"

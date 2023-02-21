@@ -18,8 +18,8 @@ class EditComment(forms.ModelForm):
 class SpellForm(forms.ModelForm):
     class Meta:
         model = PostSpell
-        fields = (
-            'title', 'description', 'categories', 'items_needed', 'content', 'main_image')
+        fields = ('title', 'description', 'categories', 'items_needed',
+                  'content', 'main_image')
 
         widgets = {
             'description': SummernoteWidget(),
@@ -34,3 +34,10 @@ class SpellForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(SpellForm, self).__init__(*args, **kwargs)
         self.fields['categories'].help_text = "Hold command while clicking to select multiple categories"
+
+
+class EditSpell(forms.ModelForm):
+    class Meta:
+        model = PostSpell
+        fields = ('title', 'description', 'categories',
+                  'items_needed', 'content', 'main_image')
