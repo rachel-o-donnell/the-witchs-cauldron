@@ -36,15 +36,21 @@ class AddSpell(SuccessMessageMixin, View):
             "add_spell.html",
             {
                     "spell_form": spell_form
-                    
             },
             RequestContext(request)
         )
 
 
+class EditSpell(generic.UpdateView):
+    model = PostSpell
+    template_name = 'edit_spell.html'
+    form_class = SpellForm
+    success_url = '/'
+
+
 # class based views allows for re-use - One view can inherit from another
 class PostList(generic.ListView):
-    model = PostSpell()
+    model = PostSpell
     queryset = PostSpell.objects.order_by('-created_on')
     template_name = 'index.html'
     # paginate_by = 6
@@ -73,7 +79,7 @@ class SpellDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
-        queryset = PostSpell.objects.filter
+        queryset = PostSpell.objects
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by('created_on')
         liked = False
