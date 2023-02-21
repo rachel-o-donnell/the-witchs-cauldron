@@ -41,11 +41,12 @@ class AddSpell(SuccessMessageMixin, View):
         )
 
 
-class EditSpell(generic.UpdateView):
+ class EditSpell(SuccessMessageMixin, generic.UpdateView):
     model = PostSpell
     template_name = 'edit_spell.html'
     form_class = SpellForm
     success_url = '/'
+    success_message = "You updated your spell"
 
 
 # class based views allows for re-use - One view can inherit from another

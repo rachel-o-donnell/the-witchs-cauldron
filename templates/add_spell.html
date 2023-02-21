@@ -14,7 +14,7 @@
                     <div class="">
                         <form method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
-                            {{ spell_form|crispy}}
+                            {{ spell_form | crispy}}
                             <button class="btn btn-signin btn-lg" name="post" type="submit" value="post">Post</button>
                         </form>
                     </div>

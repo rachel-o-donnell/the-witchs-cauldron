@@ -2,20 +2,18 @@
 
 {% block content %}
 {% load crispy_forms_tags %}
-{% if user.is_authenticated and user.id == post.creator.id %}
 <div class="container">
     <div class="row">
         <div class="card border-dark">
             <div class="card-body font">
                 <h1 class="post-title">Edit a spell</h1>
-
             </div>
             <div class="container">
                 <div class="row">
                     <div class="">
                         <form method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
-                            {{ spell_form |crispy}}
+                            {{ form | crispy}}
                             <button class="btn btn-signin btn-lg" name="update" type="submit"
                                 value="update">Update</button>
                         </form>
@@ -24,5 +22,5 @@
             </div>
         </div>
     </div>
-    {% endif %}
+
     {% endblock %}
