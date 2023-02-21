@@ -41,12 +41,24 @@ class AddSpell(SuccessMessageMixin, View):
         )
 
 
- class EditSpell(SuccessMessageMixin, generic.UpdateView):
+class EditSpell(SuccessMessageMixin, generic.UpdateView):
     model = PostSpell
     template_name = 'edit_spell.html'
     form_class = SpellForm
     success_url = '/'
     success_message = "You updated your spell"
+
+
+class DeleteSpell(SuccessMessageMixin, generic.DeleteView):
+    model = PostSpell
+    template_name = "delete_spell.html"
+    success_url = '/'
+    success_message = "Your spell was deleted"
+
+    # Work around for: SuccessMessageMixin not working for DeleteView
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(DeleteSpell, self).delete(request, *args, **kwargs)
 
 
 # class based views allows for re-use - One view can inherit from another
