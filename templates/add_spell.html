@@ -15,7 +15,7 @@
                         <form method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
                             {{ spell_form|crispy}}
-                            <button class="btn btn-secondary right mb-2" type="submit" value="Save">Add Spell</button>
+                            <button class="btn btn-signin btn-lg" name="post" type="submit" value="post">Post</button>
                         </form>
                     </div>
                 </div>
