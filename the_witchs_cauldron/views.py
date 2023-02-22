@@ -171,16 +171,22 @@ def category_list(request):
 
 
 # Edit a comment
-class EditComment(SuccessMessageMixin, generic.UpdateView):
+class EditComment(UserPassesTestMixin,
+                  SuccessMessageMixin, generic.UpdateView):
     model = Comment
     template_name = "edit_comment.html"
     form_class = CommentArea
     success_url = '/'
     success_message = "Your comment was updated"
 
+    def test_func(self):
+        comment = self.get_object()
+        return self.request.user == comment.username
+
 
 # Delete a comment
-class DeleteComment(SuccessMessageMixin, generic.DeleteView):
+class DeleteComment(UserPassesTestMixin,
+                    SuccessMessageMixin, generic.DeleteView):
     model = Comment
     template_name = "delete_comment.html"
     form_class = CommentArea
@@ -191,6 +197,10 @@ class DeleteComment(SuccessMessageMixin, generic.DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super(DeleteComment, self).delete(request, *args, **kwargs)
+
+    def test_func(self):
+        comment = self.get_object()
+        return self.request.user == comment.username
 
 
 # Profile
