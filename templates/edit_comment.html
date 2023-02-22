@@ -8,7 +8,7 @@
     <div class="card-body">
         <h2>Comment posted:</h2>
         <p>{{ comment }}</p>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             {{ form | crispy }}
             {% csrf_token %}
             <button class="btn btn-signin" type="submit" name="update" value="update">Update</button>

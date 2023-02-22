@@ -35,7 +35,8 @@
                             <!-- likes and comments -->
                             <div class="row">
                                 {% if user.is_authenticated %}
-                                <form action="{% url 'spell_like' post.slug %}" method="POST">
+                                <form action="{% url 'spell_like' post.slug %}" method="POST"
+                                    enctype="multipart/form-data">
                                     {% csrf_token %}
                                     {% if liked %}
                                     <button type="submit" name="spellpost_id" value="{{post.slug}}" class="btn">
@@ -95,7 +96,7 @@
                                 {% if user.is_authenticated %}
                                 <h2>Post a comment</h2>
                                 <p>Posted by: {{ user.username }}</p>
-                                <form method="post">
+                                <form method="post" enctype="multipart/form-data">
                                     {{ comment_area | crispy }}
                                     {% csrf_token %}
                                     <button class="btn btn-signin" name="post" value="post">Post</button>
