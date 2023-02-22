@@ -2,113 +2,126 @@
 
 {% block content %}
 {% load crispy_forms_tags %}
-<div class="container">
-    <div class="row">
-        <div class="card border-dark">
-            <div class="card-body font">
-                <h1 class="post-title">{{ post.title }}</h1>
-                <p class="post-subtitle">{{ post.creator }} | {{ post.created_on }}</p>
-            </div>
-            {% if user.is_authenticated and user.id == post.creator.id %}
+<div class="container pt-3 pb-3">
+    <div class="card border-dark">
+        <section class="container pt-3 pb-3">
+            <div class="card border-0 pt-3 pb-3">
+                <div class="card-body font text-center">
 
-            <div>
-                <a class="btn btn-signin" href="{% url 'edit_spell' post.id %} ">Edit
-                    Spell</a>
-                <a class="btn btn-signin" href="{% url 'delete_spell' post.id %} ">Delete
-                    Spell</a>
-            </div>
+                    <!-- Image -->
+                    {% if "placeholder" in post.main_image.url %}
+                    <img src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
+                        class="card-img-top logo-card logo-image img-fluid"
+                        alt="A black and white drawing of a cauldron with spiral steam coming from it's contents">
+                    {% else %}
+                    <img src="{{ post.main_image.url }}" alt="The creator has posted a custom image to suit their spell"
+                        class="card-img-top logo-card logo-image img-fluid">
+                    {% endif %}
+                    <div class="card-body font pt-3">
+                        <h1 class="post-title">{{ post.title }}</h1>
+                        <p class="post-subtitle">Posted by: {{ post.creator }} | {{ post.created_on }}</p>
 
-            {% endif %}
-            <div>
-                {% if "placeholder" in post.main_image.url %}
-                <img src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
-                    class="card-img-top"
-                    alt="A black and white drawing of a cauldron with spiral steam coming from it's contents">
-                {% else %}
-                <img src="{{ post.main_image.url }}" alt="" class="card-img-top">
-                {% endif %}
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="card-body">
-                        <p class="card-text">{{ post.content | safe }}
-                            <!-- likes and comments -->
-                            <div class="row">
-                                {% if user.is_authenticated %}
-                                <form action="{% url 'spell_like' post.slug %}" method="POST"
-                                    enctype="multipart/form-data">
-                                    {% csrf_token %}
-                                    {% if liked %}
-                                    <button type="submit" name="spellpost_id" value="{{post.slug}}" class="btn">
-                                        <i class="fas fa-heart"></i>
-                                    </button>
-                                    {% else %}
-                                    <button type="submit" name="spellpost_id" value="{{post.slug}}" class="btn">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    {% endif %}
-                                </form>
+                        <!-- likes and comments icons and counts -->
+                        <div class="row">
+                            {% if user.is_authenticated %}
+                            <form action="{% url 'spell_like' post.slug %}" method="POST" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                {% if liked %}
+                                <button type="submit" name="spellpost_id" value="{{post.slug}}" class="btn">
+                                    <i class="fas fa-heart"></i>
+                                    {{ post.no_of_likes }}
+                                </button>
                                 {% else %}
-                                <span><i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}</span>
+                                <button type="submit" name="spellpost_id" value="{{post.slug}}" class="btn">
+                                    <i class="far fa-heart"></i>
+                                    {{ post.no_of_likes }}
+                                </button>
                                 {% endif %}
-                                <div>
-                                    {% with comments.count as no_of_comments %}
-                                    <i class="fa-regular fa-comments">
-                                    </i>
-                                    {{ no_of_comments }}
-                                    {% endwith %}
-                                </div>
+                            </form>
+                            {% else %}
+                            <span><i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}</span>
+                            {% endif %}
+                            <div>
+                                {% with comments.count as no_of_comments %}
+                                <i class="fa-regular fa-comments">
+                                </i>
+                                {{ no_of_comments }}
+                                {% endwith %}
                             </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="card border-dark">
-                        <h2>Comments:</h2>
-                        <div class="card-body">
-                            {% for comment in comments %}
-                            <div class="container">
-                                <div>
-                                    <p>
-                                        {{ comment.username}}
-                                        <span>
-                                            {{ comment.created_on }}
-                                        </span>
-                                    </p>
-                                    {{ comment.body | linebreaks }}
-                                    {% if user.is_authenticated and user.username == comment.username %}
-                                    <div>
-                                        <a class="btn btn-signin" href="{% url 'edit_comment' comment.id %} ">Edit
-                                            Comment</a>
-                                        <a class="btn btn-signin" href="{% url 'delete_comment' comment.id %}">Delete
-                                            Comment</a>
+            </div>
+        </section>
 
-                                    </div>
-
-                                    {% endif %}
-                                    <br>
-
-                                </div>
+        <!-- Spell Content -->
+        <section class="container">
+            <div class="row">
+                <div class="card-body">
+                    <div class="card-body p-3">
+                        <div class="card-text">
+                            <h2>Spell Overview:</h2>
+                            <hr>
+                            <div>{{ post.description | safe }}
                             </div>
-                            {% endfor %}
-                        </div>
-                        <div class="card border-dark font">
-                            <div class="card-body">
-                                {% if user.is_authenticated %}
-                                <h2>Post a comment</h2>
-                                <p>Posted by: {{ user.username }}</p>
-                                <form method="post" enctype="multipart/form-data">
-                                    {{ comment_area | crispy }}
-                                    {% csrf_token %}
-                                    <button class="btn btn-signin" name="post" value="post">Post</button>
-                                </form>
-                                {% endif %}
+                            <hr>
+                            <h2>Items/Tools needed:</h2>
+                            <hr>
+                            <div>{{ post.items_needed | safe }}</div>
+                            <hr>
+                            <h2>Spell:</h2>
+                            <hr>
+                            <p class="font">{{ post.content | safe }}</p>
+                            <hr>
+                            {% if user.is_authenticated and user.id == post.creator.id %}
+                            <div class="text-center p-3">
+                                <a class="btn btn-signin" href="{% url 'edit_spell' post.id %} ">Edit
+                                    Spell</a>
+                                <a class="btn btn-signin" href="{% url 'delete_spell' post.id %} ">Delete
+                                    Spell</a>
                             </div>
+                            <hr>
+                            {% endif %}
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comments section -->
+        <div class="container">
+            <div class="card-body comment-detail justify-content-end">
+                <h2>Comments:</h2>
+                {% for comment in comments %}
+                </p class="comments">
+                {{ comment.body | linebreaks }}
+                <hr>
+                <div class="comment-detail justify-content-end">
+                    <p>Posted by: {{ comment.username}} on {{ comment.created_on }}
+                        {% if user.is_authenticated and user.username == comment.username %}
+                        <a class="btn btn-signin" href="{% url 'edit_comment' comment.id %} ">Edit
+                            Comment</a>
+                        <a class="btn btn-signin" href="{% url 'delete_comment' comment.id %}">Delete
+                            Comment</a>
+                </div>
+                {% endif %}
+                <hr>
+                {% endfor %}
+                <div class="card border-dark font pb-3">
+                    <div class="card-body">
+                        {% if user.is_authenticated %}
+                        <h2>Post a comment</h2>
+                        <p>Posted by: {{ user.username }}</p>
+                        <form method="post" enctype="multipart/form-data">
+                            {{ comment_area | crispy }}
+                            {% csrf_token %}
+                            <button class="btn btn-signin" name="post" value="post">Post</button>
+                        </form>
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-{% endblock %}
+    {% endblock %}
