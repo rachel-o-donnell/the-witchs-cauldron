@@ -368,6 +368,8 @@ Jigsaw Wc3 validation
 
 #15 - Removed queryset from views causing failure to view posts. Re added without status filters
 
+#16 - warnings.warn(f"No directory at: {root}") when debug set to False - needed to change the placement of my whitenoise middleware http://whitenoise.evans.io/en/latest/django.html
+
 ### Remaining Bugs
 
 Like button not changing colour on home screen
