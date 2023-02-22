@@ -1,20 +1,19 @@
-   % extends "base.html" %}
+% extends "base.html" %}
 
-   {% block content %}
-   <div class="container pt-3 pb-3">
-       <div class="card border-dark pt-3 pb-3">
-           <div class="card-body font text-center">
-               <img class="card-img-top img-fluid"
-                   src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816140/The%20Witch%27s%20Cauldron/broom_blhe2l.png"
-                   alt="black drawing of a wooden broomstick">
-               <div class="pt-3">
-                   <h1 class="post-title">ERROR 500: Yikes! Something went wrong</h1>
-                   <a class="btn btn-signin" href="{% url 'home' %}" aria-label="Return to home page">Return to home
-                       page.</a>
-               </div>
-           </div>
-       </div>
-   </div>
+{% block content %}
+<div class="container pt-3 pb-3">
+    <div class="card border-dark pt-3 pb-3">
+        <div class="card-body font text-center">
+            <img class="card-img-top img-fluid"
+                src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816140/The%20Witch%27s%20Cauldron/broom_blhe2l.png"
+                alt="black drawing of a wooden broomstick">
+            <div class="pt-3">
+                <h1 class="post-title">ERROR 500: Yikes! Something went wrong</h1>
+                <a class="btn btn-signin" href="{% url 'home' %}" aria-label="Return to home page">Return to home
+                    page.</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-   {% endblock %}
+{% endblock %}
