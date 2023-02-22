@@ -433,6 +433,17 @@ https://www.youtube.com/watch?v=zb4fIvtn4tY Codemy
 
 Adding help text to forms field https://stackoverflow.com/posts/50873523/edit
 
+Crud for posts: Codemy
+https://github.com/flatplanet/djangoblog (Code for walkthrough videos)
+Edit: https://www.youtube.com/watch?v=R6-pB5PAA6s&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=23
+Delete:
+https://www.youtube.com/watch?v=8NPOwmtupiI&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=7
+
+Reference projects:
+https://github.com/ianmeigh/support-hub
+https://github.com/KarinOldbring/vegan-a-eat
+https://github.com/dougiemath/photo_sharing_site
+https://github.com/Iris-Smok/The-Healthy-Family-PP4
 
 ### Media
 
