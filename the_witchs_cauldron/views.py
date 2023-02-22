@@ -7,6 +7,7 @@ from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.utils.text import slugify
 from django.template import RequestContext
+from django.contrib.auth.mixins import UserPassesTestMixin
 from .models import PostSpell, Categories, Comment, Profile
 from .forms import CommentArea, EditComment, SpellForm
 
@@ -41,24 +42,33 @@ class AddSpell(SuccessMessageMixin, View):
         )
 
 
-class EditSpell(SuccessMessageMixin, generic.UpdateView):
+class EditSpell(UserPassesTestMixin, SuccessMessageMixin, generic.UpdateView):
     model = PostSpell
     template_name = 'edit_spell.html'
     form_class = SpellForm
     success_url = '/'
     success_message = "You updated your spell"
 
+    def test_func(self):
+        obj = self.get_object()
+        return self.request.user == obj.creator
 
-class DeleteSpell(SuccessMessageMixin, generic.DeleteView):
+
+class DeleteSpell(UserPassesTestMixin,
+                  SuccessMessageMixin, generic.DeleteView):
     model = PostSpell
     template_name = "delete_spell.html"
     success_url = '/'
     success_message = "Your spell was deleted"
 
-    # Work around for: SuccessMessageMixin not working for DeleteView
+# Work around for: SuccessMessageMixin not working for DeleteView
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super(DeleteSpell, self).delete(request, *args, **kwargs)
+
+    def test_func(self):
+        obj = self.get_object()
+        return self.request.user == obj.creator
 
 
 # class based views allows for re-use - One view can inherit from another
