@@ -374,7 +374,7 @@ Jigsaw Wc3 validation
 
 #16 - warnings.warn(f"No directory at: {root}") when debug set to False - needed to change the placement of my whitenoise middleware http://whitenoise.evans.io/en/latest/django.html
 
-#17 - 403 error in edit/delete comments - mixin test addition code is wrong FINISH
+#17 - 403 error in edit/delete comments needed to get to user.username.
 
 ### Remaining Bugs
 
