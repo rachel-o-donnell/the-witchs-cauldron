@@ -71,7 +71,7 @@
                             <hr>
                             <h2>Spell:</h2>
                             <hr>
-                            <p class="font">{{ post.content | safe }}</p>
+                            <div class="font">{{ post.content | safe }}</div>
                             <hr>
                             {% if user.is_authenticated and user.id == post.creator.id %}
                             <div class="text-center p-3">
@@ -92,28 +92,26 @@
         <div class="container">
             <div class="card-body">
                 <h2>Comments:</h2>
-                {% for comment in comments %}
-                </p>
-                {{ comment.body | linebreaks }}
                 <hr>
-                <div class="comment-detail">
-                    <p>Posted by: {{ comment.username}} on {{ comment.created_on }}
-                        <div class="text_end ms-auto">
-                            {% if user.is_authenticated and user.username == comment.username %}
-                            <a class="btn btn-signin" href="{% url 'edit_comment' comment.id %} ">Edit
-                                Comment</a>
-                            <a class="btn btn-signin" href="{% url 'delete_comment' comment.id %}">Delete
-                                Comment</a></div>
-                </div>
-
+                {% for comment in comments %}
+                <div>{{ comment.body | linebreaks }}</div>
+                <br>
+                <div>Posted by: {{ comment.username}} on {{ comment.created_on }}</div>
+                {% if user.is_authenticated and user.username == comment.username %}
+                <br>
+                <a class="btn btn-signin" href="{% url 'edit_comment' comment.id %} ">Edit
+                    Comment</a>
+                <a class="btn btn-signin" href="{% url 'delete_comment' comment.id %}">Delete
+                    Comment</a>
                 {% endif %}
                 <hr>
                 {% endfor %}
+                <br>
                 <div class="card border-dark font pb-3">
                     <div class="card-body">
                         {% if user.is_authenticated %}
                         <h2>Post a comment</h2>
-                        <p>Posted by: {{ user.username }}</p>
+                        <div>Posted by: {{ user.username }}</div>
                         <form method="post" enctype="multipart/form-data">
                             {{ comment_area | crispy }}
                             {% csrf_token %}
@@ -125,5 +123,5 @@
             </div>
         </div>
     </div>
-
-    {% endblock %}
+</div>
+{% endblock %}

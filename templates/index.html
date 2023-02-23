@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
+
 <div class="container pt-3 pb-3">
 
-    <!-- Logo image and message -->
-    <section>
+    <!-- Logo image and welcome message -->
+    <div>
         <div class="container-fluid text-center">
             <div class="card border-dark pt-3 pb-1">
                 <div class="container pt-3 pb-3">
@@ -17,35 +18,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <p class="card-text hero-text text-center logo-text">The Witch's Cauldron
-                            <div class="container-fluid hero-text text-center font">
-                                <p>Your Community Coven.
-                                    <br>
-                                    <p> Bringing the world's most reveared Witch's work together online,
-                                        we are a true melting pot of practices.
-                                        <br>
-                                        <p>
-                                            Whether you are a solo witch or those without a local coven, this
-                                            modern
-                                            gathering of aesoteric practices is bound to push you deeper into your
-                                            practice.
-                                        </p>
-                                        <br>
-                                        <p> Blessed Be</p>
-                                    </p>
-                            </div>
+                    <div class="card-text text-center logo-text">The Witch's Cauldron</div>
+                    <br>
+                    <div class="container container-fluid hero-text text-center font">
+                        <p>Your Community Coven.</p>
+                        <p> Bringing the world's most reveared Witch's work together online,
+                            we are a true melting pot of practices.</p>
+                        <p>
+                            Whether you are a solo witch or those without a local coven, this
+                            modern
+                            gathering of aesoteric practices is bound to push you deeper into your
+                            practice.</p>
+                        <p> Blessed Be</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Spell posts -->
     <div class="container-fluid pt-3 pb-3">
         <div class="row">
-
-            <!-- Blog Entries Column -->
             <div class="col-12 mt-3 left">
                 <div class="row">
                     {% for post in postspell_list %}

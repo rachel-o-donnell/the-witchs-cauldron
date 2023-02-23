@@ -73,6 +73,7 @@
     </nav>
 
     <main class="flex-shrink-0">
+
         <!-- Message alerts -->
         <div class="container">
             {% if messages %}
@@ -82,7 +83,6 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             {% endfor %}
-            </ul>
             {% endif %}
         </div>
         {% block content %}
