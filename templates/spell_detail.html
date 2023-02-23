@@ -90,20 +90,22 @@
 
         <!-- Comments section -->
         <div class="container">
-            <div class="card-body comment-detail justify-content-end">
+            <div class="card-body">
                 <h2>Comments:</h2>
                 {% for comment in comments %}
                 </p class="comments">
                 {{ comment.body | linebreaks }}
                 <hr>
-                <div class="comment-detail justify-content-end">
+                <div class="comment-detail">
                     <p>Posted by: {{ comment.username}} on {{ comment.created_on }}
-                        {% if user.is_authenticated and user.username == comment.username %}
-                        <a class="btn btn-signin" href="{% url 'edit_comment' comment.id %} ">Edit
-                            Comment</a>
-                        <a class="btn btn-signin" href="{% url 'delete_comment' comment.id %}">Delete
-                            Comment</a>
+                        <div class="text_end ms-auto">
+                            {% if user.is_authenticated and user.username == comment.username %}
+                            <a class="btn btn-signin" href="{% url 'edit_comment' comment.id %} ">Edit
+                                Comment</a>
+                            <a class="btn btn-signin" href="{% url 'delete_comment' comment.id %}">Delete
+                                Comment</a></div>
                 </div>
+
                 {% endif %}
                 <hr>
                 {% endfor %}

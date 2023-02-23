@@ -1,105 +1,94 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section>
-    <div class="container-fluid text-center">
-        <div class="col col-12 mt-3 d-flex justify-content-center">
-            <div class="card logo-card border-0">
-                <img class="card-img-top logo-card logo-image img-fluid"
-                    src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
-                    alt="A black and white drawing of a cauldron with spiral steam coming from it's contents">
-                <div class="card-body pb-0 pt-0">
-                    <p class="card-text logo-card">The Witch's Cauldron
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="container-fluid hero-text text-center font">
-            <p>Your Community Coven.
-                <br>
-                <p> Bringing the world's most reveared Witch's work together online,
-                    we are a true melting pot of practices.
-                    <br>
-                    Whether you are a solo witch or those without a local coven, this
-                    modern
-                    gathering of aesoteric practices is bound to push you deeper into your practice.
-                    <br>
-                    <p> Blessed Be</p>
-                </p>
-        </div>
-    </div>
+<div class="container pt-3 pb-3">
 
-</section>
-<div class="container-fluid">
-    <div class="row">
-
-        <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
-            <div class="row">
-                {% for post in postspell_list %}
-                <!-- card populated with content -->
-                <div class="col-md-4">
-                    <div class="card border-dark mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
-                                {% if "placeholder" in post.main_image.url %}
-                                <img src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
-                                    class="card-img-top"
-                                    alt="A black and white drawing of a cauldron with spiral steam coming from it's content">
-                                {% else %}
-                                <img src="{{ post.main_image.url }}" alt="" class="card-img-top">
-                                {% endif %}
-                                <div class="image-flash">
-                                    <p class="creator">Creator: {{ post.creator }}</p>
-                                </div>
+    <!-- Logo image and message -->
+    <section>
+        <div class="container-fluid text-center">
+            <div class="card border-dark pt-3 pb-1">
+                <div class="container pt-3 pb-3">
+                    <div class="card border-0">
+                        <div class="col col-12 mt-3 d-flex justify-content-center">
+                            <div class="card logo-card border-0">
+                                <img class="card-img-top logo-card img-fluid"
+                                    src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
+                                    alt="A black and white drawing of a cauldron with spiral steam coming from it's contents">
                             </div>
-                            <a href="{% url 'spell_detail' post.slug %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt }}</p>
-                            </a>
-                            <p class="card-text">{{ post.created_on }}
-                                <!-- Shows users liked posts  -->
-                                {% if request.user in post.likes.all %}
-                                <i class="fas fa-heart"></i> {{ post.no_of_likes }}
-                                {% else %}
-                                <i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}
-                                {% endif %}
-                                <!-- count is a build in method -->
-                                <i class="fa-regular fa-comments"></i> {{ post.comments.count }}
-                            </p>
-
                         </div>
                     </div>
+                    <div class="container">
+                        <p class="card-text hero-text text-center logo-text">The Witch's Cauldron
+                            <div class="container-fluid hero-text text-center font">
+                                <p>Your Community Coven.
+                                    <br>
+                                    <p> Bringing the world's most reveared Witch's work together online,
+                                        we are a true melting pot of practices.
+                                        <br>
+                                        <p>
+                                            Whether you are a solo witch or those without a local coven, this
+                                            modern
+                                            gathering of aesoteric practices is bound to push you deeper into your
+                                            practice.
+                                        </p>
+                                        <br>
+                                        <p> Blessed Be</p>
+                                    </p>
+                            </div>
+                    </div>
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
             </div>
-            <div class="row">
-                {% endif %}
-                {% endfor %}
+        </div>
+    </section>
+
+    <!-- Spell posts -->
+    <div class="container-fluid pt-3 pb-3">
+        <div class="row">
+
+            <!-- Blog Entries Column -->
+            <div class="col-12 mt-3 left">
+                <div class="row">
+                    {% for post in postspell_list %}
+                    <div class="col-md-4">
+                        <div class="card border-dark mb-4">
+                            <div class="card-body">
+                                <div class="image-container">
+                                    {% if "placeholder" in post.main_image.url %}
+                                    <img src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
+                                        class="card-img-top"
+                                        alt="A black and white drawing of a cauldron with spiral steam coming from it's content">
+                                    {% else %}
+                                    <img src="{{ post.main_image.url }}" alt="" class="card-img-top">
+                                    {% endif %}
+                                    <div class="image-flash">
+                                        <p class="creator">Creator: {{ post.creator }}</p>
+                                    </div>
+                                </div>
+                                <a href="{% url 'spell_detail' post.slug %}" class="post-link">
+                                    <h2 class="card-title">{{ post.title }}</h2>
+                                    <p class="card-text">{{ post.excerpt }}</p>
+                                </a>
+                                <p class="card-text">{{ post.created_on }}
+
+                                    <!-- Shows users' liked posts  -->
+                                    {% if request.user in post.likes.all %}
+                                    <i class="fas fa-heart"></i> {{ post.no_of_likes }}
+                                    {% else %}
+                                    <i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}
+                                    {% endif %}
+                                    <i class="fa-regular fa-comments"></i> {{ post.comments.count }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {% if forloop.counter|divisibleby:3 %}
+                </div>
+                <div class="row">
+                    {% endif %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
-    <!-- center aligned pagination buttons not working
-    {% if is_paginated %}
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-            {% if page_obj.has_previous %}
-            <li class="page-item disabled">
-                <a class="page-link">Previous</a>
-            </li>
-            {% endif %}
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            {% if page_obj.has_next %}
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
-            {% endif %}
-        </ul>
-    </nav>
-    {% endif %} 
--->
 </div>
 {%endblock%}

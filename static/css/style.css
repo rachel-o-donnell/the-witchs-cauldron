@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Amiri&display=swap');
 
 body {
-    /* background-color: #F4F3EE; */
     background-color: #Efd6cf;
-    /* color: #463F3A; */
-}
 
+}
 
 .navbar,
 footer,
@@ -16,11 +14,19 @@ footer,
     font-size: 2rem;
 }
 
+.comment-detail {
+    font-size: 1rem;
+    color: #463F3A
+}
+
 .logo-card {
-    font-family: 'Amatic SC', cursive;
-    font-size: 4rem;
     background-color: #Efd6cf;
     width: 25rem;
+}
+
+.logo-text {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5rem;
 }
 
 footer {
@@ -32,10 +38,6 @@ footer {
 h3 {
     font-family: 'Amiri', serif;
     background-color: f4f3ee;
-}
-
-.card-title {
-    /* color: #463F3A; */
 }
 
 .post-link {
