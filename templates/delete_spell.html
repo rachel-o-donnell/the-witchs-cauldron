@@ -1,25 +1,23 @@
 {% extends "base.html" %}
+
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="card border-dark">
-            <div class="card-body font">
-                <h1 class="post-title">Delete</h1>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <h3>Are you sure you want to delete this post?</h3>
-                    <div class="">
-                        <form method="POST" enctype="multipart/form-data">
-                            {% csrf_token %}
-                            <button class="btn btn-signin btn-lg" name="delete" type="submit"
-                                value="delete">Delete</button>
-                        </form>
-                    </div>
-                </div>
+{% load crispy_forms_tags %}
+
+<div class="container pt-3 pb-3">
+    <div class="card border-dark pt-3 pb-3">
+        <div class="card-body font text-center">
+            <img class="card-img-top logo-card img-fluid"
+                src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816140/The%20Witch%27s%20Cauldron/broom_blhe2l.png"
+                alt="black drawing of a wooden broomstick">
+            <div class="pt-3">
+                <h2>Are you sure you want to delete this post?</h2>
+                <form method="post" enctype="multipart/form-data">
+                    {{ form | crispy }}
+                    {% csrf_token %}
+                    <button class="btn btn-signin" type="submit">Delete</button>
+                </form>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}
