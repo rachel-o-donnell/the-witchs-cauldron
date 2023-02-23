@@ -12,6 +12,7 @@ from .models import PostSpell, Categories, Comment
 from .forms import CommentArea, EditComment, SpellForm
 
 
+# Add a spell
 class AddSpell(SuccessMessageMixin, View):
     def get(self, request):
         return render(
@@ -42,6 +43,7 @@ class AddSpell(SuccessMessageMixin, View):
         )
 
 
+# Edit a spell you posted
 class EditSpell(UserPassesTestMixin, SuccessMessageMixin, generic.UpdateView):
     model = PostSpell
     template_name = 'edit_spell.html'
@@ -54,6 +56,7 @@ class EditSpell(UserPassesTestMixin, SuccessMessageMixin, generic.UpdateView):
         return self.request.user == obj.creator
 
 
+# Delete a spell you posted
 class DeleteSpell(UserPassesTestMixin,
                   SuccessMessageMixin, generic.DeleteView):
     model = PostSpell
@@ -71,14 +74,14 @@ class DeleteSpell(UserPassesTestMixin,
         return self.request.user == obj.creator
 
 
-# class based views allows for re-use - One view can inherit from another
+# Display multiple spells
 class PostList(generic.ListView):
     model = PostSpell
     queryset = PostSpell.objects.order_by('-created_on')
     template_name = 'index.html'
-    # paginate_by = 6
 
 
+# View full spell with details
 class SpellDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
@@ -134,6 +137,7 @@ class SpellDetail(View):
         )
 
 
+# Like a spell
 class SpellLike(View):
 
     def post(self, request, slug):
@@ -149,6 +153,7 @@ class SpellLike(View):
         return HttpResponseRedirect(reverse('spell_detail', args=[slug]))
 
 
+#  Categories for posts
 class ListCategories(generic.ListView):
     template_name = 'categories.html'
     context_object_name = 'categorylist'
@@ -180,8 +185,8 @@ class EditComment(UserPassesTestMixin,
     success_message = "Your comment was updated"
 
     def test_func(self):
-        comment = self.get_object()
-        return self.request.user == comment.username
+        obj = self.get_object()
+        return self.request.user.username == obj.username
 
 
 # Delete a comment
@@ -199,5 +204,5 @@ class DeleteComment(UserPassesTestMixin,
         return super(DeleteComment, self).delete(request, *args, **kwargs)
 
     def test_func(self):
-        comment = self.get_object()
-        return self.request.user == comment.username
+        obj = self.get_object()
+        return obj.username == self.request.user.username
