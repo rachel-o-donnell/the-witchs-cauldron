@@ -1,8 +1,10 @@
 # **Welcome to The Witch's Cauldron**
 
-## Demo
+An online community coven for those who have a solid wiccan / aesoteric practice, or for the curious. 
+Members can post their own spells and rituals and tray practices from other members allowing them to greatly expand their knowledge of other wordly rituals. It is perfect for wiccans or wiccan curious who may not b e able to find a local coven, or even those who prefer to practice alone but enjoy learning from others. 
 
-[View the live project here.]
+## Demo
+View the live project here. https://the-witchs-cauldron.herokuapp.com/
 
 ## TOC
 
@@ -217,9 +219,23 @@ Amiri - Has an early modern feel like - the classical period of witch hunts.
 
 ### Images and Iconography
 
+3 images were drawn up on Procreate - 
+
+I wanted the images to be playful, homemade, rough around the edges much like the community and aesoteric practices. The site wants to draw community members in and not to avoid members having imposter syndrome. 
+
+Cauldron: though most wiccans just use whatever is lying aroung the iconic image of bubbling cauldron is perfect for this melting pot of practices. 
+
+Broom: The broom is indeed a part of many rituals of sweeping bad energy out of the area, so I thought it perfect as a way to "clean up" your mistakes on the site with the edit and delete features. 
+
+Hat: A pointy witches hat 
+
+though only two are used on the current live site - The hat was to be a default profile image and relate to all profile pages. 
+
 ### Database Schema
 
 ### Design changes ???
+
+colors - much preferred goin with cleaner simpler colors - white - no greys. The black writing was better visually than the dark grey and better visibility
 
 ## Features
 
@@ -243,9 +259,14 @@ Amiri - Has an early modern feel like - the classical period of witch hunts.
 
     - 
 
+1. Categories
+
+    - 
+
 
 
 ### Features Not Implemented
+
 
 ### Future Features
 
@@ -332,9 +353,16 @@ linting:
 
 ## Testing
 
+Wc3 HTML - All pages pass without error
+
+
 Pycodestyle? - pep 8 replacement
 
-Jigsaw Wc3 validation
+conflicts arise with pythonchecker and imported python checker in terminal. I've gone with what the terminal has suggested 
+
+Jigsaw Wc3 validation - passes without error
+
+
 
 
 ### Bugs
@@ -382,12 +410,13 @@ Jigsaw Wc3 validation
 
 ### Remaining Bugs
 
-Delete messages not displaying
-
 override bootstrap styling dropdown menu etc. 
 
 double submission of form - comments
 
+Resize images uploaded so all the same size
+
+Commented out code - automatic ? Remove or keep? - Just Python files
 ## Deployment
 
 
@@ -467,3 +496,4 @@ Tips from the below video README: Worth Reading, with Joanna Gorska on the Code 
 
 ### Acknowledgments
 
+Huge thanks to my cohort members ivette and Roz for helping me troubleshoot issues, our cohort lead Iris, My mentor Richard and the Slack Community
