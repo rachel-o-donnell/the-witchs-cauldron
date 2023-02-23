@@ -29,10 +29,6 @@ class SpellForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(SpellForm, self).__init__(*args, **kwargs)
-        self.fields['main_image'].label = "Upload your spell image here"
-
-    def __init__(self, *args, **kwargs):
-        super(SpellForm, self).__init__(*args, **kwargs)
         self.fields['categories'].help_text = "Hold command while clicking to select multiple categories"
 
 

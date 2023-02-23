@@ -2,26 +2,24 @@
 
 {% block content %}
 {% load crispy_forms_tags %}
-<div class="container">
+<div class="container pt-3 pb-3">
     <div class="row">
-        <div class="card border-dark">
+        <div class="card border-dark pb-3">
             <div class="card-body font">
                 <h1 class="post-title">Add a spell</h1>
-
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="">
+                    <div class="font">
                         <form method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
                             {{ spell_form | crispy}}
-                            <button class="btn btn-signin btn-lg" name="post" type="submit" value="post">Post</button>
+                            <button class="btn btn-signin font btn-lg" name="post" type="submit"
+                                value="post">Post</button>
                         </form>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 
