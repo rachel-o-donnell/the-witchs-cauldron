@@ -262,6 +262,10 @@ Admin page on frontend to upload spells
 
 -
 
+Full Crud Profile feature. 
+
+Had profile feature started but ran out of time to use signals to auto create one when signing in - Admin had to create the profile from the back end. 
+
 ## Technologies Used
 
 ### Languages Used
@@ -369,6 +373,8 @@ Jigsaw Wc3 validation
 #15 - Removed queryset from views causing failure to view posts. Re added without status filters
 
 #16 - warnings.warn(f"No directory at: {root}") when debug set to False - needed to change the placement of my whitenoise middleware http://whitenoise.evans.io/en/latest/django.html
+
+#17 - 403 error in edit/delete comments - mixin test addition code is wrong FINISH
 
 ### Remaining Bugs
 

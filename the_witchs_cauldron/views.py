@@ -8,7 +8,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.utils.text import slugify
 from django.template import RequestContext
 from django.contrib.auth.mixins import UserPassesTestMixin
-from .models import PostSpell, Categories, Comment, Profile
+from .models import PostSpell, Categories, Comment
 from .forms import CommentArea, EditComment, SpellForm
 
 
@@ -201,44 +201,3 @@ class DeleteComment(UserPassesTestMixin,
     def test_func(self):
         comment = self.get_object()
         return self.request.user == comment.username
-
-
-# Profile
-# import Profile
-# class Profile(View):
-
-#     def profile(request):
-#         name = username.name
-#         template_name = "profile.html"
-#         # success_url = '/'
-#         success_message = "Your Profile was created"
-
-
-class ProfileView(generic.DetailView):
-    model = Profile
-    template_name = "profile.html"
-
-    def get_context_data(self, *args, **kwargs):
-        active_user = Profile.objects.get(id=self.kwargs['pk'])
-
-        context = {
-            "active_user": active_user,
-        }
-        return context
-
-        # 'related_posts': PostSpell.objects.filter(
-        #     categories__category=self.kwargs['category']).filter(status=1)
-        # return category_content
-
-    # def valid_form(self, form):
-    #     user_instance_form = self.request.user
-    #     return super().valid_form(form)
-
-
-# class CreateProfileView(CreateView):
-#     model = Profile
-#     template_name = "create_profile.html"
-
-#     def valid_form(self, form):
-#         user_instance_form = self.request.user
-#         return super().valid_form(form)

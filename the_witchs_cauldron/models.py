@@ -63,20 +63,3 @@ class Comment(models.Model):
     # returns a string representaion of an object
     def __str__(self):
         return f"Comment {self.body} by {self.username}"
-
-
-# Profile
-class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE,
-                                related_name='profile')
-    profile_image = CloudinaryField('image', default='default-profile')
-    titles = models.TextField(max_length=100, default="Apprentice")
-    about = models.TextField(max_length=500, default="Coven curious")
-    practice_of_interest = models.ForeignKey(
-        Categories, on_delete=models.CASCADE, default="0")
-
-    def __str__(self):
-        return f'{self.user}'
-
-    # def get_absolute_url(self):
-    #      return reverse('home')
