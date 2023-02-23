@@ -376,16 +376,17 @@ Jigsaw Wc3 validation
 
 #17 - 403 error in edit/delete comments needed to get to user.username.
 
+#18 - distortion of list display when looking under categories corrected layout
+
 ### Remaining Bugs
 
-Like button not changing colour on home screen
 Delete messages not displaying
-disctortion of list display when looking under categories
-like amounts not showing now after restyle?/fixing front end like 
 
-override bootstrap styling on underline- border, dropdown menu etc. 
+override bootstrap styling dropdown menu etc. 
 
 double submission of form - comments
+
+override summernote styling 
 
 ## Deployment
 
@@ -419,6 +420,8 @@ Using Code Institute's "I Think Therefore I Blog" runthrough as a base for guide
 ***admin.py - PostAdmin and Admin comment - Add features to expand/make different (minimal I could change here yet- possibly add a category tag if that becomes a feature later on)
 
 Footer - Base code example and addapted to suit the needs and style of the project https://mdbootstrap.com/snippets/standard/mdbootstrap/2885129?view=side
+
+justify-content-end not working when copied from bootstrap - needed to add to the parent. Anurag Srivastava: https://stackoverflow.com/questions/61174994/bootstrap-justify-content-end-not-working-as-expected
 
 Fixing footer styling to push to the bottom of the screen but not sticky : https://radu.link/make-footer-stay-bottom-page-bootstrap/
 

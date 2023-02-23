@@ -58,7 +58,9 @@
                                         class="card-img-top"
                                         alt="A black and white drawing of a cauldron with spiral steam coming from it's content">
                                     {% else %}
-                                    <img src="{{ post.main_image.url }}" alt="" class="card-img-top">
+                                    <img src="{{ post.main_image.url }}"
+                                        alt="The creator has posted a custom image to suit their spell"
+                                        class="card-img-top">
                                     {% endif %}
                                     <div class="image-flash">
                                         <p class="creator">Creator: {{ post.creator }}</p>
