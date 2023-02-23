@@ -378,6 +378,8 @@ Jigsaw Wc3 validation
 
 #18 - distortion of list display when looking under categories corrected layout
 
+#19 - Sumernote widgets causing multiple errors in validation - removed from forms.py after consultation with TA 
+
 ### Remaining Bugs
 
 Delete messages not displaying
@@ -385,8 +387,6 @@ Delete messages not displaying
 override bootstrap styling dropdown menu etc. 
 
 double submission of form - comments
-
-override summernote styling 
 
 ## Deployment
 
