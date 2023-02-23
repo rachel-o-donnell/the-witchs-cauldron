@@ -45,8 +45,8 @@ class PostSpell(models.Model):
     def no_of_likes(self):
         return self.likes.count()
 
-# Comments
 
+# Comments
 
 class Comment(models.Model):
     post = models.ForeignKey(
