@@ -333,6 +333,8 @@ Books from creators for sale / reccomendations
 Admin page on frontend to upload spells
 Creation of new Categories by User/admin on front end
 
+Add Favicon
+
 -
 
 Full Crud Profile feature. 
@@ -405,14 +407,7 @@ linting:
 
 ## Testing
 
-Wc3 HTML - All pages pass without error
-
-
-Pycodestyle? - pep 8 replacement
-
-conflicts arise with pythonchecker and imported python checker in terminal. I've gone with what the terminal has suggested 
-
-Jigsaw Wc3 validation - passes without error
+link to file
 
 
 
@@ -465,6 +460,15 @@ Jigsaw Wc3 validation - passes without error
 override bootstrap styling dropdown menu etc. Order alphabetically
 
 double submission of form - comments
+
+### BUGS found in validation / TESTING
+
+Various Html fixes
+#19 
+Areas that should have hover but do not 
+spell form not styling now - re-add summernote widget?
+Categories not applying when posting 
+Edit a spell page not styled
 
 ## Deployment
 
