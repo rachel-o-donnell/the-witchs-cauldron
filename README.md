@@ -455,6 +455,8 @@ link to file
 
 #19 - Sumernote widgets causing multiple errors in validation - removed from forms.py after consultation with TA 
 
+#20 - Styling changes for responsiveness Navbar running over in mobile view, crowded edit and delete buttons in mobile view 
+
 ### Remaining Bugs
 
 override bootstrap styling dropdown menu etc. Order alphabetically
@@ -469,11 +471,11 @@ Areas that should have hover but do not
 spell form not styling now - re-add summernote widget?
 Categories not applying when posting spells. 
 Edit a spell page not styled
-footer on spell detail not responsive 
+
+
 edit and delete comment buttons crowded in mobile view - make like spell? delete comment? make smaller? add btn-sm will fix
 Navbar Styling is strange on some views mobile - runs over - ADD A Spell- when logged in change to Add Spell 
 
-dElete Comment page not responsive 
 <p>{{ comment }}</p> in delete comment is showing Comment and commentors name as well as comment 
 
 ## Deployment

@@ -153,10 +153,10 @@ Multiple Categories can be applied to one spell | FAIL
 | Navbar - goes to burger | PASS | Styling is strange on some views mobile - runs over - ADD A Spell- when logged in change to Add Spell will fix
 | footer - change to m-0 around social fontawesome icons | PASS |
 | Home Page - fully responsive | PASS |
-| Spell Detail PAge - footer not the same as base html?! not responsive
+| Spell Detail PAge | PASS |
 | Edit Spell | PASS |
 | Delete Spell | PASS |
-| Edit Comment | BUTTONS CROWDED|
+| Edit Comment | | PASS |
 | Delete Comment | PASS |
 
 | Categories page | |
