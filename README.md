@@ -1,5 +1,7 @@
 # **Welcome to The Witch's Cauldron**
 
+
+
 An online community coven for those who have a solid wiccan / aesoteric practice, or for the curious. 
 Members can post their own spells and rituals and tray practices from other members allowing them to greatly expand their knowledge of other wordly rituals. It is perfect for wiccans or wiccan curious who may not b e able to find a local coven, or even those who prefer to practice alone but enjoy learning from others. 
 
@@ -59,6 +61,10 @@ View the live project here. https://the-witchs-cauldron.herokuapp.com/
 
 ### User Stories
 
+### UX/UI
+
+[GitHub Issue #32](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=18662577)
+
 ### Theme: Acc Management 
 [GitHub Issue #14](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/14)
 
@@ -68,6 +74,8 @@ View the live project here. https://the-witchs-cauldron.herokuapp.com/
 User Stories: 
 
 1. As a Site User / Admin I can register an account so that I can add comments and like posts [GitHub Issue #6](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/6)
+
+## Testing: PASS
 
 ### Epic: Sign In 
 [GitHub Issue #17](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/17)
@@ -83,12 +91,7 @@ User Stories:
 
 1. As a User/Admin I can log out so that I can log in on different devices - shared computers [GitHub Issue #18](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/18)
 
-### Epic: Customise Profile
-[GitHub Issue #20](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/20)
 
-User Stories:
-
-1. As a Site User/Site Admin I can personalise my profile so that people can see my areas of interest as a site user or areas of speciality as a creator [GitHub Issue #1](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/1)
 
 ### Theme: Admin Features
 [GitHub Issue #21](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/21)
@@ -114,23 +117,42 @@ User Stories:
 ### Theme: Post Interaction
 [GitHub Issue #24](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/24)
 
+User Stories:
+
+As a user/admin I can create,read,update and delete a spell from the front end so that the process of posting is easier [GitHub Issue #46](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=20948795)
+PASS
+
 ### Epic: View Posts
 [GitHub Issue #25](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/25)
 
 User Stories:
 
 1. As a Site User I can view a list of posts so that I can choose one to read [GitHub Issue #2](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/2)
-1. As a Site User I can click on a post so that I can read the full spell [GitHub Issue #3](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/3)
+
+PASS
+
+1. As a Site User I can click on a post so that I can read the full spell [GitHub Issue #3](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/3) 
+PASS
+1. As a user I can **see my liked posts from the home screen ** so that I dont have to click into a post to check if I have liked it [GitHub Issue #3](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=18620688)
+PASS
 
 ### Epic: Save Post
-[GitHub Issue #23](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/23)
+[GitHub Issue #23](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/23) Future features
 
 User Stories:
 
 1. As a Site User I can save a spell post so that I can have quick access to my favourite spells [GitHub Issue #13](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/13)
 
 ### Epic: Likes and Comments
+
 [GitHub Issue #26](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/26)
+
+### EPIC: Advanced likes and comments#34
+[GitHub Issue #34](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=18620584) PASS
+
+1.  As a user I can edit or delete my comment so that I can amend mistakes [GitHub Issue #37](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=18669585)
+
+PASS
 
 User Stories: 
 
@@ -138,6 +160,33 @@ User Stories:
 1. As a Site User / Admin I can view the number of likes on a post so that I can see how popular/successful the post is [GitHub Issue #4](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/4)
 1. As a Site User I can leave comments on individual posts so that I can add to the conversation [GitHub Issue #7](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/7)
 1. As a Site User I can like / unlike a spell post so that I can interact with the content [GitHub Issue #8](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/8)
+
+### Alert Messages
+
+### EPIC: Alert messages
+[GitHub Issue #38](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=20198268) 
+PASS
+
+User Stories: 
+As a user I can see an alert message so that my actions have been confirmed
+tasks [GitHub Issue #39](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/39) PASS
+
+As a user I can see alert messages so that I can see if my login, logout and register actions have been successful
+[GitHub Issue #40](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/40) PASS
+
+As a user I can see alert messages so that I get confirmation that my liking a post has been successful
+[GitHub Issue #41](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/41) PASS
+
+### Future Features:
+
+### Epic: Customise Profile
+[GitHub Issue #20](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/20)
+
+User Stories:
+
+1. As a Site User/Site Admin I can personalise my profile so that people can see my areas of interest as a site user or areas of speciality as a creator [GitHub Issue #1](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/1)
+
+ADDED TO FUTURE FEATURES
 
 ### Agile Methodology
 
