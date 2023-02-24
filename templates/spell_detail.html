@@ -107,21 +107,30 @@
                 <hr>
                 {% endfor %}
                 <br>
-                <div class="card border-dark font pb-3">
-                    <div class="card-body">
-                        {% if user.is_authenticated %}
-                        <h2>Post a comment</h2>
-                        <div>Posted by: {{ user.username }}</div>
-                        <form method="post" enctype="multipart/form-data">
-                            {{ comment_area | crispy }}
-                            {% csrf_token %}
-                            <button class="btn btn-signin" name="post" value="post">Post</button>
-                        </form>
-                        {% endif %}
-                    </div>
+
+                <!-- Add comments area -->
+                {% if user.is_authenticated %}
+                <div class="card border-dark font p-3">
+                    <div class="card-body"></div>
+
+                    <h2>Post a comment</h2>
+                    <div>Posted by: {{ user.username }}</div>
+                    <br>
+                    <form method="post" enctype="multipart/form-data">
+                        {{ comment_area | crispy }}
+                        {% csrf_token %}
+                        <button class="btn btn-signin" name="post" value="post">Post</button>
+                    </form>
                 </div>
+                {% else %}
+                <div class="card border-dark font p-3">
+                    <div class="card-body"></div>
+                    <h2 class="p-3">Sign in/register to add a comment</h2>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
 </div>
+
 {% endblock %}
