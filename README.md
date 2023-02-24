@@ -8,6 +8,8 @@ Members can post their own spells and rituals and tray practices from other memb
 ## Demo
 View the live project here. https://the-witchs-cauldron.herokuapp.com/
 
+
+
 ## TOC
 
 - [User Experience (UX)](#user-experience-ux)
@@ -329,6 +331,7 @@ Notifications of replies to comments
 Merch for sale
 Books from creators for sale / reccomendations
 Admin page on frontend to upload spells
+Creation of new Categories by User/admin on front end
 
 -
 
@@ -459,13 +462,10 @@ Jigsaw Wc3 validation - passes without error
 
 ### Remaining Bugs
 
-override bootstrap styling dropdown menu etc. 
+override bootstrap styling dropdown menu etc. Order alphabetically
 
 double submission of form - comments
 
-Resize images uploaded so all the same size
-
-Commented out code - automatic ? Remove or keep? - Just Python files
 ## Deployment
 
 
@@ -536,13 +536,17 @@ https://github.com/Iris-Smok/The-Healthy-Family-PP4
 
 ### ReadMe 
 
-I used the skeleton of Ian's ReadMe to help me put a structure of my ReadMe together as a starting point.
+I used the skeleton of Ian's ReadMe to help me put a structure of my ReadMe together as a starting point. 
 
 - https://github.com/ianmeigh/support-hub/blob/main/README.md 
+
+I also used his testing.md structure as a skeleton and ideas to add docs with links, links to projects board etc. 
 
 Tips from the below video README: Worth Reading, with Joanna Gorska on the Code Institute Channel.
 - https://www.youtube.com/watch?v=P1UiUXrp7Ic
 
 ### Acknowledgments
 
-Huge thanks to my cohort members ivette and Roz for helping me troubleshoot issues, our cohort lead Iris, My mentor Richard and the Slack Community
+Huge thanks to my cohort members ivette and Roz for helping me troubleshoot issues, our cohort lead Iris, My mentor Richard and the Slack Community. 
+
+Ian Meigh for the ReadME structure.
