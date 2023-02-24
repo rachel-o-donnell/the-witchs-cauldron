@@ -45,7 +45,7 @@
                     <div class="col-md-4 pb-3 pt-3">
                         <div class="card border-dark mb-4 h-100">
                             <div class="card-body">
-                                <div class="image-container">
+                                <div class="image-container pb-3">
                                     {% if "placeholder" in post.main_image.url %}
                                     <img src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
                                         class="card-img-top"
@@ -56,17 +56,12 @@
                                         class="card-img-top">
                                     {% endif %}
                                 </div>
-                                <div class="container">
-                                    <div class="image-flash">
-                                        <p class="creator">Creator: {{ post.creator }}</p>
-                                    </div>
-
+                                <div class="containers">
                                     <a href="{% url 'spell_detail' post.slug %}" class="post-link">
                                         <h2 class="card-title">{{ post.title }}</h2>
-                                        <p class="card-text">{{ post.description }}</p>
                                     </a>
-                                    <p class="card-text">{{ post.created_on }}
-
+                                    <p class="card-text">{{ post.description }}</p>
+                                    <div>
                                         <!-- Shows users' liked posts  -->
                                         {% if request.user in post.likes.all %}
                                         <i class="fas fa-heart"></i> {{ post.no_of_likes }}
@@ -74,7 +69,10 @@
                                         <i class="fa-regular fa-heart"></i> {{ post.no_of_likes }}
                                         {% endif %}
                                         <i class="fa-regular fa-comments"></i> {{ post.comments.count }}
-                                    </p>
+                                    </div>
+                                    <br>
+                                    <div>Creator: {{ post.creator }}</div>
+                                    <div>{{ post.created_on }}</div>
                                 </div>
                             </div>
 
