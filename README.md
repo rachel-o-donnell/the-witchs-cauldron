@@ -467,8 +467,14 @@ Various Html fixes
 #19 
 Areas that should have hover but do not 
 spell form not styling now - re-add summernote widget?
-Categories not applying when posting 
+Categories not applying when posting spells. 
 Edit a spell page not styled
+footer on spell detail not responsive 
+edit and delete comment buttons crowded in mobile view - make like spell? delete comment? make smaller? add btn-sm will fix
+Navbar Styling is strange on some views mobile - runs over - ADD A Spell- when logged in change to Add Spell 
+
+dElete Comment page not responsive 
+<p>{{ comment }}</p> in delete comment is showing Comment and commentors name as well as comment 
 
 ## Deployment
 
