@@ -1,16 +1,8 @@
 # Testing
 
-## Automated Tests
-
-No automated tests
-
-## Manual Tests
-
-Manual tests were applied as I was building features to ensure all features added were as fully finished as needed at their respective stages. Any bugs found were either dealt with immediately or noted in READme for future fixing. 
-
 ### Methodology
 
-### Test Cases
+Manual tests were applied as I was building features to ensure all features added were as fully finished as needed at their respective stages. Any bugs found were either dealt with immediately or noted in READme for future fixing. Validators of affected/changed files /pages were rechecked after each bug fix after initial validation had begun
 
 &nbsp;
 
@@ -34,27 +26,28 @@ Manual tests were applied as I was building features to ensure all features adde
 | ADD A SPELL PAGE |
 | Post | Clicking the post button on a valid form publishes the spell to the home page | Clicked the Post button on a valid form | PASS |
 | SPELL DETAIL PAGE |
-| Edit and delete buttons only appear for a spell you have created |
-|COMMENTS |
-| Post (COMMENTS)| Post button posts a comment and you stay on the same page | Clicked Post button after commenting in box | PASS | 
-| Edit (COMMENTS)| Edit button pulls your comment into the body for you to re-edit edit a comment page | clicked on edit button | PASS |
-
-| Delete (COMMENTS)|  Edit button brings you to the delete comment page  | clicked on delete button | PASS |
-
+| Likes and comments favicons |
+| Heart Favicon and counter | Heart Favicon changes to all black if you click and counter increases by 1 | Clicked on favicon | PASS |
+| Heart Favicon and counter | Heart Favicon changes to black outline if you 'unlike' and counter decreases by 1 | Clicked on favicon | PASS |
+| Heart Favicon and counter (Home page) | Heart Favicon appears all black only for the spells you have liked from the spell detail page and counter in showing and increasing/decreasing | Liked multiple random spells and checked on home page which ones were black and what count they had  | PASS |
+| Comment Favicon and counter | Comment favicon appears on home page and spell detail page with a count denoting how many comments have been made on each post. Counter increases/decreases accordingly | PASS |
+| Edit and delete buttons | Edit and delete buttons only appear for a spell you have created |  Created a spell under one username - buttons appear, logged out and logg in as a different user - buttons do not appear on the same post , but do appear when I post a new spell with the 2nd user | PASS |
 | EDIT A SPELL PAGE |
 | Edit | Edit button brings you to edit a spell page | clicked on edit button | PASS |
 | DELETE A SPELL PAGE |
 | Delete | Delete button brings you to delte a spell page | clicked on delete button | PASS |
+|COMMENTS |
+| Post (COMMENTS)| Post button posts a comment and you stay on the same page | Clicked Post button after commenting in box | PASS | 
+| Edit (COMMENTS)| Edit button pulls your comment into the body for you to re-edit edit a comment page | clicked on edit button | PASS |
+| Update button (COMMENTS) | Comment is updated, user is brought to the home page | Posted a comment, edited it and pressed the update button | PASS |
+| Delete (COMMENTS)|  Delete button brings you to the delete comment page  | clicked on delete button | PASS |
+| 2nd Delete button (COMMENTS) | Comment is deleted and user is brough to the home page | Created and deleted a comment | PASS |
 
-| ADD A SPELL PAGE |
-| Post | Post button changes color when hovered over | hovered over Post button | PASS |
-| EDIT A SPELL |
+&nbsp;
 
-
-Hover features change color column
-|--------|---------|---------|---------|
+### Hover features 
 | Testing | Expected Outcome | Steps | Results |
-
+|--------|---------|---------|---------|
 | HOME PAGE |
 | NAVBAR |
 | Logo | Logo | -
@@ -71,31 +64,51 @@ Hover features change color column
 | Delete | Delete button changes color when hovered over |
 |COMMENTS |
 | Post (COMMENTS)| Post button changes color when hovered over | hovered over Post button | PASS |
-| Update (COMMENTS) | Update button changes color when hovered over | PASS 
+| Update (COMMENTS) | Update button changes color when hovered over | hovered over Update button |PASS 
+| Delete (COMMENTS)|  Delete button changes color when hovered over | hovered over delete button | PASS |
+| 2nd Delete button (COMMENTS) | Delete button changes color when hovered over | hovered over delete button | PASS |
 | ADD A SPELL PAGE |
 | Post | Post button changes color when hovered over | hovered over Post button | PASS |
-| EDIT A SPELL |
-
 | EDIT A SPELL PAGE |
-| Update | Update button changes color when hovered over
+| Update | Update button changes color when hovered over | hovered over Update button | PASS |
+| Delete | Delete button changes color when hovered over | hovered over Delete button | PASS |
+| SIGN IN PAGE |
+| Sign In | Sign In changes color when hovered over | hovered over Sign In |  |
+| REGISTER PAGE |
+| Register | Register changes color when hovered over | hovered over Register |  |
+| LOGOUT PAGE |
+| Logout | Logout changes color when hovered over | hovered over Logout |  |
 
-FOOTER - did not want to hover 
+&nbsp;
 
-#### Registration/ login/logout
-ADD A SPELL 
+#### ERROR PAGES 
+| Testing | Expected Outcome | Steps | Results |
+|--------|---------|---------|---------|
+| 404 |  404 Error page appears when | 
+| 500 | 500 Error page appears when | 
+| 503 | 503 Error page appears when | 
+
+&nbsp;
+
+#### FORMS 
+
+#### ADD A SPELL
 | Testing | Expected Outcome | Steps | Results |
 |--------|---------|---------|---------|
 | Form Validation |  Try to submit empty form | Form validation will prompt for user action | PASS |
 | Form Validation | Try to submit invalid only title  | Form validation will prompt for user action to fill content | PASS |
 | Form Validation | Try to submit only title and content | Post Will be uploaded and user returned to homepage | PASS |
-
 | Form Validation | Try to submit only title and content | User returned to homepage and post is displayed with title but no descrition | PASS |
+
 | Form Validation | Try to submit only title and content | Post Will be uploaded and user returned to homepage | PASS |
 | Form Validation | Try to submit only title and content | Post Will be uploaded and user returned to homepage | PASS |
 
 | COMMENTS |
 | Post (COMMENTS)| Post button posts a comment and you stay on the same page | Clicked Post button after commenting in box | PASS |
 
+### FORM VIEWS
+| Testing | Expected Outcome | Steps | Results |
+|--------|---------|---------|---------|
 | Posts display on home page
 | Title | Title |
 | Description(spell overview -if any) | Description(spell overview -if any)|
@@ -114,8 +127,65 @@ ADD A SPELL
 | Items needed | Items needed | NOT STYLED add back widget?
 | Content | Items needed | NOT STYLED add back widget?
 
-Multiple Categories can be applied to one spell 
+#### Category Search
+
+Multiple Categories can be applied to one spell | FAIL
+
+#### Messaages:
+| SIGN IN etc |
+| Sign In | Sign In message appears in banner |  Signed In  PASS |
+| Register | Register message appears in banner |  Registered as new User | PASS |
+| Logout | Logout message appears in banner |  Logged out | PASS |
+| SPELLS|
+| Add Spell | Your Spell was deleted message appears | Added a spell | PASS |
+| Edit Spell | Your Spell was edited message appears | Edited a spell | PASS |
+| Delete Spell | Your Spell was deleted message appears | Deleted a spell | PASS |
+| COMMENTS |
+| Add Comment | Your Comment was deleted message appears | Added a comment | PASS |
+| Edit Comment | Your Comment was edited message appears | Edited a comment | PASS |
+| Delete Comment | Your Comment was deleted message appears | Deleted a comment | PASS |
+
+&nbsp;
+
+
+#### Responsiveness 
+
+| Navbar - goes to burger | PASS | Styling is strange on some views mobile - runs over - ADD A Spell- when logged in change to Add Spell will fix
+| footer - change to m-0 around social fontawesome icons | PASS |
+| Home Page - fully responsive | PASS |
+| Spell Detail PAge - footer not the same as base html?! not responsive
+| Edit Spell | PASS |
+| Delete Spell | PASS |
+| Edit Comment | BUTTONS CROWDED|
+| Delete Comment | PASS |
+
+| Categories page | |
+
+
+| Add Spell | NOT STYLED but responsive
+| Register | NOT STYLED but responsive
+| Loggout | NOT STYLED but responsive
+| 404 |  404 Error page appears when | 
+| 500 | 500 Error page appears when | 
+| 503 | 503 Error page appears when | 
 
 
 &nbsp;
 
+## Code Validation
+
+### HTML
+Wc3 HTML - All pages pass without error
+
+### PYTHON
+Pycodestyle? - pep 8 replacement
+
+conflicts arise with pythonchecker and imported python checker in terminal. I've gone with what the terminal has suggested 
+
+### CSS 
+Jigsaw Wc3 validation - passes without error
+
+
+&nbsp;
+
+Return to [README.md]() ADD LINK
