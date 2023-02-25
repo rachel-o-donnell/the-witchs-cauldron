@@ -22,8 +22,8 @@ class PostSpell(models.Model):
     slug = models.SlugField(max_length=250, unique=True)
     creator = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='spell_posts')
-    categories = models.ManyToManyField(
-        Categories, related_name='spell_categories', blank=True)
+    categories = models.ForeignKey(
+        Categories, on_delete=models.CASCADE, default='0')
     updated_on = models.DateTimeField(auto_now=True)
     main_image = CloudinaryField('image', default='placeholder')
     description = models.TextField(blank=True)

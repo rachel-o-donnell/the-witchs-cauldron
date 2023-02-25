@@ -1,5 +1,5 @@
 # Testing
-
+Add a spell title that already exists
 ### Methodology
 
 Manual tests were applied as I was building features to ensure all features added were as fully finished as needed at their respective stages. Any bugs found were either dealt with immediately or noted in READme for future fixing. Validators of affected/changed files /pages were rechecked after each bug fix after initial validation had begun
@@ -12,7 +12,7 @@ Manual tests were applied as I was building features to ensure all features adde
 | NAVBAR |
 | Logo | Logo link brings you to the home page | Clicked logo link when on spell detail page | PASS |
 | Magic Categories | Magic Categories dropdown features a list of categories | Clicked Magic Categories button | PASS |
-| Magic Categories | Clicking the categories links will bring you to a page with all spells relating to that category | Added spells pertaining to each category, CLicked various categories, each time the page rendered spells that had been tagged with that category | FAIL |
+| Magic Categories | Clicking the categories links will bring you to a page with all spells relating to that category | Added spells pertaining to each category, CLicked various categories, each time the page rendered spells that had been tagged with that category | PASS |
 | Add Spell | Add a Spell brings you to a page where you can post a spell | Clicked Add a spell in Nabvar | PASS |
 | Home | Home button takes you to the home page | Clicked Home in Nabvar | PASS |
 | Sign In | Sign In takes you to a sign in page |  Clicked Sign In in Nabvar |PASS |
@@ -179,7 +179,7 @@ Wc3 HTML - All pages pass without error
 
 ### PYTHON
 Pycodestyle? - pep 8 replacement
-
+Pep8CI 
 conflicts arise with pythonchecker and imported python checker in terminal. I've gone with what the terminal has suggested 
 
 ### CSS 

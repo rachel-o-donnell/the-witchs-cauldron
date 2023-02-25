@@ -10,37 +10,30 @@ from django.template import RequestContext
 from django.contrib.auth.mixins import UserPassesTestMixin
 from .models import PostSpell, Categories, Comment
 from .forms import CommentArea, EditComment, SpellForm
+from django.contrib.auth import get_user
 
 
 # Add a spell
 class AddSpell(SuccessMessageMixin, View):
+
     def get(self, request):
         return render(
             request, "add_spell.html", {"spell_form": SpellForm()})
 
     def post(self, request):
         spell_form = SpellForm(request.POST, request.FILES)
-
         if spell_form.is_valid():
             spell = spell_form.save(commit=False)
-            spell.creator = request.user
+            spell.creator = get_user(request)
             spell.slug = slugify(spell.title)
-            spell.save()
+            spell_form.save()
             success_url = '/'
             success_message = "Your spell was posted"
             return redirect('home')
         else:
             messages.error(self.request, 'Please fill in all required details')
             spell_form = SpellForm()
-
-        return render(
-            request,
-            "add_spell.html",
-            {
-                    "spell_form": spell_form
-            },
-            RequestContext(request)
-        )
+            return render(request, 'add_spell.html', {'form': form})
 
 
 # Edit a spell you posted
@@ -153,7 +146,7 @@ class SpellLike(View):
         return HttpResponseRedirect(reverse('spell_detail', args=[slug]))
 
 
-#  Categories for posts
+#  Categories display of posts
 class ListCategories(generic.ListView):
     template_name = 'categories.html'
     context_object_name = 'categorylist'

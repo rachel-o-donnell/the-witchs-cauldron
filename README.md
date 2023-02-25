@@ -457,6 +457,8 @@ link to file
 
 #20 - Styling changes for responsiveness Navbar running over in mobile view, crowded edit and delete buttons in mobile view 
 
+#21 - Categories not applying when posting spells - needed to change my logic and simplify due to time contraints - Category model changed to Foreign key and changed forms and views to fix. Only one category can be added per post. 
+
 ### Remaining Bugs
 
 override bootstrap styling dropdown menu etc. Order alphabetically
@@ -466,15 +468,14 @@ double submission of form - comments
 ### BUGS found in validation / TESTING
 
 Various Html fixes
-#19 
+#19 Sumernote widgets causing multiple errors in validation
+#20 edit and delete comment buttons crowded in mobile view, navbar too long
+#21 Categories not applying when posting spells
 Areas that should have hover but do not 
 spell form not styling now - re-add summernote widget?
-Categories not applying when posting spells. 
+
 Edit a spell page not styled
 
-
-edit and delete comment buttons crowded in mobile view - make like spell? delete comment? make smaller? add btn-sm will fix
-Navbar Styling is strange on some views mobile - runs over - ADD A Spell- when logged in change to Add Spell 
 
 <p>{{ comment }}</p> in delete comment is showing Comment and commentors name as well as comment 
 
