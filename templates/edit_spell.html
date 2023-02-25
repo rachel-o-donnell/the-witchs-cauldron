@@ -2,26 +2,23 @@
 
 {% block content %}
 {% load crispy_forms_tags %}
-<div class="container">
-    <div class="row">
-        <div class="card border-dark">
-            <div class="card-body font">
-                <h1 class="post-title">Edit a spell</h1>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="">
-                        <form method="POST" enctype="multipart/form-data">
-                            {% csrf_token %}
-                            {{ form | crispy}}
-                            <button class="btn btn-signin btn-lg" name="update" type="submit"
-                                value="update">Update</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+
+<div class="container pt-3 pb-3">
+    <div class="card border-dark pt-3 pb-3">
+        <div class="card-body font text-center">
+            <img class="card-img-top logo-card img-fluid"
+                src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816140/The%20Witch%27s%20Cauldron/broom_blhe2l.png"
+                alt="black drawing of a wooden broomstick">
+            <h2>Edit your Spell:</h2>
+        </div>
+        <div class="card-body font pt-3 pb-3">
+            <br>
+            <form method="post" enctype="multipart/form-data">
+                {{ form | crispy }}
+                {% csrf_token %}
+                <button class="btn btn-signin" type="submit" name="update" value="update">Update</button>
+            </form>
         </div>
     </div>
 </div>
-
 {% endblock %}

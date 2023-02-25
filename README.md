@@ -459,6 +459,8 @@ link to file
 
 #21 - Categories not applying when posting spells - needed to change my logic and simplify due to time contraints - Category model changed to Foreign key and changed forms and views to fix. Only one category can be added per post. 
 
+#22 - Edit a spell page not styled.
+
 ### Remaining Bugs
 
 override bootstrap styling dropdown menu etc. Order alphabetically
