@@ -312,7 +312,7 @@ Amiri - Has an early modern feel like - the classical period of witch hunts.
 
 ### Images and Iconography
 
-3 images were drawn up using Procreate and an Apple Pencil on an IPad.
+3 images were drawn up using Procreate and an Apple Pencil on an IPad. They are all on a transparent background so the background can e manipulated with design changes.
 
 I wanted the images to be playful, homemade, rough around the edges much like the community and aesoteric practices. The site wants to draw community members in as it can be quite an intimidating interest. 
 
@@ -413,7 +413,7 @@ The home page is where you will find the welcome banner , all the blog posts, th
     
    -  Users can comment on a spell but you must be signed in to do so
      - ![Post](/assets/images/readme-images/sign-in-comment.png)
-     - ![Post](/assets/images/readme-images)
+     - ![Post](/assets/images/readme-images/comment-post.png)
 
 
 
