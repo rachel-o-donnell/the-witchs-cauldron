@@ -95,43 +95,40 @@ Manual tests were applied as I was building features to ensure all features adde
 #### ADD A SPELL
 | Testing | Expected Outcome | Steps | Results |
 |--------|---------|---------|---------|
-| Form Validation |  Try to submit empty form | Form validation will prompt for user action | PASS |
-| Form Validation | Try to submit invalid only title  | Form validation will prompt for user action to fill content | PASS |
-| Form Validation | Try to submit only title and content | Post Will be uploaded and user returned to homepage | PASS |
-| Form Validation | Try to submit only title and content | User returned to homepage and post is displayed with title but no descrition | PASS |
-
-| Form Validation | Try to submit only title and content | Post Will be uploaded and user returned to homepage | PASS |
-| Form Validation | Try to submit only title and content | Post Will be uploaded and user returned to homepage | PASS |
-
+| Form Validation EMPTY | Form validation will prompt for user action if empty form is submitted |   Try to submit empty form | PASS |
+| Form Validation TITLE | Form validation will prompt for user action to fill content if only title is filled |  Try to submit only title  | PASS |
+| Form Validation TITLE AND CONTENT | Post Will be uploaded and user returned to homepage, default category will be general| Try to submit only title and content | PASS |
+| Form Validation ALL DETAILS | Fill all details of form | User returned to homepage and post is displayed with all relavant info on home page and all extra details on the spell detail page, post appears in relavant category search | PASS |
 | COMMENTS |
 | Post (COMMENTS)| Post button posts a comment and you stay on the same page | Clicked Post button after commenting in box | PASS |
 
-### FORM VIEWS
+### FORM VIEWS 
 | Testing | Expected Outcome | Steps | Results |
 |--------|---------|---------|---------|
-| Posts display on home page
-| Title | Title |
-| Description(spell overview -if any) | Description(spell overview -if any)|
-| Likes icon and count | Likes |
-| Comments icon and count | Comments icon and count |
-| Creator | Creator |
-| Posted on | Posted on |
+| Posts display on home page |
+| Title | Title appears on card on home page | Added a ttile to the form | PASS |
+| Description(spell overview -if any) | Description(spell overview -if any)appears on card on home page | Added a description to the form| PASS |
+| Likes icon and count | Likes icon and count appear on card on home page | like a post | PASS |
+| Comments icon and count | Comments icon and count appear on card on home page | comment on a post | PASS |
+| Creator | Creator name is posted depending on who has written the spell | created different spells using different loggins | PASS |
+| Posted on | Posted on appears on the card and is true to time and date posted | posted a spell | PASS |
+| Posts display on Spell Detail page |
+| Title | Title appears on card on spell detail page | Added a ttile to the form | PASS |
+| Description(spell overview -if any) | Description(spell overview -if any)appears on card on spell detail page | Added a description to the form| PASS |
+| Likes icon and count | Likes icon and count appear in correct sectionon spell detail page | like a post | PASS |
+| Comments icon and count | Comments icon and count appear in correct sectionon spell detail page | comment on a post | PASS |
+| Creator | Creator name is posted depending on who has written the spell | created different spells using different loggins | PASS |
+| Posted on | Posted on appears on spell detail and is true to time and date posted | posted a spell | PASS |
+| Items needed | Items needed  appear in correct section on spell detail page | added items needed| PASS |
+| Content | Items needed appear in correct section on spell detail page| added content | PASS |
 
-| Posts display on Spell Detail page
-| Title | Title |
-| Description(spell overview -if any) | Description(spell overview -if any)|
-| Likes icon and count | Likes |
-| Comments icon and count | Comments icon and count |
-| Creator | Creator |
-| Posted on | Posted on | 
-| Items needed | Items needed | NOT STYLED add back widget?
-| Content | Items needed | NOT STYLED add back widget?
+#### Category Search PASS
 
-#### Category Search
+Category can be applied to a spell | PASS
 
-Multiple Categories can be applied to one spell | FAIL
-
-#### Messaages:
+#### Messaages: PASS
+| Testing | Expected Outcome | Steps | Results |
+|--------|---------|---------|---------|
 | SIGN IN etc |
 | Sign In | Sign In message appears in banner |  Signed In  PASS |
 | Register | Register message appears in banner |  Registered as new User | PASS |
@@ -150,21 +147,22 @@ Multiple Categories can be applied to one spell | FAIL
 
 #### Responsiveness 
 
-| Navbar - goes to burger | PASS | Styling is strange on some views mobile - runs over - ADD A Spell- when logged in change to Add Spell will fix
+| Navbar - goes to burger | PASS |
 | footer - change to m-0 around social fontawesome icons | PASS |
 | Home Page - fully responsive | PASS |
-| Spell Detail PAge | PASS |
+| Spell Detail Page | PASS |
+| Add Spell | PASS |
 | Edit Spell | PASS |
 | Delete Spell | PASS |
 | Edit Comment | | PASS |
 | Delete Comment | PASS |
+| Categories page | PASS |
 
-| Categories page | |
 
 
-| Add Spell | NOT STYLED but responsive
 | Register | NOT STYLED but responsive
 | Loggout | NOT STYLED but responsive
+| Login | NOT STYLED but responsive 
 | 404 |  404 Error page appears when | 
 | 500 | 500 Error page appears when | 
 | 503 | 503 Error page appears when | 
@@ -175,16 +173,21 @@ Multiple Categories can be applied to one spell | FAIL
 ## Code Validation
 
 ### HTML
-Wc3 HTML - All pages pass without error
+Wc3 HTML - All pages pass without error apart from Add Spell(see below)
+
+Errors coming from Summernote's code regarding the summernote widget - I did remove the widgets and this solved the problem but then the form would not register things like a new line, bullet points etc. So I've decided to add it back as otherise the posts could end up affectign the UX terribly. 
+
+Most of the errors are from the same issues that are repeated with each form but I set the width to 100% in settings.py to make it responsive and that added another error but that is the only solution I found. 
 
 ### PYTHON
 Pycodestyle? - pep 8 replacement
-Pep8CI 
-conflicts arise with pythonchecker and imported python checker in terminal. I've gone with what the terminal has suggested 
+
+Pep8CI - all files pass without error
+
+Conflicts arise with pythonchecker and imported python linter in terminal. I've gone with what the terminal has suggested.
 
 ### CSS 
 Jigsaw Wc3 validation - passes without error
-
 
 &nbsp;
 
