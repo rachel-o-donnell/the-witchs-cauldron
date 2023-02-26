@@ -73,11 +73,11 @@ Manual tests were applied as I was building features to ensure all features adde
 | Update | Update button changes color when hovered over | hovered over Update button | PASS |
 | Delete | Delete button changes color when hovered over | hovered over Delete button | PASS |
 | SIGN IN PAGE |
-| Sign In | Sign In changes color when hovered over | hovered over Sign In |  |
+| Sign In | Sign In changes color when hovered over | hovered over Sign In | PASS |
 | REGISTER PAGE |
-| Register | Register changes color when hovered over | hovered over Register |  |
+| Register | Register changes color when hovered over | hovered over Register | PASS |
 | LOGOUT PAGE |
-| Logout | Logout changes color when hovered over | hovered over Logout |  |
+| Logout | Logout changes color when hovered over | hovered over Logout | PASS |
 
 &nbsp;
 
@@ -85,7 +85,7 @@ Manual tests were applied as I was building features to ensure all features adde
 | Testing | Expected Outcome | Steps | Results |
 |--------|---------|---------|---------|
 | 404 |  404 Error page appears when page request does not exist | entered /help at the end of the http | PASS
-| 500 | 500 Error page appears when there is a server error | | UNTESTED |
+| 500 | 500 Error page appears when there is a server error | Unable to test server error|
 | 403 | 403 Error page appears when user tries to acces a page they are not allowed | Added edit_comment/1 to end of hhtp address when signed in as a different user than the author of the comment | PASS |
 
 &nbsp;
@@ -162,9 +162,9 @@ Manual tests were applied as I was building features to ensure all features adde
 | 403 | PASS | 
 | 404 | PASS | 
 
-| Register | NOT STYLED but responsive |
-| Loggout | NOT STYLED but responsive |
-| Login | NOT STYLED but responsive |
+| Register | PASS |
+| Loggout | PASS |
+| Login | PASS |
 
 
 &nbsp;
@@ -193,4 +193,4 @@ Jigsaw Wc3 validation - passes without error
 ### Lighthouse 
 
 
-Return to [README.md]() ADD LINK
+Return to [README.md](https://github.com/rachel-o-donnell/the-witchs-cauldron/blob/main/README.md) 

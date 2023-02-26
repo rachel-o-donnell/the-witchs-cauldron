@@ -1,58 +1,32 @@
 {% extends "base.html" %}
 
 {% load i18n %}
-{% load account socialaccount %}
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
 
-<div class="container pb-5 ">
-  <div class="row">
-    <div class="col-md-12 mt-3 offset-md-4 font">
-
+<div class="container pt-3 pb-3">
+  <div class="card border-dark pt-3 pb-3">
+    <div class="card-body font text-center">
       <h1>{% trans "Sign In" %}</h1>
 
-      <!-- {% get_providers as socialaccount_providers %}
-
-      {% if socialaccount_providers %}
-      <p>{% blocktrans with site.name as site_name %}Please sign in to interact with a post.
-        Or, <a href="{{ signup_url }}">sign up</a>
-        for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
-
-      <div class="socialaccount_ballot">
-
-        <ul class="socialaccount_providers">
-          {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-        </ul>
-
-        <div class="login-or">{% trans 'or' %}</div>
-
-      </div>
-
-      {% include "socialaccount/snippets/login_extra.html" %}
-  
-    </div>
-  </div>
--->
-      <!-- {% else %} -->
       <p>{% blocktrans %}Please sign in to interact with a post or
         <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-    </div>
-  </div>
-  <!-- {% endif %} -->
-  <div class="row">
-    <div class="col-md-12 mt-3 offset-md-4 font">
+      <div class="row">
+        <div class="card-body font text-center font">
 
-      <form class="login" method="POST" action="{% url 'account_login' %}">
-        {% csrf_token %}
-        {{ form.as_p }}
-        {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-        {% endif %}
-        <!-- <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a> -->
-        <button class="btn-signin" type="submit">{% trans "Sign In" %}</button>
-      </form>
+          <form class="login" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <button class="btn btn-signin font" label='sign-in' name="sign-in"
+              type="submit">{% trans "Sign In" %}</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </div>

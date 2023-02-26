@@ -5,9 +5,9 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<div class="container pb-4">
-  <div class="row">
-    <div class="col-md12 mt-3 offset-md-4 font">
+<div class="container pt-3 pb-3">
+  <div class="card border-dark pt-3 pb-3">
+    <div class="card-body font text-center">
       <h1>{% trans "Register an account" %}</h1>
 
       <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
@@ -19,7 +19,8 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="btn-signin" type="submit">{% trans "Register" %}</button>
+        <button class="btn btn-signin font" label="register" name="register"
+          type="submit">{% trans "Register" %}</button>
       </form>
 
     </div>
