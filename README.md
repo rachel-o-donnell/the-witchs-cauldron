@@ -247,6 +247,9 @@ Kanban Iteration 5
 
 ![Kanban Iteration 5](/assets/images/readme-images/agile/kanban-it2.png)
 
+Kanban Iteration 6
+![Kanban Iteration 6](/assets/images/readme-images/agile/iteration-6.png)
+
 
 Kanban Final Iteration 
 During the final iteration it became clear that I would not have time to finish the profiles I had started so I decided to add it to my future features list and complete the front end of posting content. Originally I had wanted only admins to post but I thought it best to have all users post for better community engagement.
@@ -263,37 +266,57 @@ At the final iteration I created a future features section in the kanban board. 
 
 ### Wireframes
 
-Wireframes were created using Balsamiq and can be found [here](/assets/images/readme-images/
-![Homepage desktop](/assets/images/Wireframes/home-view-desktop.png)
+Wireframes were created using Balsamiq and can be found [here](assets/images/readme-images/wireframes)
+![Homepage desktop](assets/images/readme-images/wireframes/home-view-desktop.png)
+![Homepage mobile](assets/images/readme-images/wireframes/home-moblie.png)
+![Create Post mobile](assets/images/readme-images/wireframes/create-post-moblie.png)
+![log in/ sign up mobile](assets/images/readme-images/wireframes/login-signup-moblie.png)
+![View Post mobile](assets/images/readme-images/wireframes/view-post-%20moblie.png)
+
 
 ### Colour Scheme
 
 Neutral natural colors were chosen for the site using Coolers. I made every effort for color blind accesability here to ensure all tones would differ. 
 
-![Colour Palette](assets/images/README-images/colors/color-palette-original.png)
+![Colour Palette](/assets/images/readme-images/colors/color-palette-original.png)
 
-All colorblind variants can be found [here](/assets/images/README-images/colors)
+All colorblind variants can be found [here](/assets/images/readme-images/colors)
+
+As I was styling the project along the way I realised that the site had much better impact with the use of tints of the colour in the background and that it was a much better ux/ui to have black writing and a white background. 
+
+
+![Tint Palette](/assets/images/readme-images/colors/tints.png)
 
 ### Typography
 
 Amatic SC - playful and homemade - a nod to the inviting and not so serious nature of the blog.
+![Amatic](/assets/images/readme-images/logo-font.png)
+
 Amiri - Has an early modern feel like - the classical period of witch hunts.
+![Amiri](/assets/images/readme-images/font.png)
 
 ### Images and Iconography
 
-3 images were drawn up on Procreate - 
+3 images were drawn up using Procreate and an Apple Pencil on an IPad.
 
-I wanted the images to be playful, homemade, rough around the edges much like the community and aesoteric practices. The site wants to draw community members in and not to avoid members having imposter syndrome. 
+I wanted the images to be playful, homemade, rough around the edges much like the community and aesoteric practices. The site wants to draw community members in as it can be quite an intimidating interest. 
 
 Cauldron: though most wiccans just use whatever is lying aroung the iconic image of bubbling cauldron is perfect for this melting pot of practices. 
 
+![Cauldron](/assets/images/readme-images/cauldron.png)
+
 Broom: The broom is indeed a part of many rituals of sweeping bad energy out of the area, so I thought it perfect as a way to "clean up" your mistakes on the site with the edit and delete features. 
 
-Hat: A pointy witches hat 
+![Broom](/assets/images/readme-images/broom.png)
 
-though only two are used on the current live site - The hat was to be a default profile image and relate to all profile pages. 
+Hat: A pointy witches hat 
+![Hat](/assets/images/readme-images/hat_png.png)
+Though only two are used on the current live site - The hat was to be a default profile image and relate to all profile pages.
 
 ### Database Schema
+
+I used DrawSQL to map out my database 
+![Draw SQL](/assets/images/readme-images/draw-sql.png)
 
 ### Design changes ???
 
@@ -303,29 +326,90 @@ colors - much preferred goin with cleaner simpler colors - white - no greys. The
 
 1. Home Page
 
+The home page is where you will find the welcome banner , all the blog posts, the nav links and the footer. 
+
+![Welcome Banner](/assets/images/readme-images/)
     - 
 
 1. Navigation
+![Navbar](/assets/images/readme-images/navbar-signed-in.png)
+![Navbar](/assets/images/readme-images/navbar-signed-out.png)
 
-    - 
+    - A clear navigation is consistent across all pages and only changes when user is logged in or logged out.
+    - A dropdown button is on the navbar so Users can easily search spells under different categories. 
+
+    ![Categories](/assets/images/readme-images/dropdown-button.png)
+
+     ![Categories](/assets/images/readme-images/categories-dropdown-nav.png) 
 
 1. Signup, Login and other account management pages
 
-    - 
+    - All auth was used for the account management - Log in, register, loggout. User is prompted to fill all fields correctly and have a more complex password. 
+
+     ![Log in](/assets/images/readme-images/sign-in-form.png)
+     ![Loggout](/assets/images/readme-images/logout-page.png)
+     ![Register](/assets/images/readme-images/register-acc.png)
+
+1. Messages
+
+    - ALert messages appear on the top of the relevant screen confirming your actions if necessary. 
+
+    ![Messages](/assets/images/readme-images/sign-in-message.png)
+    ![Messages](/assets/images/readme-images/signed-out-message.png)
+    ![Messages](/assets/images/readme-images/signed-out-message.png)
+    ![Messages](/assets/images/readme-images/spell-updated-msg.png)
 
 1. Posts
 
-    - 
+    - All posts have CRUD functionality and Users can like and comment on posts. 
 
-1. Admin
+    CREATE
+    Summernote Widgets were applied to allow the user to create bullet points, steps, paragraphs etc 
 
-    - 
+    ![Post](/assets/images/readme-images/add-spell-form.png)
+
+  
+
+    READ
+     Users can like and comment on a spell from this page.
+    ![Post](/assets/images/readme-images/read-spell-banner.png)
+   
+  
+
+     ![Post](/assets/images/readme-images/read-spell-summernote.png)
+
+
+    UPDATE
+
+    Users can edit or delete a spell but the buttons only appear if the user is the creator of the spell.
+
+    ![Post](/assets/images/readme-images/edit-spell-buttons.png)
+
+    ![Post](/assets/images/readme-images/edit-spell-form.png)
+
+    DELETE
+
+1. Comments 
+
+
+    -  Comments have full crud functionality. 
+    
+    Users can comment on a spell but you must be signed in to do so
+    ![Post](/assets/images/readme-images/sign-in-comment.png)
+
+    
 
 1. Categories
 
     - 
 
+1. Error Pages
 
+    - 
+
+1. Footer
+
+    -   
 
 ### Features Not Implemented
 
