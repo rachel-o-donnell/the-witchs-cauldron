@@ -75,24 +75,23 @@ View the live project here. https://the-witchs-cauldron.herokuapp.com/
 
 User Stories: 
 
-1. As a Site User / Admin I can register an account so that I can add comments and like posts [GitHub Issue #6](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/6)
+1. As a Site User / Admin I can register an account so that I can add comments and like posts [GitHub Issue #6](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/6) PASS
 
-## Testing: PASS
+
 
 ### Epic: Sign In 
 [GitHub Issue #17](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/17)
 
 User Stories:
 
-1. As a User/admin I can sign in so that I can see my content [GitHub Issue #16](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/16)
+1. As a User/admin I can sign in so that I can see my content [GitHub Issue #16](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/16) PASS
 
 ### Epic: Log Out
 [GitHub Issue #19](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/19)
 
 User Stories:
 
-1. As a User/Admin I can log out so that I can log in on different devices - shared computers [GitHub Issue #18](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/18)
-
+1. As a User/Admin I can log out so that I can log in on different devices - shared computers [GitHub Issue #18](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/18) PASS
 
 
 ### Theme: Admin Features
@@ -103,47 +102,32 @@ User Stories:
 
 User Stories:
 
-1. As a Site Admin I can create, read update and delete posts so that I can manage the content I am submitting to the platform [GitHub Issue #9](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/9)
+1. As a Site Admin I can create, read update and delete posts so that I can manage the content I am submitting to the platform [GitHub Issue #9](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/9) PASS
 
-1. As a Site Admin I can approve or deny comments added to my content so that filter any comments that go against community guidelines [GitHub Issue #11](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/11)
 
-1. As a Site Admin I can add a category tag to my post so that users can find my post when looking for a specific topic [GitHub Issue #12](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/12)
+1. As a Site Admin I can add a category tag to my post so that users can find my post when looking for a specific topic [GitHub Issue #12](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/12) PASS
 
-### Epic: Save Draft
-[GitHub Issue #27](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/27)
-
-User Stories:
-
-1. As a Site Admin I can create a draft of my post so that I can save my progress and finish the post at a later time [GitHub Issue #10](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/10)
 
 ### Theme: Post Interaction
 [GitHub Issue #24](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/24)
 
 User Stories:
 
-As a user/admin I can create,read,update and delete a spell from the front end so that the process of posting is easier [GitHub Issue #46](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=20948795)
-PASS
+As a user/admin I can create,read,update and delete a spell from the front end so that the process of posting is easier [GitHub Issue #46](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=20948795) PASS
 
 ### Epic: View Posts
 [GitHub Issue #25](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/25)
 
 User Stories:
 
-1. As a Site User I can view a list of posts so that I can choose one to read [GitHub Issue #2](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/2)
+1. As a Site User I can view a list of posts so that I can choose one to read [GitHub Issue #2](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/2) PASS
 
-PASS
 
-1. As a Site User I can click on a post so that I can read the full spell [GitHub Issue #3](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/3) 
-PASS
+1. As a Site User I can click on a post so that I can read the full spell [GitHub Issue #3](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/3) PASS
+
 1. As a user I can **see my liked posts from the home screen ** so that I dont have to click into a post to check if I have liked it [GitHub Issue #3](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=18620688)
 PASS
 
-### Epic: Save Post
-[GitHub Issue #23](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/23) Future features
-
-User Stories:
-
-1. As a Site User I can save a spell post so that I can have quick access to my favourite spells [GitHub Issue #13](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/13)
 
 ### Epic: Likes and Comments
 
@@ -152,16 +136,17 @@ User Stories:
 ### EPIC: Advanced likes and comments#34
 [GitHub Issue #34](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=18620584) PASS
 
-1.  As a user I can edit or delete my comment so that I can amend mistakes [GitHub Issue #37](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=18669585)
-
-PASS
+1.  As a user I can edit or delete my comment so that I can amend mistakes [GitHub Issue #37](https://github.com/users/rachel-o-donnell/projects/9/views/1?pane=issue&itemId=18669585) PASS
 
 User Stories: 
 
-1. As a Site User / Admin I can view the comments left on a post so that I can follow conversation generated by the post [GitHub Issue #5](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/5)
-1. As a Site User / Admin I can view the number of likes on a post so that I can see how popular/successful the post is [GitHub Issue #4](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/4)
-1. As a Site User I can leave comments on individual posts so that I can add to the conversation [GitHub Issue #7](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/7)
-1. As a Site User I can like / unlike a spell post so that I can interact with the content [GitHub Issue #8](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/8)
+1. As a Site User / Admin I can view the comments left on a post so that I can follow conversation generated by the post [GitHub Issue #5](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/5) PASS
+
+1. As a Site User / Admin I can view the number of likes on a post so that I can see how popular/successful the post is [GitHub Issue #4](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/4) PASS
+
+1. As a Site User I can leave comments on individual posts so that I can add to the conversation [GitHub Issue #7](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/7) PASS
+
+1. As a Site User I can like / unlike a spell post so that I can interact with the content [GitHub Issue #8](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/8) PASS
 
 ### Alert Messages
 
@@ -181,6 +166,27 @@ As a user I can see alert messages so that I get confirmation that my liking a p
 
 ### Future Features:
 
+### Features/themes/epics/userstories changed during production or Not Implemented while prioritising an mvp.
+
+
+Draft of post was taken off when moving to front end form
+Multiple categories option was taken off during final iteration.
+Comment approval was removed for better user experience.
+User profiles was unfinished so moved to future features.
+
+
+### Approve Comments
+
+1. As a Site Admin I can approve or deny comments added to my content so that filter any comments that go against community guidelines [GitHub Issue #11](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/11)
+
+
+### Epic: Save Draft
+[GitHub Issue #27](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/27)
+
+User Stories:
+
+1. As a Site Admin I can create a draft of my post so that I can save my progress and finish the post at a later time [GitHub Issue #10](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/10) 
+
 ### Epic: Customise Profile
 [GitHub Issue #20](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/20)
 
@@ -188,7 +194,14 @@ User Stories:
 
 1. As a Site User/Site Admin I can personalise my profile so that people can see my areas of interest as a site user or areas of speciality as a creator [GitHub Issue #1](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/1)
 
-ADDED TO FUTURE FEATURES
+### Epic: Save Post
+[GitHub Issue #23](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/23) Future features
+
+User Stories:
+
+1. As a Site User I can save a spell post so that I can have quick access to my favourite spells [GitHub Issue #13](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/13)
+
+
 
 ### Agile Methodology
 
@@ -207,6 +220,8 @@ Each Epic and User Story was color coded to have more harmonious connection to t
 User Stories had acceptance criteria/tasks in the form of check boxes. In this example I tested this feature from the admin panel first and added screenshot in the comments as I know I will have to test this function again after I create the views.
 
 [User Story Acceptance criteria](https://github.com/rachel-o-donnell/the-witchs-cauldron/issues/9) 
+Here is another example:
+[!User Story Acceptance criteria](/assets/images/readme-images/agile/acceptance-criteria%3Atasks.png) 
 
 All issues were coverted to a Github Kanban project board found in the Github Projects tab or by clicking 
 
@@ -318,9 +333,11 @@ Though only two are used on the current live site - The hat was to be a default 
 I used DrawSQL to map out my database 
 ![Draw SQL](/assets/images/readme-images/draw-sql.png)
 
-### Design changes ???
+### Design changes
 
-colors - much preferred goin with cleaner simpler colors - white - no greys. The black writing was better visually than the dark grey and better visibility
+colors - much preferred going with cleaner simpler colors - white - no greys. The black writing was better visually than the dark grey and better visibility.
+
+initially I wanted to override the bootstrap blue color and the alert messages but I think they went really well when I simplified the color sheme.
 
 ## Features
 
@@ -328,7 +345,7 @@ colors - much preferred goin with cleaner simpler colors - white - no greys. The
 
 The home page is where you will find the welcome banner , all the blog posts, the nav links and the footer. 
 
-![Welcome Banner](/assets/images/readme-images/)
+![Welcome Banner](/assets/images/readme-images/welcome-overview.png)
     - 
 
 1. Navigation
@@ -363,78 +380,77 @@ The home page is where you will find the welcome banner , all the blog posts, th
 
     - All posts have CRUD functionality and Users can like and comment on posts. 
 
-    CREATE
-    Summernote Widgets were applied to allow the user to create bullet points, steps, paragraphs etc 
+    - CREATE
+     - Summernote Widgets were applied to allow the user to create bullet points, steps, paragraphs etc 
 
-    ![Post](/assets/images/readme-images/add-spell-form.png)
+     ![Post](/assets/images/readme-images/add-spell-form.png)
+     - Users can upload their own image or a default logo image will be used in its place
 
-  
 
-    READ
-     Users can like and comment on a spell from this page.
-    ![Post](/assets/images/readme-images/read-spell-banner.png)
-   
-  
+    - READ
+     - Users can like and comment on a spell from this page.
+     ![Post](/assets/images/readme-images/read-spell-banner.png)
 
      ![Post](/assets/images/readme-images/read-spell-summernote.png)
 
 
-    UPDATE
+    - UPDATE
 
-    Users can edit or delete a spell but the buttons only appear if the user is the creator of the spell.
+     - Users can edit or delete a spell but the buttons only appear if the user is the creator of the spell.
 
-    ![Post](/assets/images/readme-images/edit-spell-buttons.png)
+     ![Post](/assets/images/readme-images/edit-spell-buttons.png)
 
-    ![Post](/assets/images/readme-images/edit-spell-form.png)
+     ![Post](/assets/images/readme-images/edit-spell-form.png)
 
-    DELETE
+    - DELETE
+     ![Post](/assets/images/readme-images/delete-post.png)
+
 
 1. Comments 
 
 
     -  Comments have full crud functionality. 
     
-    Users can comment on a spell but you must be signed in to do so
-    ![Post](/assets/images/readme-images/sign-in-comment.png)
+   -  Users can comment on a spell but you must be signed in to do so
+     - ![Post](/assets/images/readme-images/sign-in-comment.png)
+     - ![Post](/assets/images/readme-images)
 
-    
+
 
 1. Categories
 
-    - 
+    - Users can search all posts by using the dropdown categories button
+    - Posts will automatically be given a general category if the creator has not chosen one
+     - ![category](/assets/images/readme-images/categories.png)
+
 
 1. Error Pages
 
-    - 
+    - 404, 403 and 500 pages have been styled and are in place.
+    - ![Error](/assets/images/readme-images/404.png)
+
 
 1. Footer
 
-    -   
-
-### Features Not Implemented
+    -   Social Media links open in a new tab to allow users to follow on xocial media
+    -   Clicking the logo link at the copyright will bring you to the home page
+    - ![Footer](/assets/images/readme-images/footer.png)
 
 
 ### Future Features
 
-Contact us  - apply to become an admin/ submit a spell
-Sign in/up with social media
-Admin profile pages
-User Profile pages
-Favourites/Saved/Liked posts page
-Follow Admin profiles - notifications of their new posts
-Notifications of replies to comments
-Merch for sale
-Books from creators for sale / reccomendations
-Admin page on frontend to upload spells
-Creation of new Categories by User/admin on front end
-
-Add Favicon
-
--
-
-Full Crud Profile feature. 
-
-Had profile feature started but ran out of time to use signals to auto create one when signing in - Admin had to create the profile from the back end. 
+- Contact us  - apply to become an admin/ submit a spell
+- Sign in/up with social media
+- Admin profile pages -about us 
+- User Profile pages
+- Favourites/Saved/Liked posts page
+- Follow Admin profiles - notifications of their new posts
+- Notifications of replies to comments
+- Merch for sale
+- Books from creators for sale / reccomendations
+- Admin page on frontend to upload spells
+- Creation of new Categories by User/admin on front end
+- Full Crud Profile feature. 
 
 ## Technologies Used
 
@@ -448,32 +464,23 @@ Had profile feature started but ran out of time to use signals to auto create on
 
  - [gunicorn](https://pypi.org/project/gunicorn/20.1.0/) - Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX. (The server that I am useing to run Django on Heroku)
  - [Django](https://www.djangoproject.com/) - High-level Python Web framework used to build this project rapidly.
- <!-- Not sure if i need to add these
- - [include]
- - [os]
- - [DateTime] - [CharField] etc 
- -->
  
  API: 
  - [cloudinary](https://cloudinary.com/) - Image and Video API
  
  Libraries:
- - [dj-database-url](https://pypi.org/project/dj-database-url/) - Django utility allows use of DATABASE_URL environment variable to configure your Django app.  
+  - [dj-database-url](https://pypi.org/project/dj-database-url/) - Django utility allows use of DATABASE_URL environment variable to configure your Django app.  
     (Support library needed for PostgresSQL - Found in Django settings file to connect to a PostgreSQL database.)
- - [psycopg2](https://pypi.org/project/psycopg2/) - PostgreSQL database adapter for Python. (Connects to PostgresSQL)
- - [dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/) - Django package that facilitates integration with Cloudinary by implementing Django Storage API.
- - [django-summernote](https://summernote.org/) - WISIWYG (what you see is what you get) text editor
- - [django-allauth](https://django-allauth.readthedocs.io/en/latest/) - integrated Django application addressing authentication, registration, account management and sign in from social media. Used to set up an account, like, comment etc.
- - [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/install.html#installing-django-crispy-forms) - Used for form elements for comments
+  - [psycopg2](https://pypi.org/project/psycopg2/) - PostgreSQL database adapter for Python. (Connects to PostgresSQL)
+  - [dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/) - Django package that facilitates integration with Cloudinary by implementing Django Storage API.
+  - [django-summernote](https://summernote.org/) - WISIWYG (what you see is what you get) text editor
+  - [django-allauth](https://django-allauth.readthedocs.io/en/latest/) - integrated Django application addressing authentication, registration, account management and sign in from social media. Used to set up an account, like, comment etc.
+  - [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/install.html#installing-django-crispy-forms) - Used for form  elements for comments
 
-- [whitenoise] - (https://whitenoise.evans.io/en/latest/) - problem with heroku not reading css 
-- widgets? 
- ???
+ - [whitenoise] - (https://whitenoise.evans.io/en/latest/) - problem with heroku not reading css 
  - [django.contrib.messages]https://docs.djangoproject.com/en/4.1/ref/contrib/messages/
- - [SuccessMessageMixin]
- List of all imports?
 
-Deployment:
+ Deployment:
  - [Heroku](https://dashboard.heroku.com/) - "Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud."
  Database:
  - [ElephantSQL](https://www.elephantsql.com/) - "ElephantSQL automates every part of setup and running of PostgreSQL clusters." (Database)
@@ -486,8 +493,6 @@ Deployment:
   - Bootstrap was used through the project to style the project and create responsive elements/layouts.
 
 - [drawSQL](https://drawsql.app/) - Create Database Schema/ERD
-
-
 - [Git](https://git-scm.com/)
   - Git was used for version control, using the terminal to commit to Git and
     Push to GitHub.
@@ -497,15 +502,11 @@ Deployment:
   - Balsamiq was used to create the [wireframes](#wireframes) during the design
     process.
 - [Coolors](https://coolors.co/image-recolor)
-- The following modules were installed or enabled in [GitHub]() to assist with formatting and code
-linting:
 
 ## Testing
 
-link to file
-
-
-
+A separate extensive testing file can be found here
+[TESTING.md](/docs/testing.md)
 
 ### Bugs
 
@@ -560,12 +561,7 @@ link to file
 
 ### Remaining Bugs
 
-REALising at bug #22 that that using # connects to userstories and project boards on the commit messages and not just a refernece for readme. 
-
-
-override bootstrap styling dropdown menu etc. Order alphabetically
-
-double submission of form - comments
+Realised at bug #22 that that using # connects to userstories and project boards on the commit messages and not just a refernece for readme. 
 
 ### BUGS found in validation / TESTING
 
@@ -576,26 +572,97 @@ Various Html fixes
 Areas that should have hover but do not 
 Edit a spell page not styled
 #23 Sumernote widgets needed to add better readability on posts. 
+Changed images to webp format and ensured img-fluid class on all images 
 
-<p>{{ comment }}</p> in delete comment is showing Comment and commentors name as well as comment 
-
-
-Changed images to webp format and ensured img-fluid class on all images
 ## Deployment
 
-
+**DO NOT COMMIT AND PUSH ANYTHING IN GITHUB UNTIL YOU HAVE HIDDEN THE SECRET KEY**
 
 ### Forking the GitHub Repository
 
+By forking the GitHub Repository we make a copy of the original repository on
+our GitHub account to view and/or make changes without affecting the original
+repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub
+   Repository](https://github.com/ianmeigh/support-hub)
+1. At the top of the Repository (not top of page) just above the "Settings"
+   Button on the menu, locate the "Fork" Button.
+1. Click the button (not the number to the right) and you should now have a copy
+   of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-**NOTE**: It is a requirement of the is project that you have Python version 3.8 or higher installed locally.
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/rachel-o-donnell/the-witchs-cauldron).
+1. Under the repository name, click "Code".
+1. To clone the repository using HTTPS, under "HTTPS", copy the link.
+1. Open your local terminal with git installed
+1. Change the current working directory to the location where you want the cloned directory to be created.
+1. Type `git clone`, and then paste the URL you copied in Step 3.
 
+    ```console
+    ~$ git clone https://github.com/rachel-o-donnell/the-witchs-cauldron
+    ```
 
+1. Press Enter. Your local clone will be created.
+
+    ```console
+    $ git clone https://github.com/rachel-o-donnell/the-witchs-cauldron
+    > Cloning into `test-dir`...
+    > remote: Counting objects: 10, done.
+    > remote: Compressing objects: 100% (8/8), done.
+    > remove: Total 10 (delta 1), reused 10 (delta 1)
+    > Unpacking objects: 100% (10/10), done.
+    ```
+
+    [Click here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explanation of the process above with pictures.
+
+1. Change the current working directory to the cloned project folder (this will be a child directory in the location you cloned the project).
+
+1. It is recommended to use a virtual environment during development ([learn more about virtual environments](https://realpython.com/python-virtual-environments-a-primer/)). If you would prefer not to use on please skip the following steps:
+    1. Create a virtual environment in the projects working directory by entering the following command in the same terminal window used for the steps above `python3 -m venv .venv`.
+    1. Before use, the virtual environment will need to be activated using the command `source .venv/bin/activate` in the same terminal window used previously.
+1. Packages required by the project can now using the command `pip install -r requirements.txt`
+1. In the cloned directory, rename the file `.env-example` to `.env` and populate it with the information required.
+1. Make django migrations using the command `python3 manage.py makemigrations`
+
+### DATABASE
+Create an account and set up a project with ElephantSQL. Steps can be found here. [elephansql](https://www.elephantsql.com/docs/)
 
 ### Deploying with Heroku
 
+**NOTE**: It is a prerequisite of deployment to Heroku that you already have access to the following:
+
+- A Cloudinary account, create one for free at [https://cloudinary.com](https://cloudinary.com).
+
+**NOTE**: It is assumed you have followed all deployment instructions listed in this readme starting with the section titled 'Forking the GitHub Repository'.
+
+1. Log in to [Heroku](https://www.heroku.com/) and if not taken there automatically, navigate to your personal app dashboard.
+1. At the top of the page locate the 'New' drop down, click it and then select 'Create new app'.
+1. Give your application a unique name, select a region appropriate to your location and click the 'Create app' button.
+1. Your app should now be created, so from the menu towards the top of the page select the 'Resources' section.
+1. Search for 'Heroku Postgres' under the Add-ons section and add it.
+1. From the menu towards the top of the page select the 'Settings' section and lick 'Reveal Config Vars' in the Config vars section. Enter the following key / value pairings:
+    1. Key as `ALLOWED_HOSTS` and the value as the name of you project with '.herokuapp.com' appended to the end e.g.  `example-app.herokuapp.com`. Click the Add button.
+    1. Key as `CLOUDINARY_URL` and the value as your cloudinary API Environment variable e.g. `cloudinary://**************:**************@*********`. Click the Add button.
+    1. Key as `SECRET_KEY` and the value as a complex string which will be used to provide cryptographic signing. The use of a secret key generator is recommended such as [https://djecrety.ir](https://djecrety.ir/). Click the Add button.
+
+    1. `DataBase` as the `url link` from your elephantsql project.
+    1. Set `PORT`  value as `8000`
+Django (Framework)
+    1. The `DATABASE_URL` should be copied into your local `.env`, created during the cloning process.
+1. Open the `.env` file in the project directory and delete the key / value pair `DEV_ENVIRONMENT_DATABASE = True` before saving the file. This can be added back after the next step to ensure local development changes will not alter the remote database.
+1. Running migrations on the remote database
+    1. Open your local terminal and change the current working directory to that of the project folder.
+    1. Make django migrations using the command `python3 manage.py migrate`.
+1. Navigate to the 'Deploy' page using the menu towards the top of the page.
+1. Select 'GitHub' from the 'Deployment method' section and you will be prompted to 'Connect to GitHub'.
+1. Once connected to your GitHub account you will be able to search for your repository which contains the forked 'The Witchs Cauldron' repository.
+1. Once the repository is found click 'Connect'.
+1. At the bottom of the page find the section named 'Manual deploy', select the 'main' branch in the drop down and click the 'Deploy' button.
+1. Once deployment is complete, click the 'View' button to load the URL of the deployed application.
+
+**SET DEBUG TO FALSE IN SETTINGS.PY BEFORE FINAL DEPLOYMENT**
 
 ## Credits
 
@@ -650,6 +717,13 @@ https://github.com/dougiemath/photo_sharing_site
 https://github.com/Iris-Smok/The-Healthy-Family-PP4
 
 ### Media and blog post content
+ALL content is being used for educational purposes only.
+
+- https://www.allure.com/story/moon-phases-magic-spells
+- https://www.alittlesparkofjoy.com/five-card-tarot-spread/
+- https://www.simplemysticmiracles.com/magickspells/freespells.php?gclid=Cj0KCQiAo-yfBhD_ARIsANr56g6PxWJJY1RVegBRDEFd3g8_AW3CpMnRfUapPehoSEfMqxgLP_1Ki9AaAuwUEALw_wcB
+-https://yogandha.com/blogs/the-mindful-essential-oils-edit/6-celtic-rituals-to-do-in-may
+- 
 
 ### ReadMe 
 
@@ -661,6 +735,8 @@ I also used his testing.md structure as a skeleton and ideas to add docs with li
 
 Tips from the below video README: Worth Reading, with Joanna Gorska on the Code Institute Channel.
 - https://www.youtube.com/watch?v=P1UiUXrp7Ic
+
+- The very detailed deployment was also taken from his READMe and altered to suit. 
 
 ### Acknowledgments
 
