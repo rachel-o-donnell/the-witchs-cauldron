@@ -159,6 +159,8 @@ MESSAGE_TAGS = {
     messages.ERROR: "danger"
 }
 
+SUMMERNOTE_THEME = 'bs4'
+
 SUMMERNOTE_CONFIG = {
     'width': '100%',
 }

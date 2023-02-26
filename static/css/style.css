@@ -51,3 +51,8 @@ h2 {
     background-color: #463F3A;
     color: #E0AFA0;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}

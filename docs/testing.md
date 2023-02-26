@@ -30,7 +30,7 @@ Manual tests were applied as I was building features to ensure all features adde
 | Heart Favicon and counter | Heart Favicon changes to all black if you click and counter increases by 1 | Clicked on favicon | PASS |
 | Heart Favicon and counter | Heart Favicon changes to black outline if you 'unlike' and counter decreases by 1 | Clicked on favicon | PASS |
 | Heart Favicon and counter (Home page) | Heart Favicon appears all black only for the spells you have liked from the spell detail page and counter in showing and increasing/decreasing | Liked multiple random spells and checked on home page which ones were black and what count they had  | PASS |
-| Comment Favicon and counter | Comment favicon appears on home page and spell detail page with a count denoting how many comments have been made on each post. Counter increases/decreases accordingly | PASS |
+| Comment Favicon and counter | Comment favicon appears on home page and spell detail page with a count denoting how many comments have been made on each post. Counter increases/decreases accordingly | Added and deleted comments | PASS |
 | Edit and delete buttons | Edit and delete buttons only appear for a spell you have created |  Created a spell under one username - buttons appear, logged out and logg in as a different user - buttons do not appear on the same post , but do appear when I post a new spell with the 2nd user | PASS |
 | EDIT A SPELL PAGE |
 | Edit | Edit button brings you to edit a spell page | clicked on edit button | PASS |
@@ -60,8 +60,8 @@ Manual tests were applied as I was building features to ensure all features adde
 | SPELL DISPLAYS |
 | Spell Title |  Spell Title changes color when hovered over | hovered over Spell Title | PASS |
 | SPELL DETAIL PAGE |
-| Edit | Post button changes color when hovered over | 
-| Delete | Delete button changes color when hovered over |
+| Edit | Post button changes color when hovered over | hovered over edit button | PASS |
+| Delete | Delete button changes color when hovered over | hovered over delete | PASS |
 |COMMENTS |
 | Post (COMMENTS)| Post button changes color when hovered over | hovered over Post button | PASS |
 | Update (COMMENTS) | Update button changes color when hovered over | hovered over Update button |PASS 
@@ -84,9 +84,9 @@ Manual tests were applied as I was building features to ensure all features adde
 #### ERROR PAGES 
 | Testing | Expected Outcome | Steps | Results |
 |--------|---------|---------|---------|
-| 404 |  404 Error page appears when | 
-| 500 | 500 Error page appears when | 
-| 503 | 503 Error page appears when | 
+| 404 |  404 Error page appears when page request does not exist | entered /help at the end of the http | PASS
+| 500 | 500 Error page appears when there is a server error | | UNTESTED |
+| 403 | 403 Error page appears when user tries to acces a page they are not allowed | Added edit_comment/1 to end of hhtp address when signed in as a different user than the author of the comment | PASS |
 
 &nbsp;
 
@@ -101,6 +101,8 @@ Manual tests were applied as I was building features to ensure all features adde
 | Form Validation ALL DETAILS | Fill all details of form | User returned to homepage and post is displayed with all relavant info on home page and all extra details on the spell detail page, post appears in relavant category search | PASS |
 | COMMENTS |
 | Post (COMMENTS)| Post button posts a comment and you stay on the same page | Clicked Post button after commenting in box | PASS |
+
+&nbsp;
 
 ### FORM VIEWS 
 | Testing | Expected Outcome | Steps | Results |
@@ -122,9 +124,7 @@ Manual tests were applied as I was building features to ensure all features adde
 | Items needed | Items needed  appear in correct section on spell detail page | added items needed| PASS |
 | Content | Items needed appear in correct section on spell detail page| added content | PASS |
 
-#### Category Search PASS
-
-Category can be applied to a spell | PASS
+&nbsp;
 
 #### Messaages: PASS
 | Testing | Expected Outcome | Steps | Results |
@@ -146,7 +146,8 @@ Category can be applied to a spell | PASS
 
 
 #### Responsiveness 
-
+| Testing | Results |
+|--------|---------|
 | Navbar - goes to burger | PASS |
 | footer - change to m-0 around social fontawesome icons | PASS |
 | Home Page - fully responsive | PASS |
@@ -154,18 +155,16 @@ Category can be applied to a spell | PASS
 | Add Spell | PASS |
 | Edit Spell | PASS |
 | Delete Spell | PASS |
-| Edit Comment | | PASS |
+| Edit Comment  | PASS |
 | Delete Comment | PASS |
 | Categories page | PASS |
+| 500 | PASS | 
+| 403 | PASS | 
+| 404 | PASS | 
 
-
-
-| Register | NOT STYLED but responsive
-| Loggout | NOT STYLED but responsive
-| Login | NOT STYLED but responsive 
-| 404 |  404 Error page appears when | 
-| 500 | 500 Error page appears when | 
-| 503 | 503 Error page appears when | 
+| Register | NOT STYLED but responsive |
+| Loggout | NOT STYLED but responsive |
+| Login | NOT STYLED but responsive |
 
 
 &nbsp;
@@ -190,5 +189,8 @@ Conflicts arise with pythonchecker and imported python linter in terminal. I've 
 Jigsaw Wc3 validation - passes without error
 
 &nbsp;
+
+### Lighthouse 
+
 
 Return to [README.md]() ADD LINK

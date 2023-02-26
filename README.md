@@ -484,6 +484,8 @@ Edit a spell page not styled
 
 <p>{{ comment }}</p> in delete comment is showing Comment and commentors name as well as comment 
 
+
+Changed images to webp format and ensured img-fluid class on all images
 ## Deployment
 
 
@@ -544,13 +546,15 @@ Edit: https://www.youtube.com/watch?v=R6-pB5PAA6s&list=PLCC34OHNcOtr025c1kHSPrnP
 Delete:
 https://www.youtube.com/watch?v=8NPOwmtupiI&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=7
 
+Changing the width of Summernote widgets: https://morioh.com/p/64e991b05547
+
 Reference projects:
 https://github.com/ianmeigh/support-hub
 https://github.com/KarinOldbring/vegan-a-eat
 https://github.com/dougiemath/photo_sharing_site
 https://github.com/Iris-Smok/The-Healthy-Family-PP4
 
-### Media
+### Media and blog post content
 
 ### ReadMe 
 
@@ -565,6 +569,5 @@ Tips from the below video README: Worth Reading, with Joanna Gorska on the Code 
 
 ### Acknowledgments
 
-Huge thanks to my cohort members ivette and Roz for helping me troubleshoot issues, our cohort lead Iris, My mentor Richard and the Slack Community. 
+Huge thanks to my cohort members Ivette McDermott and Roslyn Welch for helping me troubleshoot issues, our cohort lead Iris Smok, Code Institute's Tutor Assistants and my mentor Richard Wells.
 
-Ian Meigh for the ReadME structure.

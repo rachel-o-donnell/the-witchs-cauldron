@@ -11,9 +11,9 @@
                 <div class="container pt-3 pb-3">
                     <div class="card border-0">
                         <div class="col col-12 mt-3 d-flex justify-content-center">
-                            <div class="card logo-card border-0">
+                            <div class="card logo-card border-0 img-fluid">
                                 <img class="card-img-top logo-card img-fluid"
-                                    src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
+                                    src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1677416502/The%20Witch%27s%20Cauldron/cauldron_y7sb1f.webp"
                                     alt="A black and white drawing of a cauldron with spiral steam coming from it's contents">
                             </div>
                         </div>
@@ -47,13 +47,13 @@
                             <div class="card-body">
                                 <div class="image-container pb-3">
                                     {% if "placeholder" in post.main_image.url %}
-                                    <img src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1676816121/The%20Witch%27s%20Cauldron/cauldron_png_h2j9gh.png"
-                                        class="card-img-top"
+                                    <img src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1677416502/The%20Witch%27s%20Cauldron/cauldron_y7sb1f.webp"
+                                        class="card-img-top img-fluid"
                                         alt="A black and white drawing of a cauldron with spiral steam coming from it's content">
                                     {% else %}
                                     <img src="{{ post.main_image.url }}"
                                         alt="The creator has posted a custom image to suit their spell"
-                                        class="card-img-top">
+                                        class="card-img-top img-fluid">
                                     {% endif %}
                                 </div>
                                 <div class="containers">
