@@ -194,15 +194,15 @@ ADDED TO FUTURE FEATURES
 
 Themes, Epics and User Stories were all divided up and added as issues in the issues tab of Github 
 
-![Acc Management screenshot](assets/README-images/agile/acc-management.png)
+![Acc Management screenshot](/assets/images/readme-images/agile/acc-management.png)
 
 Each Theme, Epic and User Story was given a label(s) to visually connect to the theme or epic it belonged to.
 
-![Admin Features screenshot](assets/README-images/agile/admin-features.png)
+![Admin Features screenshot](/assets/images/readme-images/agile/admin-features.png)
 
 Each Epic and User Story was color coded to have more harmonious connection to the Theme.
 
-![Post Interaction screenshot](assets/README-images/agile/post-interaction.png)
+![Post Interaction screenshot](/assets/images/readme-images/agile/post-interaction.png)
 
 User Stories had acceptance criteria/tasks in the form of check boxes. In this example I tested this feature from the admin panel first and added screenshot in the comments as I know I will have to test this function again after I create the views.
 
@@ -216,52 +216,63 @@ Product Backlogs were created using the Milestones feature in Github. 1 main pro
 
 Product Backlog (main) with MoSCoW labels - Screenshot taken at the start of Iteration 2.
 
-![Product Backlog (main) with MoSCoW](assets/README-images/agile/main-product-backlog-moscow.png)
+![Product Backlog (main) with MoSCoW](/assets/images/readme-images/agile/main-product-backlog-moscow.png)
 
 Timeboxing was used by creating Iterations in the Milestones tab of Github with each iteration being one week long. 
 
-![Milstones tab](assets/README-images/agile/milestones.png)
+![Milstones tab](/assets/images/readme-images/agile/milestones.png)
 
 
 Issues were added to each iteration at the start of each week using MosCow prioritisation (with new labels added to each issue) and using the 60% 20% rest method. These issues were also ordered from top priority on the top of the list down.
 
 Issues that were not completed were added back into the main Product Backlog Milestone at the end of each iteration and the board was reprioritised.
 
-![Iteration 1](assets/README-images/agile/it-1-product-backlog.png)
+![Iteration 1](/assets/images/readme-images/agile/it-1-product-backlog.png)
 
 1st week I was ahead of my iteration so I began working on 2nd iteration early.
 
-![Iteration 2](assets/README-images/agile/it2-pb.png)
+![Iteration 1](/assets/images/readme-images/agile/it2-pb.png)
 
 The current iteration led the management of the kanban board- again laid out with a product backlog style in mind with prioritised issues on the top of the list. This helped me visually focus as you could no longer see the MoSCoW labels without clicking into each item. 
 
 Kanban Iteration 1
 
-![kanban Iteration 1](assets/README-images/agile/kanban-it-1.png)
+![kanban Iteration 1](/assets/images/readme-images/agile/kanban-it-1.png)
 
 Kanban Iteration 1 Day 4 progress
 
-![Kanban Iteration 1 Day 4 progress](assets/README-images/agile/kanban-it1-progress.png) 
+![Kanban Iteration 1 Day 4 progress](/assets/images/readme-images/agile/kanban-it1-progress.png) 
 
-Kanban Iteration 2 
+Kanban Iteration 5 
 
-![Kanban Iteration 2](assets/README-images/agile/kanban-it2.png)
+![Kanban Iteration 5](/assets/images/readme-images/agile/kanban-it2.png)
+
+
+Kanban Final Iteration 
+During the final iteration it became clear that I would not have time to finish the profiles I had started so I decided to add it to my future features list and complete the front end of posting content. Originally I had wanted only admins to post but I thought it best to have all users post for better community engagement.
+
+![Kanban Iteration Final](/assets/images/readme-images/agile/final-iteration.png)
+
+Kanban Final Iteration FUTURE FEATURES
+
+At the final iteration I created a future features section in the kanban board. All issues that had been marked as could have/should have/wont have that never made it through production have been added to the future features section on the kanban board fo ease of access for developing the site further. 
+
+![Kanban Iteration Final Future Features](/assets/images/readme-images/agile/final-iteration--future.png)
 
 ### Design
 
 ### Wireframes
 
-Wireframes were created using Balsamiq and can be found [here](assets/Wireframes/)
-
-![Homepage desktop](assets/Wireframes/home-view-desktop.png)
+Wireframes were created using Balsamiq and can be found [here](/assets/images/readme-images/
+![Homepage desktop](/assets/images/Wireframes/home-view-desktop.png)
 
 ### Colour Scheme
 
 Neutral natural colors were chosen for the site using Coolers. I made every effort for color blind accesability here to ensure all tones would differ. 
 
-![Colour Palette](assets/README-images/colors/color-palette-original.png)
+![Colour Palette](assets/images/README-images/colors/color-palette-original.png)
 
-All colorblind variants can be found [here](assets/README-images/colors)
+All colorblind variants can be found [here](/assets/images/README-images/colors)
 
 ### Typography
 
