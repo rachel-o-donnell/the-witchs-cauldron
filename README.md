@@ -461,7 +461,12 @@ link to file
 
 #22 - Edit a spell page not styled.
 
+#23 - Spell form not registering styling on front end after removal of widget - paragraphs/new lines etc  - re-added summernote widget and updated setting.py with resposive width
+
 ### Remaining Bugs
+
+REALising at bug #22 that that using # connects to userstories and project boards on the commit messages and not just a refernece for readme. 
+
 
 override bootstrap styling dropdown menu etc. Order alphabetically
 
@@ -474,10 +479,8 @@ Various Html fixes
 #20 edit and delete comment buttons crowded in mobile view, navbar too long
 #21 Categories not applying when posting spells
 Areas that should have hover but do not 
-spell form not styling now - re-add summernote widget?
-
 Edit a spell page not styled
-
+#23 Sumernote widgets needed to add better readability on posts. 
 
 <p>{{ comment }}</p> in delete comment is showing Comment and commentors name as well as comment 
 
