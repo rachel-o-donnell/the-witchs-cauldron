@@ -20,12 +20,12 @@
                                             <div class="image-container">
                                                 {% if "placeholder" in post.main_image.url %}
                                                 <img src="https://res.cloudinary.com/dpxa5dfjt/image/upload/v1677416502/The%20Witch%27s%20Cauldron/cauldron_y7sb1f.webp"
-                                                    class="card-img-top img-fit img-fluid"
+                                                    class="card-img-top img-fluid"
                                                     alt="A black and white drawing of a cauldron with spiral steam coming from it's content">
                                                 {% else %}
                                                 <img src="{{ post.main_image.url }}"
                                                     alt="The creator has posted a custom image to suit their spell"
-                                                    class="card-img-top img-fit img-fluid">
+                                                    class="card-img-top iimg-fluid">
                                                 {% endif %}
                                                 <div class="image-flash">
                                                     <p class="creator">Creator: {{ post.creator }}</p>

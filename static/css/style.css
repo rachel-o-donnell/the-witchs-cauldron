@@ -13,12 +13,6 @@ footer,
     font-size: 2rem;
 }
 
-.img-fit {
-    width: 100% !important;
-    height: 22vw !important;
-    object-fit: cover !important;
-}
-
 .dropdown-menu {
     background-color: #Efd6cf !important;
 }
