@@ -192,5 +192,7 @@ Jigsaw Wc3 validation - passes without error
 
 ### Lighthouse 
 
+images not set to width and height - but all images have img-fluid which is active when looking on dev tools
+
 
 Return to [README.md](https://github.com/rachel-o-donnell/the-witchs-cauldron/blob/main/README.md) 
