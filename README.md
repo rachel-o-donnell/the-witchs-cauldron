@@ -363,8 +363,8 @@ The home page is where you will find the welcome banner , all the blog posts, th
 
     - All auth was used for the account management - Log in, register, loggout. User is prompted to fill all fields correctly and have a more complex password. 
 
-     ![Log in](/assets/images/readme-images/sign-in-form.png)
-     ![Loggout](/assets/images/readme-images/logout-page.png)
+     ![Log in](/assets/images/readme-images/sign-in.png)
+     ![Loggout](/assets/images/readme-images/loggout.png)
      ![Register](/assets/images/readme-images/register-acc.png)
 
 1. Messages

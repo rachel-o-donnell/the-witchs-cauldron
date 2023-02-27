@@ -192,7 +192,22 @@ Jigsaw Wc3 validation - passes without error
 
 ### Lighthouse 
 
-images not set to width and height - but all images have img-fluid which is active when looking on dev tools
+lighthouse scores can be found here 
+[Lighthouse](/docs/lighthouse/dt-add-spell.png)
+[Lighthouse](/docs/lighthouse/dt-categories.png)
+[Lighthouse](/docs/lighthouse/dt-categories.png)
+[Lighthouse](/docs/lighthouse/dt-home.png)
+[Lighthouse](/docs/lighthouse/dt-loggout.png)
+[Lighthouse](/docs/lighthouse/mob-add-spell.png)
+[Lighthouse](/docs/lighthouse/dt-loggout.png)
+[Lighthouse](/docs/lighthouse/home-mobile-lh.png)
+[Lighthouse](/docs/lighthouse/mob-categories.png)
+[Lighthouse](/docs/lighthouse/dt-loggout.png)
+[Lighthouse](/docs/lighthouse/mob-loggout.png)
+[Lighthouse](/docs/lighthouse/mob-register.png)
+[Lighthouse](/docs/lighthouse/mob-spell-detail.png)
+
+
 
 
 Return to [README.md](https://github.com/rachel-o-donnell/the-witchs-cauldron/blob/main/README.md) 
